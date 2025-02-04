@@ -1,4 +1,4 @@
-## 설치 방법
+## 📚 설치 방법
 ### xcframework를 직접 설치할 경우
 ① **LuckyBiteiOS.xcframework**를 프로젝트에 넣습니다.     
 ② TARGETS에서 SDK를 사용할 대상 앱을 찾습니다.     
@@ -22,7 +22,7 @@ post_install do |installer|
 end
 ```
 
-## 진입점 플로팅 버튼 적용 방법
+## 💎 진입점 플로팅 버튼 적용 방법
 ### SwiftUI 프로젝트
 ```swift
 import LuckyBiteiOS
