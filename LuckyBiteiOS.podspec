@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LuckyBiteiOS'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'LuckyBite Service for iOS'
   s.description      = 'LuckyBite Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
