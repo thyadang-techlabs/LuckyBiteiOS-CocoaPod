@@ -1,6 +1,6 @@
 Updating spec repo `trunk`
 Validating podspec
- -> LuckyBiteiOS -> LuckyBiteiOS (0.1.6)
+ -> LuckyBiteiOS -> LuckyBiteiOS (0.1.7)
     - WARN  | [iOS] license: Unable to find a license file
     - NOTE  | xcodebuild:  note: Using codesigning identity override: -
     - NOTE  | [iOS] xcodebuild:  note: Building targets in dependency order
@@ -16,12 +16,12 @@ Updating spec repo `trunk`
 --------------------------------------------------------------------------------
  🎉  Congrats
 
- 🚀  LuckyBiteiOS (0.1.6) successfully published
- 📅  February 5th, 09:37
+ 🚀  LuckyBiteiOS (0.1.7) successfully published
+ 📅  February 5th, 09:39
  🌎  https://cocoapods.org/pods/LuckyBiteiOS
  👍  Tell your friends!
 --------------------------------------------------------------------------------
 
-[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.6)`
+[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.7)`
 
-[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.6)`
+[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.7)`
