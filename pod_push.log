@@ -1,0 +1,27 @@
+Updating spec repo `trunk`
+Validating podspec
+ -> LuckyBiteiOS -> LuckyBiteiOS (0.1.5)
+    - WARN  | [iOS] license: Unable to find a license file
+    - NOTE  | xcodebuild:  note: Using codesigning identity override: -
+    - NOTE  | [iOS] xcodebuild:  note: Building targets in dependency order
+    - NOTE  | [iOS] xcodebuild:  note: Target dependency graph (3 targets)
+    - NOTE  | [iOS] xcodebuild:  note: Signing static framework with --generate-pre-encrypt-hashes (in target 'Pods-App' from project 'Pods')
+    - NOTE  | [iOS] xcodebuild:  note: Metadata extraction skipped. No AppIntents.framework dependency found. (in target 'App' from project 'App')
+    - NOTE  | [iOS] xcodebuild:  note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'LuckyBiteiOS' from project 'Pods')
+    - NOTE  | [iOS] xcodebuild:  note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'App' from project 'App')
+    - NOTE  | [iOS] xcodebuild:  note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Pods-App' from project 'Pods')
+
+Updating spec repo `trunk`
+
+--------------------------------------------------------------------------------
+ 🎉  Congrats
+
+ 🚀  LuckyBiteiOS (0.1.5) successfully published
+ 📅  February 5th, 09:35
+ 🌎  https://cocoapods.org/pods/LuckyBiteiOS
+ 👍  Tell your friends!
+--------------------------------------------------------------------------------
+
+[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.5)`
+
+[!] Unable to read the license file `LICENSE` for the spec `LuckyBiteiOS (0.1.5)`
