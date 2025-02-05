@@ -63,5 +63,5 @@ import LuckyBiteiOS
     
 `setFloatingButtonWithViewController` 함수 인자    
 - 첫 인자: self (UIViewController)
-- show: 플로팅 버튼을 띄우고 싶다면 true, 가리고 싶다면 false를 전달하면 됩니다.
+- show: 플로팅 버튼을 띄우고 싶다면 YES, 가리고 싶다면 NO를 전달하면 됩니다.
 
