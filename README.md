@@ -1,3 +1,5 @@
+## 🍎 지원 버전
+`iOS 13.0` 이상
 ## 📚 설치 방법
 ### xcframework를 직접 설치할 경우
 ① **LuckyBiteiOS.xcframework**를 프로젝트에 넣습니다.     
