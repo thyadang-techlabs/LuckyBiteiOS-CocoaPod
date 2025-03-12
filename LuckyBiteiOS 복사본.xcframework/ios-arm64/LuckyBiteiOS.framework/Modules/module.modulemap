@@ -1,0 +1,10 @@
+framework module LuckyBiteiOS {
+  umbrella header "LuckyBiteiOS.h"
+  
+  export *
+  module * { export * }
+} 
+module LuckyBiteiOS.Swift {
+  header "LuckyBiteiOS-Swift.h"
+  requires objc
+}
