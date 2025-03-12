@@ -19,6 +19,13 @@
         "moduleName": "LuckyBiteiOS"
       },
       {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "LuckyBiteiOS"
+      },
+      {
         "kind": "TypeDecl",
         "name": "FloatingButtonManager",
         "printedName": "FloatingButtonManager",
