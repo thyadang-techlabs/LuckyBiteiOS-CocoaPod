@@ -2,7 +2,7 @@
 `iOS 13.0` 이상
 ## 📚 설치 방법
 ### xcframework를 직접 설치할 경우
-① Release 페이지에서 **LuckyBiteiOS.xcframework**를 받고, 사용할 프로젝트에 넣습니다.     
+① Releases 페이지에서 **LuckyBiteiOS.xcframework**를 받고, 사용할 프로젝트에 넣습니다.     
 ② TARGETS에서 SDK를 사용할 대상 앱을 찾습니다.     
 ③ **General**의 **Frameworks, Libraries, and Embedded Content** 영역에서 **LuckyBiteiOS.xcframework**를 찾습니다.    
 ④ **Embed**의 값을 **'Embed & Sign'** 으로 설정합니다.
