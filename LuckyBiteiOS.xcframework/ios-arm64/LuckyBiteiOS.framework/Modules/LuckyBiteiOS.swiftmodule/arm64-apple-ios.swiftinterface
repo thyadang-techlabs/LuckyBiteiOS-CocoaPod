@@ -13,16 +13,8 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
-  @objc override dynamic public init()
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
@@ -34,8 +26,16 @@ import _SwiftConcurrencyShims
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
+  @objc override dynamic public init()
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
   @objc deinit
 }
 extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
