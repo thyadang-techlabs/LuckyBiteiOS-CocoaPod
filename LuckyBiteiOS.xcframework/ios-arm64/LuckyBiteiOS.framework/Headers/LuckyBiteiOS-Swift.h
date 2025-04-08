@@ -323,6 +323,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
 @end
 
+SWIFT_CLASS("_TtC12LuckyBiteiOS21LuckyBiteSDKAdManager")
+@interface LuckyBiteSDKAdManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDKAdManager * _Nonnull shared;)
++ (LuckyBiteSDKAdManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
