@@ -12,12 +12,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
-  @objc override dynamic public init()
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
   final public func initialize(bidmadCommon: any LuckyBiteiOS.BidmadCommonProtocol, completion: @escaping (Swift.Bool) -> Swift.Void)
@@ -39,6 +33,12 @@ public protocol BidmadCommonProtocol {
   @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
   @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
   @objc public func hideFloatingButton()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
+  @objc override dynamic public init()
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
   @objc deinit
 }
 extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
