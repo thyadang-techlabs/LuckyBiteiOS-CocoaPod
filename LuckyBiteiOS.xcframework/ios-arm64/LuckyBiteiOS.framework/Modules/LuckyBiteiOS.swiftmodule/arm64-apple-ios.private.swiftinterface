@@ -2,8 +2,11 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios18.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LuckyBiteiOS
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import Combine
 import Foundation
 @_exported import LuckyBiteiOS
+import Observation
+import OpenBiddingHelper
 import SafariServices
 import Swift
 import SwiftUI
@@ -12,6 +15,17 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
   final public func initialize(bidmadCommon: (any LuckyBiteiOS.BidmadCommonProtocol)?, completion: @escaping (Swift.Bool) -> Swift.Void)
@@ -20,11 +34,8 @@ import _SwiftConcurrencyShims
 public protocol BidmadCommonProtocol {
   func initializeSdk(completion: @escaping (Swift.Bool) -> Swift.Void)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc deinit
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
@@ -40,10 +51,5 @@ public protocol BidmadCommonProtocol {
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
 }
 extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
