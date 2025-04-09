@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LuckyBiteiOS'
-  s.version          = '0.1.83'
+  s.version          = '0.1.84'
   s.summary          = 'LuckyBite Service for iOS'
   s.description      = 'LuckyBite Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
   s.vendored_frameworks = "LuckyBiteiOS.xcframework"
-  s.dependency 'BidmadSDK', '6.12.0', :source => 'https://github.com/bidmad/cocoapod.git'
-  s.dependency 'OpenBiddingHelper', '6.12.0', :source => 'https://github.com/bidmad/cocoapod.git'
+  s.dependency 'BidmadSDK', '6.12.0'
+  s.dependency 'OpenBiddingHelper', '6.12.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   s.user_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 end
