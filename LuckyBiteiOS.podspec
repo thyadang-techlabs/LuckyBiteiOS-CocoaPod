@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LuckyBiteiOS'
-  s.version          = '0.1.76'
+  s.version          = '0.1.77'
   s.summary          = 'LuckyBite Service for iOS'
   s.description      = 'LuckyBite Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
@@ -11,8 +11,23 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.vendored_frameworks = "LuckyBiteiOS.xcframework"
   s.dependency 'BidmadSDK', '6.12.0'
+  
+  # Explicitly define configurations for conflicting SDKs
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'VALID_ARCHS' => 'arm64 x86_64'
+  }
+  
+  # Define subspec for AdFit related configuration
+  s.subspec 'AdFit' do |ss|
+    ss.dependency 'BidmadAdFitAdapter', '3.12.7.11.0'
+    ss.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+  end
+  
+  # Rest of the adapters
   s.dependency 'OpenBiddingHelper', '6.12.0'
-  s.dependency 'BidmadAdFitAdapter', '3.12.7.11.0'
   s.dependency 'BidmadAdmixerAdapter', '2.0.0.11.0'
   s.dependency 'BidmadAppLovinAdapter', '13.0.0.11.0'
   s.dependency 'BidmadFyberAdapter', '8.3.2.11.0'
