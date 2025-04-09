@@ -9,16 +9,6 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "LuckyBiteiOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
         "moduleName": "LuckyBiteiOS"
       },
       {
@@ -947,6 +937,16 @@
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyBiteiOS",
+        "declAttributes": [
+          "RawDocComment"
         ]
       }
     ],
