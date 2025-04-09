@@ -12,6 +12,14 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
+  final public func initialize(bidmadCommon: (any LuckyBiteiOS.BidmadCommonProtocol)?, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+public protocol BidmadCommonProtocol {
+  func initializeSdk(completion: @escaping (Swift.Bool) -> Swift.Void)
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
   @objc override dynamic public init()
@@ -26,14 +34,6 @@ import _SwiftConcurrencyShims
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
-  final public func initialize(bidmadCommon: (any LuckyBiteiOS.BidmadCommonProtocol)?, completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc deinit
-}
-public protocol BidmadCommonProtocol {
-  func initializeSdk(completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
