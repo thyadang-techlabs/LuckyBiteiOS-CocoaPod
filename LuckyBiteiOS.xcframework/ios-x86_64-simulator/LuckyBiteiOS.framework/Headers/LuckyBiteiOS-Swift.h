@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
+@import OpenBiddingHelper;
 #endif
 
 #endif
@@ -315,6 +316,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 - (void)hideFloatingButton;
 @end
 
+@class OpenBiddingInterstitial;
+SWIFT_CLASS("_TtC12LuckyBiteiOS14InterstitialAd") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface InterstitialAd : NSObject <BIDMADOpenBiddingInterstitialDelegate>
+- (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC12LuckyBiteiOS12LuckyBiteSDK")
 @interface LuckyBiteSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK * _Nonnull shared;)
@@ -327,6 +338,18 @@ SWIFT_CLASS("_TtC12LuckyBiteiOS21LuckyBiteSDKAdManager")
 @interface LuckyBiteSDKAdManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDKAdManager * _Nonnull shared;)
 + (LuckyBiteSDKAdManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class OpenBiddingRewardVideo;
+SWIFT_CLASS("_TtC12LuckyBiteiOS8RewardAd") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface RewardAd : NSObject <BIDMADOpenBiddingRewardVideoDelegate>
+- (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
+- (void)onSkipAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onCompleteAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
+- (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
