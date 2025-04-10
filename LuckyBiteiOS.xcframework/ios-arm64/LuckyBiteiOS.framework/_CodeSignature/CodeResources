@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		qwyS6w4fdKKLR2kO795XdIOi0QY=
+		TRb2L33KiJTkQEJV0TnY86K0iug=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		EkidnMBbfLPA6ZRk4ManZROvU3o=
+		f9BzSEm6XS2UMpfBnKx9wdPDZUI=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		w46xQxZbD8zPnqtapy57al04tl8=
+		qNNBQ5FugwEs/Ob4Gtq8uRym/HA=
 		</data>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		wcqSL0KJlAg+99jsThQKdM8Aqcg=
+		DeL+byorgWM5i1KHMKd8LKBDdQY=
 		</data>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wcqSL0KJlAg+99jsThQKdM8Aqcg=
+		DeL+byorgWM5i1KHMKd8LKBDdQY=
 		</data>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dGw9acmLSeB9BuO2yJjD6VWexEk=
+		ILhAXzHA+qCKt5a3oPNmHpOK5cw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g4+gN8gkid5nkEuZbx4lddePxAlu0Eu6C1DZTTGxRMc=
+			o8f/hz6VT9x06CmhXWWh5ZFAp6OQCdCIEv6QSsFEg74=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DGPw8s4TLohwc9W15uHZi0FJvRmYM7ikh09Q0qWjIoQ=
+			kqzEpoEcozLmze8d/PCv6jj19WJMX/A3eny4XJqCoAg=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kEU7f8PUv2YL3OiPtjHTJwIWuwq+phCaWUiGYCiRuIc=
+			UuYO3ynn5TFVGnL3Rm3/GGCf7x8BQN9wb0K4UEGXeWk=
 			</data>
 		</dict>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogLGNjYNgoyrKT3l7MN+s7tUkFyUY/B/cQpMldkaBHI=
+			PlZmnRUsy5p4N5WEGGoMEuRMJM4MBv4AcE3EvI8xwzM=
 			</data>
 		</dict>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogLGNjYNgoyrKT3l7MN+s7tUkFyUY/B/cQpMldkaBHI=
+			PlZmnRUsy5p4N5WEGGoMEuRMJM4MBv4AcE3EvI8xwzM=
 			</data>
 		</dict>
 		<key>Modules/LuckyBiteiOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			amnpWNrIhNmMJIDApFJLH8BOdPAlIdK4exK6SieRADc=
+			riUnOYzr/KG8mE8gz/DKBSoMghFZoVokWh9u8ZRWYfk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
