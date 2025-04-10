@@ -15,23 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
-}
-@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
   @objc override dynamic public init()
@@ -69,6 +52,15 @@ extension UIKit.UIApplication {
   @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
   @objc public func hideFloatingButton()
   @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
 }
 @objc @available(iOS 13.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
@@ -124,7 +116,7 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
     set
     _modify
   }
-  public init(_ zoneId: Swift.String) async
+  public init(_ zoneId: Swift.String)
   public func show(_ adClosureHandler: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo)
   @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, error: any Swift.Error)
@@ -136,6 +128,14 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.RewardAd : Observation.Observable {
 }
-extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
+}
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.BannerAdView : Swift.Sendable {}
+extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}

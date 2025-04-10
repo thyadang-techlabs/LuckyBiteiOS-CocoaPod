@@ -15,11 +15,10 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
-  @objc override dynamic public init()
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc deinit
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
 }
 @_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
@@ -29,6 +28,12 @@ import _SwiftConcurrencyShims
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
+  @objc override dynamic public init()
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
@@ -116,7 +121,7 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
     set
     _modify
   }
-  public init(_ zoneId: Swift.String) async
+  public init(_ zoneId: Swift.String)
   public func show(_ adClosureHandler: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo)
   @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, error: any Swift.Error)
@@ -130,11 +135,6 @@ extension LuckyBiteiOS.RewardAd : Observation.Observable {
 }
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
 }
 extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
