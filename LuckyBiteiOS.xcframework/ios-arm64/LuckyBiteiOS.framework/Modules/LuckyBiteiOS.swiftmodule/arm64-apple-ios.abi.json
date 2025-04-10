@@ -6,15 +6,35 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyBiteiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "LuckyBiteiOS"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyBiteiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
-        "name": "LuckyBiteSDKAdManager",
-        "printedName": "LuckyBiteSDKAdManager",
+        "name": "LuckyBiteSDK",
+        "printedName": "LuckyBiteSDK",
         "children": [
           {
             "kind": "Var",
@@ -23,14 +43,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LuckyBiteSDKAdManager",
-                "printedName": "LuckyBiteiOS.LuckyBiteSDKAdManager",
-                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager"
+                "name": "LuckyBiteSDK",
+                "printedName": "LuckyBiteiOS.LuckyBiteSDK",
+                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager(cpy)shared",
-            "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC6sharedACvpZ",
+            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(cpy)shared",
+            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC6sharedACvpZ",
             "moduleName": "LuckyBiteiOS",
             "static": true,
             "declAttributes": [
@@ -50,14 +70,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LuckyBiteSDKAdManager",
-                    "printedName": "LuckyBiteiOS.LuckyBiteSDKAdManager",
-                    "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager"
+                    "name": "LuckyBiteSDK",
+                    "printedName": "LuckyBiteiOS.LuckyBiteSDK",
+                    "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager(cm)shared",
-                "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC6sharedACvgZ",
+                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(cm)shared",
+                "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC6sharedACvgZ",
                 "moduleName": "LuckyBiteiOS",
                 "static": true,
                 "implicit": true,
@@ -70,9 +90,35 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LuckyBiteSDK",
+                "printedName": "LuckyBiteiOS.LuckyBiteSDK",
+                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(im)init",
+            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKCACycfc",
+            "moduleName": "LuckyBiteiOS",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(bidmadCommon:completion:)",
+            "name": "setFloatingButton",
+            "printedName": "setFloatingButton(viewController:show:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -81,60 +127,38 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any LuckyBiteiOS.BidmadCommonProtocol)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BidmadCommonProtocol",
-                    "printedName": "any LuckyBiteiOS.BidmadCommonProtocol",
-                    "usr": "s:12LuckyBiteiOS20BidmadCommonProtocolP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               },
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12LuckyBiteiOS0A16BiteSDKAdManagerC10initialize12bidmadCommon10completionyAA06BidmadI8Protocol_pSg_ySbctF",
-            "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC10initialize12bidmadCommon10completionyAA06BidmadI8Protocol_pSg_ySbctF",
+            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(im)setFloatingButtonWithViewController:show:",
+            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC17setFloatingButton14viewController4showySo06UIViewJ0C_SbtF",
             "moduleName": "LuckyBiteiOS",
             "declAttributes": [
-              "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager",
-        "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC",
+        "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK",
+        "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC",
         "moduleName": "LuckyBiteiOS",
         "declAttributes": [
-          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -202,75 +226,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BidmadCommonProtocol",
-        "printedName": "BidmadCommonProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "initializeSdk",
-            "printedName": "initializeSdk(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LuckyBiteiOS20BidmadCommonProtocolP13initializeSdk10completionyySbc_tF",
-            "mangledName": "$s12LuckyBiteiOS20BidmadCommonProtocolP13initializeSdk10completionyySbc_tF",
-            "moduleName": "LuckyBiteiOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : LuckyBiteiOS.BidmadCommonProtocol>",
-            "sugared_genericSig": "<Self where Self : LuckyBiteiOS.BidmadCommonProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:12LuckyBiteiOS20BidmadCommonProtocolP",
-        "mangledName": "$s12LuckyBiteiOS20BidmadCommonProtocolP",
-        "moduleName": "LuckyBiteiOS",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -738,8 +693,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LuckyBiteiOS8RewardAdCyACSScfc",
-            "mangledName": "$s12LuckyBiteiOS8RewardAdCyACSScfc",
+            "usr": "s:12LuckyBiteiOS8RewardAdCyACSSYacfc",
+            "mangledName": "$s12LuckyBiteiOS8RewardAdCyACSSYacfc",
             "moduleName": "LuckyBiteiOS",
             "declAttributes": [
               "AccessControl"
@@ -1057,171 +1012,92 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "LuckyBiteiOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "LuckyBiteiOS"
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
         "declKind": "Import",
         "moduleName": "LuckyBiteiOS"
       },
       {
         "kind": "TypeDecl",
-        "name": "LuckyBiteFloatingButton",
-        "printedName": "LuckyBiteFloatingButton",
+        "name": "LuckyBiteSDKAdManager",
+        "printedName": "LuckyBiteSDKAdManager",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LuckyBiteFloatingButton",
-                "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
-                "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
+                "name": "LuckyBiteSDKAdManager",
+                "printedName": "LuckyBiteiOS.LuckyBiteSDKAdManager",
+                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonVACycfc",
-            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonVACycfc",
-            "moduleName": "LuckyBiteiOS",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "makeUIViewController",
-            "printedName": "makeUIViewController(context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyBiteiOS.LuckyBiteFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckyBiteFloatingButton",
-                    "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
-                    "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV20makeUIViewController7contextSo0hI0C7SwiftUI0hI20RepresentableContextVyACG_tF",
-            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV20makeUIViewController7contextSo0hI0C7SwiftUI0hI20RepresentableContextVyACG_tF",
-            "moduleName": "LuckyBiteiOS",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIViewController",
-            "printedName": "updateUIViewController(_:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyBiteiOS.LuckyBiteFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckyBiteFloatingButton",
-                    "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
-                    "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV22updateUIViewController_7contextySo0hI0C_7SwiftUI0hI20RepresentableContextVyACGtF",
-            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV22updateUIViewController_7contextySo0hI0C_7SwiftUI0hI20RepresentableContextVyACGtF",
-            "moduleName": "LuckyBiteiOS",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dismantleUIViewController",
-            "printedName": "dismantleUIViewController(_:coordinator:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV25dismantleUIViewController_11coordinatorySo0hI0C_yttFZ",
-            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV25dismantleUIViewController_11coordinatorySo0hI0C_yttFZ",
+            "declKind": "Var",
+            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager(cpy)shared",
+            "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC6sharedACvpZ",
             "moduleName": "LuckyBiteiOS",
             "static": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
             ],
-            "funcSelfKind": "NonMutating"
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckyBiteSDKAdManager",
+                    "printedName": "LuckyBiteiOS.LuckyBiteSDKAdManager",
+                    "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager(cm)shared",
+                "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC6sharedACvgZ",
+                "moduleName": "LuckyBiteiOS",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV",
-        "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV",
+        "declKind": "Class",
+        "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDKAdManager",
+        "mangledName": "$s12LuckyBiteiOS0A16BiteSDKAdManagerC",
         "moduleName": "LuckyBiteiOS",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -1240,66 +1116,52 @@
           },
           {
             "kind": "Conformance",
-            "name": "UIViewControllerRepresentable",
-            "printedName": "UIViewControllerRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UIViewControllerType",
-                "printedName": "UIViewControllerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Coordinator",
-                "printedName": "Coordinator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
-            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1603,8 +1465,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LuckyBiteiOS12BannerAdViewV6zoneIdACSS_tcfc",
-            "mangledName": "$s12LuckyBiteiOS12BannerAdViewV6zoneIdACSS_tcfc",
+            "usr": "s:12LuckyBiteiOS12BannerAdViewV6zoneIdACSS_tYacfc",
+            "mangledName": "$s12LuckyBiteiOS12BannerAdViewV6zoneIdACSS_tYacfc",
             "moduleName": "LuckyBiteiOS",
             "declAttributes": [
               "Preconcurrency",
@@ -2239,23 +2101,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyBiteiOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyBiteiOS"
-      },
-      {
-        "kind": "Import",
         "name": "OpenBiddingHelper",
         "printedName": "OpenBiddingHelper",
         "declKind": "Import",
@@ -2715,8 +2560,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LuckyBiteiOS14InterstitialAdCyACSScfc",
-            "mangledName": "$s12LuckyBiteiOS14InterstitialAdCyACSScfc",
+            "usr": "s:12LuckyBiteiOS14InterstitialAdCyACSSYacfc",
+            "mangledName": "$s12LuckyBiteiOS14InterstitialAdCyACSSYacfc",
             "moduleName": "LuckyBiteiOS",
             "declAttributes": [
               "AccessControl"
@@ -2977,8 +2822,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "LuckyBiteiOS",
         "declAttributes": [
@@ -2986,63 +2831,17 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyBiteiOS"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "LuckyBiteSDK",
-        "printedName": "LuckyBiteSDK",
+        "name": "LuckyBiteFloatingButton",
+        "printedName": "LuckyBiteFloatingButton",
         "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LuckyBiteSDK",
-                "printedName": "LuckyBiteiOS.LuckyBiteSDK",
-                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(cpy)shared",
-            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC6sharedACvpZ",
-            "moduleName": "LuckyBiteiOS",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckyBiteSDK",
-                    "printedName": "LuckyBiteiOS.LuckyBiteSDK",
-                    "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(cm)shared",
-                "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC6sharedACvgZ",
-                "moduleName": "LuckyBiteiOS",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -3050,29 +2849,63 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LuckyBiteSDK",
-                "printedName": "LuckyBiteiOS.LuckyBiteSDK",
-                "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK"
+                "name": "LuckyBiteFloatingButton",
+                "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
+                "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(im)init",
-            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKCACycfc",
+            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonVACycfc",
+            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonVACycfc",
             "moduleName": "LuckyBiteiOS",
-            "overriding": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
           },
           {
             "kind": "Function",
-            "name": "setFloatingButton",
-            "printedName": "setFloatingButton(viewController:show:)",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyBiteiOS.LuckyBiteFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckyBiteFloatingButton",
+                    "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
+                    "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV20makeUIViewController7contextSo0hI0C7SwiftUI0hI20RepresentableContextVyACG_tF",
+            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV20makeUIViewController7contextSo0hI0C7SwiftUI0hI20RepresentableContextVyACG_tF",
+            "moduleName": "LuckyBiteiOS",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3087,35 +2920,73 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyBiteiOS.LuckyBiteFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckyBiteFloatingButton",
+                    "printedName": "LuckyBiteiOS.LuckyBiteFloatingButton",
+                    "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK(im)setFloatingButtonWithViewController:show:",
-            "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC17setFloatingButton14viewController4showySo06UIViewJ0C_SbtF",
+            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV22updateUIViewController_7contextySo0hI0C_7SwiftUI0hI20RepresentableContextVyACGtF",
+            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV22updateUIViewController_7contextySo0hI0C_7SwiftUI0hI20RepresentableContextVyACGtF",
             "moduleName": "LuckyBiteiOS",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismantleUIViewController",
+            "printedName": "dismantleUIViewController(_:coordinator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV25dismantleUIViewController_11coordinatorySo0hI0C_yttFZ",
+            "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV25dismantleUIViewController_11coordinatorySo0hI0C_yttFZ",
+            "moduleName": "LuckyBiteiOS",
+            "static": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@LuckyBiteiOS@objc(cs)LuckyBiteSDK",
-        "mangledName": "$s12LuckyBiteiOS0A7BiteSDKC",
+        "declKind": "Struct",
+        "usr": "s:12LuckyBiteiOS0A18BiteFloatingButtonV",
+        "mangledName": "$s12LuckyBiteiOS0A18BiteFloatingButtonV",
         "moduleName": "LuckyBiteiOS",
         "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -3134,52 +3005,66 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3771,13 +3656,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyBiteiOS\/LuckyBiteiOS\/Sources\/Cores\/AdManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 174,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyBiteiOS\/LuckyBiteiOS\/Sources\/Cores\/RewardAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 325,
@@ -3788,6 +3666,13 @@
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyBiteiOS\/LuckyBiteiOS\/Sources\/Cores\/RewardAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 443,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyBiteiOS\/LuckyBiteiOS\/Sources\/Cores\/AdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 199,
       "length": 5,
       "value": "false"
     },
