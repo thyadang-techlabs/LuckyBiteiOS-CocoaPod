@@ -283,8 +283,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import ObjectiveC;
 @import OpenBiddingHelper;
-@import UIKit;
-@import WebKit;
 #endif
 
 #endif
@@ -308,35 +306,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class UIViewController;
-@class NSString;
 SWIFT_CLASS("_TtC12LuckyBiteiOS21FloatingButtonManager")
 @interface FloatingButtonManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButtonManager * _Nonnull shared;)
 + (FloatingButtonManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)showFloatingButtonOnViewController:(UIViewController * _Nonnull)viewController;
+- (void)showFloatingButtonOn:(UIViewController * _Nonnull)viewController;
 - (void)hideFloatingButton;
-- (void)showWebViewWithURL:(NSString * _Nonnull)url onViewController:(UIViewController * _Nonnull)viewController;
-@end
-
-@class WKWebView;
-@class WKNavigationAction;
-@class WKNavigation;
-@class WKUserContentController;
-@class WKScriptMessage;
-@class NSBundle;
-@class NSCoder;
-SWIFT_CLASS("_TtC12LuckyBiteiOS27FullScreenWebViewController")
-@interface FullScreenWebViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-@property (nonatomic, readonly, strong) WKWebView * _Null_unspecified webView;
-- (void)viewDidLoad;
-- (void)viewWillLayoutSubviews;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class OpenBiddingInterstitial;
