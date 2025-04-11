@@ -315,9 +315,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 + (FloatingButtonManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)showFloatingButtonOn:(UIViewController * _Nonnull)viewController;
+- (void)showFloatingButtonOnViewController:(UIViewController * _Nonnull)viewController;
 - (void)hideFloatingButton;
-- (void)showWebViewWithUrl:(NSString * _Nonnull)url on:(UIViewController * _Nonnull)viewController;
+- (void)showWebViewWithURL:(NSString * _Nonnull)url onViewController:(UIViewController * _Nonnull)viewController;
 @end
 
 @class WKWebView;
@@ -329,7 +329,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 @class NSCoder;
 SWIFT_CLASS("_TtC12LuckyBiteiOS27FullScreenWebViewController")
 @interface FullScreenWebViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-@property (nonatomic, strong) WKWebView * _Nonnull webView;
+@property (nonatomic, readonly, strong) WKWebView * _Null_unspecified webView;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;

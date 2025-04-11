@@ -3,6 +3,10 @@ framework module LuckyBiteiOS {
   
   export *
   module * { export * }
+  
+  link "UIKit"
+  link "WebKit"
+  link "SafariServices"
 } 
 module LuckyBiteiOS.Swift {
   header "LuckyBiteiOS-Swift.h"
