@@ -15,20 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
-  @objc override dynamic public init()
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc public func initialize()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
-  @objc deinit
-}
 @objc @available(iOS 13.0, *)
 public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
   public var isLoaded: Swift.Bool {
@@ -63,6 +49,58 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.RewardAd : Observation.Observable {
 }
+@objc public enum HTTPMethod : Swift.Int {
+  case get
+  case post
+  case put
+  case delete
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NetworkError : Swift.Int, Swift.Error {
+  case invalidResponse
+  case statusCode
+  case decodingError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NetworkManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.NetworkManager
+  final public func request<T>(_ url: Foundation.URL, method: LuckyBiteiOS.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil) async throws -> T where T : Swift.Decodable
+  @objc final public func requestJSON(_ url: Foundation.URL, method: LuckyBiteiOS.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil, completion: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
+  @objc deinit
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
+  @objc override dynamic public init()
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+  @objc public func initialize()
+  @objc deinit
+}
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
@@ -84,12 +122,6 @@ extension LuckyBiteiOS.RewardAd : Observation.Observable {
   public typealias Body = Swift.Never
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
-  @objc deinit
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
 }
 @objc @available(iOS 13.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
@@ -123,40 +155,8 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.InterstitialAd : Observation.Observable {
 }
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
-}
-@objc public enum HTTPMethod : Swift.Int {
-  case get
-  case post
-  case put
-  case delete
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum NetworkError : Swift.Int, Swift.Error {
-  case invalidResponse
-  case statusCode
-  case decodingError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NetworkManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.NetworkManager
-  final public func request<T>(_ url: Foundation.URL, method: LuckyBiteiOS.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil) async throws -> T where T : Swift.Decodable
-  @objc final public func requestJSON(_ url: Foundation.URL, method: LuckyBiteiOS.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil, completion: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc deinit
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
 @_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
@@ -167,12 +167,12 @@ extension UIKit.UIApplication {
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
 }
-@available(iOS 13.0, *)
-extension LuckyBiteiOS.BannerAdView : Swift.Sendable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Equatable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Hashable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyBiteiOS.NetworkError : Swift.Equatable {}
 extension LuckyBiteiOS.NetworkError : Swift.Hashable {}
 extension LuckyBiteiOS.NetworkError : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension LuckyBiteiOS.BannerAdView : Swift.Sendable {}
 extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
