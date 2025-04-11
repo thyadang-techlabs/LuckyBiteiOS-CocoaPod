@@ -283,6 +283,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import ObjectiveC;
 @import OpenBiddingHelper;
+@import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -306,6 +308,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class UIViewController;
+@class NSString;
 SWIFT_CLASS("_TtC12LuckyBiteiOS21FloatingButtonManager")
 @interface FloatingButtonManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButtonManager * _Nonnull shared;)
@@ -314,6 +317,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)showFloatingButtonOn:(UIViewController * _Nonnull)viewController;
 - (void)hideFloatingButton;
+- (void)showWebViewWithUrl:(NSString * _Nonnull)url on:(UIViewController * _Nonnull)viewController;
+@end
+
+@class WKWebView;
+@class WKNavigationAction;
+@class WKNavigation;
+@class WKUserContentController;
+@class WKScriptMessage;
+@class NSBundle;
+@class NSCoder;
+SWIFT_CLASS("_TtC12LuckyBiteiOS27FullScreenWebViewController")
+@interface FullScreenWebViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
+@property (nonatomic, strong) WKWebView * _Nonnull webView;
+- (void)viewDidLoad;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class OpenBiddingInterstitial;
