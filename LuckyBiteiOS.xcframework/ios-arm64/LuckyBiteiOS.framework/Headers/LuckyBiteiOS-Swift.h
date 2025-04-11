@@ -331,6 +331,7 @@ SWIFT_CLASS("_TtC12LuckyBiteiOS27FullScreenWebViewController")
 @interface FullScreenWebViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
 @property (nonatomic, strong) WKWebView * _Nonnull webView;
 - (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
