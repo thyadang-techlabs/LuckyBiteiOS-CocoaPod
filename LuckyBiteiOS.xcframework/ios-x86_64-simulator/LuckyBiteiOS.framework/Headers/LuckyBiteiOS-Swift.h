@@ -341,6 +341,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
 - (void)initialize;
+- (void)initializeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 SWIFT_CLASS("_TtC12LuckyBiteiOS21LuckyBiteSDKAdManager")
