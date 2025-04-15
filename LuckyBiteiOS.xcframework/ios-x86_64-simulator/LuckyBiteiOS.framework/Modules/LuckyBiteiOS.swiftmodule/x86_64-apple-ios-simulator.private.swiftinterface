@@ -15,29 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
-  @objc override dynamic public init()
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc public func initialize()
-  @objc public func initialize(completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc deinit
-}
-@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
-  @objc deinit
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-}
 @objc @available(iOS 13.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
   public var isLoaded: Swift.Bool {
@@ -137,14 +114,31 @@ extension LuckyBiteiOS.RewardAd : Observation.Observable {
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
-  @objc deinit
-}
 extension UIKit.UIApplication {
   @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
         .compactMap { ($0 as? UIWindowScene)?.keyWindow }
         .first?.rootViewController) -> UIKit.UIViewController?
+}
+@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class LuckyBiteSDKAdManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDKAdManager
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
+  @objc override dynamic public init()
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+  @objc public func initialize()
+  @objc public func initialize(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
@@ -168,12 +162,18 @@ extension UIKit.UIApplication {
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
 }
-extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
+  @objc deinit
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+}
 extension LuckyBiteiOS.HTTPMethod : Swift.Equatable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Hashable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyBiteiOS.NetworkError : Swift.Equatable {}
 extension LuckyBiteiOS.NetworkError : Swift.Hashable {}
 extension LuckyBiteiOS.NetworkError : Swift.RawRepresentable {}
+extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.BannerAdView : Swift.Sendable {}
