@@ -49,6 +49,15 @@ import _SwiftConcurrencyShims
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
 }
+@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.FloatingButtonManager
   @objc deinit
@@ -151,15 +160,6 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.RewardAd : Observation.Observable {
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckyBiteFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyBiteiOS.LuckyBiteFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyBiteiOS.LuckyBiteFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
@@ -170,10 +170,10 @@ extension UIKit.UIApplication {
 }
 @available(iOS 13.0, *)
 extension LuckyBiteiOS.BannerAdView : Swift.Sendable {}
+extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Equatable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Hashable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyBiteiOS.NetworkError : Swift.Equatable {}
 extension LuckyBiteiOS.NetworkError : Swift.Hashable {}
 extension LuckyBiteiOS.NetworkError : Swift.RawRepresentable {}
-extension LuckyBiteiOS.LuckyBiteFloatingButton : Swift.Sendable {}
