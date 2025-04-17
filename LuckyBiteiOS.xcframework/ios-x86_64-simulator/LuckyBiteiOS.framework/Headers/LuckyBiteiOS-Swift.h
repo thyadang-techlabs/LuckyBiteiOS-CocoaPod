@@ -346,6 +346,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK
 - (void)setBannerAdZoneId:(NSString * _Nonnull)zoneId;
 - (void)initialize;
 - (void)initializeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)goToSettingObjc:(void (^ _Nonnull)(void))callback;
+- (void)goToSettingSwift:(void (^ _Nonnull)(void))callback;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
