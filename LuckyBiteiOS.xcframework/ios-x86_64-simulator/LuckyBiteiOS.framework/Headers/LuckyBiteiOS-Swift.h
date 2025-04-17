@@ -347,9 +347,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK
 - (void)initialize;
 - (void)initializeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
-- (void)goToSettingObjc;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
-- (void)goToSettingSwift;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
