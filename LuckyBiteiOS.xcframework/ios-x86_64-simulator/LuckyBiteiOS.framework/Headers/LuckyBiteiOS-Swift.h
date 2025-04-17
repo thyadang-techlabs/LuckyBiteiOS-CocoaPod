@@ -334,12 +334,16 @@ SWIFT_CLASS("_TtC12LuckyBiteiOS14InterstitialAd") SWIFT_AVAILABILITY(ios,introdu
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
 SWIFT_CLASS("_TtC12LuckyBiteiOS12LuckyBiteSDK")
 @interface LuckyBiteSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK * _Nonnull shared;)
 + (LuckyBiteSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
+- (void)setInterstitialAdZoneId:(NSString * _Nonnull)zoneId;
+- (void)setRewardAdZoneId:(NSString * _Nonnull)zoneId;
+- (void)setBannerAdZoneId:(NSString * _Nonnull)zoneId;
 - (void)initialize;
 - (void)initializeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
@@ -352,7 +356,6 @@ typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
 static NSString * _Nonnull const NetworkErrorDomain = @"LuckyBiteiOS.NetworkError";
 
 @class NSURL;
-@class NSString;
 SWIFT_CLASS("_TtC12LuckyBiteiOS14NetworkManager")
 @interface NetworkManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NetworkManager * _Nonnull shared;)
