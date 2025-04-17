@@ -15,38 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @available(iOS 13.0, *)
-public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
-  public var isLoaded: Swift.Bool {
-    get
-    set
-    _modify
-  }
-  public var cancellable: Combine.AnyCancellable? {
-    get
-    set
-    _modify
-  }
-  public var isRewarded: Swift.Bool {
-    get
-    set
-    _modify
-  }
-  public var adClosureHandler: (() -> Swift.Void)? {
-    get
-    set
-    _modify
-  }
-  public init(_ zoneId: Swift.String)
-  public func show(_ adClosureHandler: (() -> Swift.Void)? = nil)
-  @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
-  @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
-  @objc public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
-  @objc deinit
-}
-@available(iOS 13.0, *)
-extension LuckyBiteiOS.InterstitialAd : Observation.Observable {
-}
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckyBiteSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyBiteiOS.LuckyBiteSDK
   @objc override dynamic public init()
@@ -56,8 +24,10 @@ extension LuckyBiteiOS.InterstitialAd : Observation.Observable {
   @objc public func setBannerAdZoneId(_ zoneId: Swift.String)
   @objc public func initialize()
   @objc public func initialize(completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc public func goToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
-  @objc public func goToSettingSwift(_ callback: @escaping () -> Swift.Void)
+  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
+  @objc public func goToSettingObjc()
+  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
+  @objc public func goToSettingSwift()
   @objc deinit
 }
 @objc public enum HTTPMethod : Swift.Int {
@@ -168,6 +138,38 @@ extension UIKit.UIApplication {
   @objc deinit
   @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
   @objc public func hideFloatingButton()
+}
+@objc @available(iOS 13.0, *)
+public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
+  public var isLoaded: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var cancellable: Combine.AnyCancellable? {
+    get
+    set
+    _modify
+  }
+  public var isRewarded: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var adClosureHandler: (() -> Swift.Void)? {
+    get
+    set
+    _modify
+  }
+  public init(_ zoneId: Swift.String)
+  public func show(_ adClosureHandler: (() -> Swift.Void)? = nil)
+  @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
+  @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
+  @objc public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension LuckyBiteiOS.InterstitialAd : Observation.Observable {
 }
 extension LuckyBiteiOS.HTTPMethod : Swift.Equatable {}
 extension LuckyBiteiOS.HTTPMethod : Swift.Hashable {}
