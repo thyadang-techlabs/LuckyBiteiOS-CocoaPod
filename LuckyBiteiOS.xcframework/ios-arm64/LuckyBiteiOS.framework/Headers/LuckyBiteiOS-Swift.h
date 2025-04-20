@@ -325,7 +325,7 @@ typedef SWIFT_ENUM(NSInteger, HTTPMethod, open) {
 };
 
 @class OpenBiddingInterstitial;
-SWIFT_CLASS("_TtC12LuckyBiteiOS14InterstitialAd") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_CLASS("_TtC12LuckyBiteiOS14InterstitialAd") SWIFT_AVAILABILITY(ios,introduced=17.0)
 @interface InterstitialAd : NSObject <BIDMADOpenBiddingInterstitialDelegate>
 - (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
 - (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
@@ -368,7 +368,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NetworkManag
 @end
 
 @class OpenBiddingRewardVideo;
-SWIFT_CLASS("_TtC12LuckyBiteiOS8RewardAd") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_CLASS("_TtC12LuckyBiteiOS8RewardAd") SWIFT_AVAILABILITY(ios,introduced=17.0)
 @interface RewardAd : NSObject <BIDMADOpenBiddingRewardVideoDelegate>
 - (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
 - (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;

@@ -1596,7 +1596,7 @@
         "usr": "c:@M@LuckyBiteiOS@objc(cs)InterstitialAd",
         "mangledName": "$s12LuckyBiteiOS14InterstitialAdC",
         "moduleName": "LuckyBiteiOS",
-        "intro_iOS": "13.0",
+        "intro_iOS": "17.0",
         "declAttributes": [
           "AccessControl",
           "Custom",
@@ -3770,7 +3770,7 @@
         "usr": "c:@M@LuckyBiteiOS@objc(cs)RewardAd",
         "mangledName": "$s12LuckyBiteiOS8RewardAdC",
         "moduleName": "LuckyBiteiOS",
-        "intro_iOS": "13.0",
+        "intro_iOS": "17.0",
         "declAttributes": [
           "AccessControl",
           "Custom",
