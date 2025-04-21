@@ -311,10 +311,9 @@ SWIFT_CLASS("_TtC12LuckyBiteiOS21FloatingButtonManager")
 @interface FloatingButtonManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButtonManager * _Nonnull shared;)
 + (FloatingButtonManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)showFloatingButtonOn:(UIViewController * _Nonnull)viewController;
 - (void)hideFloatingButton;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, HTTPMethod, open) {
@@ -339,12 +338,14 @@ SWIFT_CLASS("_TtC12LuckyBiteiOS12LuckyBiteSDK")
 @interface LuckyBiteSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyBiteSDK * _Nonnull shared;)
 + (LuckyBiteSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
 - (void)setInterstitialAdZoneId:(NSString * _Nonnull)zoneId;
 - (void)setRewardAdZoneId:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneId:(NSString * _Nonnull)zoneId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initialize;
+- (void)openLuckyBiteMain;
 - (void)initializeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
