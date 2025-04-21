@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		htgL0DZMwpiqtRvtgSzMatUQsTE=
+		EdeAAHhUxLB5cVYYkwv94Vo85N8=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		CGdDrDGnb8Opt0edAjjG+fTwyGQ=
+		SzzlcLlYJ1ZTW+MUDplF6oaboPM=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		rK2kByZIKkvtzLFQvNgoQpMJfXI=
+		Ca7cl/E7N40s5VdJH0Zkq0KCKxI=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+PCi5YpM2ZD86O03nrHtRXHtyGg=
+		7k7z+M+aWHyQObPw1lzUMByfdA8=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			McXaEAqbtN1EjZpOlBnWLLwKDLPn9nLm4Cf0IwSYVz8=
+			RgIdKJN64nrpq0AcQPmVp9OsMlcvYmeVX1Lh3wKdrWg=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
@@ -95,7 +95,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cpH0HDLtNTkWn2itcplAa3Q8p0Uyv1OMeHsmum9A8zY=
+			UjBDwRT0/igljcaiK0tGlzucBNxSbNr6xOiETrpwqh4=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			myGzgaMw53MIxxtGkTh1Q2K0gEbg+L6aejpMf6nbfe0=
+			tL4pwvd0YMc7QOu2h0KFsIGi9Kt63exnCYXK95DOuXY=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			owEJpXOoOnNQNykKuvkoHEh3+VsahhEY+beS1H9q3S8=
+			DIr6NBYYH4mbX2WV+tJ3gIsLRvA66uJOzFjHgDLRC3c=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
