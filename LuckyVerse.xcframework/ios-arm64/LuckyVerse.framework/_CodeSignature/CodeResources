@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		oLeIrr+BHUBJKkybCqZgTI6MJOI=
+		dECAzebJUZ5O1hQABzxr/OLo/gk=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		56fgIhgUKpk7+u9T6vAijpffekE=
+		sYen5nT2KynDsQpXBXbTXR3BknU=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,11 +30,15 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		lBzAh+1JQP2PV+g0s3d1eDZyeF8=
+		RKuIdIDItjJCuBK2MLHGzCNphKM=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
 		HK2c3QmhpcYSZRgkvpUe5YHi6gA=
+		</data>
+		<key>Headers/LuckyVerse-Swift.h</key>
+		<data>
+		q/j11vWS+DwA0VFRcPTk3VdEL5E=
 		</data>
 		<key>Headers/LuckyVerse.h</key>
 		<data>
@@ -46,11 +50,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+cDKMeicT1s486We8nrEJS7ZhWg=
+		TCj67EGnQqvi100jnAxgOTly808=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		f1DNM+X1M1nYp8oYcqfcw43kzus=
+		eQGzG/TVgSkyKRaPM6OdRCcJzRs=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -58,15 +62,15 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		f1DNM+X1M1nYp8oYcqfcw43kzus=
+		eQGzG/TVgSkyKRaPM6OdRCcJzRs=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RfiCeCDd1EWXHKCJB+jJUtGqW+Q=
+		qY98yxqcgm5b4w/mhWQsT5VaCwQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		+XpG2Nx8FBXQwHMgATsZQ2cZLg8=
+		4xMvzX3banViXePhc6UNPmMuROo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lDlfwnrO6nUxX/I25WuObgUsXsu4lDYLN90gAKs5I3s=
+			THdINrmpfedgs789a0EzklwVWQneGBvghiJffjQhnXc=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
@@ -103,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhbCL0ZzmHN94puFwQD9csP5YEKwll9IQbNA2c/5trU=
+			POtIcz71qYrJ2JjHWSsR5kS6OInwVOEmpDXWHRDe/qc=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -117,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E0vR1Xagjhxk2QdsurEtbEKaBOhQeVkwqqDKZ4t5mKk=
+			ugxzZWLh2tVHwDxS907XuyR0ebLkHw2z9TAajyeq0Tc=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
@@ -125,6 +129,13 @@
 			<key>hash2</key>
 			<data>
 			PentQquS9mssYDO1nM+kQbHQUMMZ2u61V1UbTaUTFH4=
+			</data>
+		</dict>
+		<key>Headers/LuckyVerse-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DvPeIOt84sSeb+9JE9n3YdqXsMxsc/HwnZljBNXUMfA=
 			</data>
 		</dict>
 		<key>Headers/LuckyVerse.h</key>
@@ -138,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pNUhOf0Kv53bHkHjfiSw5kovhTy3iPgqIO5du8DXvDA=
+			oksTNLTuLCDAWZUBITl0LhZxuGTRx9r6iEChQrO7NIg=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tJxkn02q6LEKgeoXDrJcUR+n/zUAxzjshCbUFDKF9H0=
+			S0pWf0VOQOqO650aL5ubDY4bCXqsliLY+JA4Z8eRHCM=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -159,21 +170,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tJxkn02q6LEKgeoXDrJcUR+n/zUAxzjshCbUFDKF9H0=
+			S0pWf0VOQOqO650aL5ubDY4bCXqsliLY+JA4Z8eRHCM=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zj+mc41smIrabxFDJw6gIRCM4gIsvKCMMdWNsi0dfKk=
+			2WenO43h68r45EM2kafAhHbD7J8g4kbmQ40BDJg15OY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u2SuN20OpYsFPWoFR2sfAI6H8D6ZiuwIq/fV6wJuU+I=
+			OhYqiosHMqATeICtMfDrtJ/om8vd/W4hti2e/x/xo5M=
 			</data>
 		</dict>
 	</dict>

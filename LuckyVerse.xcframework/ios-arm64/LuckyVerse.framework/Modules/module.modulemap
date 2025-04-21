@@ -4,3 +4,7 @@ framework module LuckyVerse {
   export *
   module * { export * }
 } 
+module LuckyVerse.Swift {
+  header "LuckyVerse-Swift.h"
+  requires objc
+}
