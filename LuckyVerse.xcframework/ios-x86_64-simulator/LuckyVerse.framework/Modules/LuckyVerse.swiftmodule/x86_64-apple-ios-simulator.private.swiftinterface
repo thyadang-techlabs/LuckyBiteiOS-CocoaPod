@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import Combine
 import Foundation
+@_exported import LuckyVerse
 import Observation
 import OpenBiddingHelper
 import SafariServices

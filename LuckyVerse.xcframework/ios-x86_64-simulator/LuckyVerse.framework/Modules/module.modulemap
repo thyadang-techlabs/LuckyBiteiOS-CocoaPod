@@ -1,0 +1,6 @@
+framework module LuckyVerse {
+  umbrella header "LuckyVerse.h"
+  
+  export *
+  module * { export * }
+} 
