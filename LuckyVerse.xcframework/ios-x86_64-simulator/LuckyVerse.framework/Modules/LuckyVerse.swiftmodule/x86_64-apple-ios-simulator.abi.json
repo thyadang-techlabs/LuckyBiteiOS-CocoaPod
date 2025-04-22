@@ -6,254 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LuckyVerseFloatingButton",
-        "printedName": "LuckyVerseFloatingButton",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LuckyVerseFloatingButton",
-                "printedName": "LuckyVerse.LuckyVerseFloatingButton",
-                "usr": "s:10LuckyVerse0aB14FloatingButtonV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10LuckyVerse0aB14FloatingButtonVACycfc",
-            "mangledName": "$s10LuckyVerse0aB14FloatingButtonVACycfc",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "makeUIViewController",
-            "printedName": "makeUIViewController(context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyVerse.LuckyVerseFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckyVerseFloatingButton",
-                    "printedName": "LuckyVerse.LuckyVerseFloatingButton",
-                    "usr": "s:10LuckyVerse0aB14FloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10LuckyVerse0aB14FloatingButtonV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
-            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIViewController",
-            "printedName": "updateUIViewController(_:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyVerse.LuckyVerseFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckyVerseFloatingButton",
-                    "printedName": "LuckyVerse.LuckyVerseFloatingButton",
-                    "usr": "s:10LuckyVerse0aB14FloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10LuckyVerse0aB14FloatingButtonV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
-            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dismantleUIViewController",
-            "printedName": "dismantleUIViewController(_:coordinator:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10LuckyVerse0aB14FloatingButtonV25dismantleUIViewController_11coordinatorySo0fG0C_yttFZ",
-            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV25dismantleUIViewController_11coordinatorySo0fG0C_yttFZ",
-            "moduleName": "LuckyVerse",
-            "static": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10LuckyVerse0aB14FloatingButtonV",
-        "mangledName": "$s10LuckyVerse0aB14FloatingButtonV",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UIViewControllerRepresentable",
-            "printedName": "UIViewControllerRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UIViewControllerType",
-                "printedName": "UIViewControllerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Coordinator",
-                "printedName": "Coordinator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
-            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -265,16 +17,6 @@
         "printedName": "OpenBiddingHelper",
         "declKind": "Import",
         "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1983,518 +1725,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "BaseballPlayer",
-        "printedName": "BaseballPlayer",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "rank",
-            "printedName": "rank",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)rank",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC4rankSSSgvp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)rank",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC4rankSSSgvg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "player",
-            "printedName": "player",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)player",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC6playerSSvp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)player",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC6playerSSvg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "ageThatYear",
-            "printedName": "ageThatYear",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)ageThatYear",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC11ageThatYearSSvp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)ageThatYear",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC11ageThatYearSSvg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "hits",
-            "printedName": "hits",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)hits",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC4hitsSSvp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)hits",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC4hitsSSvg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "year",
-            "printedName": "year",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)year",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC4yearSivp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)year",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC4yearSivg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bats",
-            "printedName": "bats",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)bats",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC4batsSSvp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)bats",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC4batsSSvg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(py)id",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC2idSivp",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)id",
-                "mangledName": "$s10LuckyVerse14BaseballPlayerC2idSivg",
-                "moduleName": "LuckyVerse",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BaseballPlayer",
-                "printedName": "LuckyVerse.BaseballPlayer",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10LuckyVerse14BaseballPlayerC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "AccessControl",
-              "Required"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BaseballPlayer",
-                "printedName": "LuckyVerse.BaseballPlayer",
-                "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer(im)init",
-            "mangledName": "$s10LuckyVerse14BaseballPlayerCACycfc",
-            "moduleName": "LuckyVerse",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@LuckyVerse@objc(cs)BaseballPlayer",
-        "mangledName": "$s10LuckyVerse14BaseballPlayerC",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "LuckyVerseSDK",
         "printedName": "LuckyVerseSDK",
         "children": [
@@ -2668,7 +1898,28 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(userId:IDFA:)",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)initialize",
+            "mangledName": "$s10LuckyVerse0aB3SDKC10initializeyyF",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUSER_ID",
+            "printedName": "updateUSER_ID(userId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2680,6 +1931,28 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)updateUSER_IDWithUserId:",
+            "mangledName": "$s10LuckyVerse0aB3SDKC13updateUSER_ID6userIdySS_tF",
+            "moduleName": "LuckyVerse",
+            "objc_name": "updateUSER_IDWithUserId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateIDFA",
+            "printedName": "updateIDFA(IDFA:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -2689,9 +1962,38 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)initializeWithUserId:IDFA:",
-            "mangledName": "$s10LuckyVerse0aB3SDKC10initialize6userId4IDFAySS_SStF",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)updateIDFAWithIDFA:",
+            "mangledName": "$s10LuckyVerse0aB3SDKC10updateIDFA0E0ySS_tF",
             "moduleName": "LuckyVerse",
+            "objc_name": "updateIDFAWithIDFA:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateAPP_KEY",
+            "printedName": "updateAPP_KEY(APP_KEY:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)updateAPP_KEYWithAPP_KEY:",
+            "mangledName": "$s10LuckyVerse0aB3SDKC13updateAPP_KEY0e1_F0ySS_tF",
+            "moduleName": "LuckyVerse",
+            "objc_name": "updateAPP_KEYWithAPP_KEY:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2713,58 +2015,6 @@
             "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)openLuckyVerseMain",
             "mangledName": "$s10LuckyVerse0aB3SDKC04openaB4MainyyF",
             "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(userId:IDFA:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)initializeWithUserId:IDFA:completion:",
-            "mangledName": "$s10LuckyVerse0aB3SDKC10initialize6userId4IDFA10completionySS_SSySbctF",
-            "moduleName": "LuckyVerse",
-            "objc_name": "initializeWithUserId:IDFA:completion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -4668,6 +3918,264 @@
             "usr": "s:11Observation10ObservableP",
             "mangledName": "$s11Observation10ObservableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LuckyVerseFloatingButton",
+        "printedName": "LuckyVerseFloatingButton",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LuckyVerseFloatingButton",
+                "printedName": "LuckyVerse.LuckyVerseFloatingButton",
+                "usr": "s:10LuckyVerse0aB14FloatingButtonV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10LuckyVerse0aB14FloatingButtonVACycfc",
+            "mangledName": "$s10LuckyVerse0aB14FloatingButtonVACycfc",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyVerse.LuckyVerseFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckyVerseFloatingButton",
+                    "printedName": "LuckyVerse.LuckyVerseFloatingButton",
+                    "usr": "s:10LuckyVerse0aB14FloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LuckyVerse0aB14FloatingButtonV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
+            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<LuckyVerse.LuckyVerseFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckyVerseFloatingButton",
+                    "printedName": "LuckyVerse.LuckyVerseFloatingButton",
+                    "usr": "s:10LuckyVerse0aB14FloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LuckyVerse0aB14FloatingButtonV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
+            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismantleUIViewController",
+            "printedName": "dismantleUIViewController(_:coordinator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10LuckyVerse0aB14FloatingButtonV25dismantleUIViewController_11coordinatorySo0fG0C_yttFZ",
+            "mangledName": "$s10LuckyVerse0aB14FloatingButtonV25dismantleUIViewController_11coordinatorySo0fG0C_yttFZ",
+            "moduleName": "LuckyVerse",
+            "static": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10LuckyVerse0aB14FloatingButtonV",
+        "mangledName": "$s10LuckyVerse0aB14FloatingButtonV",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {

@@ -306,20 +306,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NSString;
-SWIFT_CLASS("_TtC10LuckyVerse14BaseballPlayer")
-@interface BaseballPlayer : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable rank;
-@property (nonatomic, readonly, copy) NSString * _Nonnull player;
-@property (nonatomic, readonly, copy) NSString * _Nonnull ageThatYear;
-@property (nonatomic, readonly, copy) NSString * _Nonnull hits;
-@property (nonatomic, readonly) NSInteger year;
-@property (nonatomic, readonly, copy) NSString * _Nonnull bats;
-@property (nonatomic, readonly) NSInteger id;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class UIViewController;
 SWIFT_CLASS("_TtC10LuckyVerse21FloatingButtonManager")
 @interface FloatingButtonManager : NSObject
@@ -347,6 +333,7 @@ SWIFT_CLASS("_TtC10LuckyVerse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduce
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
 SWIFT_CLASS("_TtC10LuckyVerse13LuckyVerseSDK")
 @interface LuckyVerseSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSDK * _Nonnull shared;)
@@ -357,9 +344,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSD
 - (void)setBannerAdZoneId:(NSString * _Nonnull)zoneId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initializeWithUserId:(NSString * _Nonnull)userId IDFA:(NSString * _Nonnull)IDFA;
+- (void)initialize;
+- (void)updateUSER_IDWithUserId:(NSString * _Nonnull)userId;
+- (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
+- (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)openLuckyVerseMain;
-- (void)initializeWithUserId:(NSString * _Nonnull)userId IDFA:(NSString * _Nonnull)IDFA completion:(void (^ _Nonnull)(BOOL))completion;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 @end
