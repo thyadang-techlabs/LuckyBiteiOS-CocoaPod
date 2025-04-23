@@ -76,15 +76,6 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
 @available(iOS 17.0, *)
 extension LuckyVerse.InterstitialAd : Observation.Observable {
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckyVerseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckyVerseSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyVerse.LuckyVerseSDK
   @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
@@ -164,6 +155,15 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 17.0, *)
 extension LuckyVerse.RewardAd : Observation.Observable {
 }
+@_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckyVerseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
+}
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
@@ -174,10 +174,10 @@ extension UIKit.UIApplication {
 }
 @available(iOS 13.0, *)
 extension LuckyVerse.BannerAdView : Swift.Sendable {}
-extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
 extension LuckyVerse.HTTPMethod : Swift.Equatable {}
 extension LuckyVerse.HTTPMethod : Swift.Hashable {}
 extension LuckyVerse.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyVerse.NetworkError : Swift.Equatable {}
 extension LuckyVerse.NetworkError : Swift.Hashable {}
 extension LuckyVerse.NetworkError : Swift.RawRepresentable {}
+extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
