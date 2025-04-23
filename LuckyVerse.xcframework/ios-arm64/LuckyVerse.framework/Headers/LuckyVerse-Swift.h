@@ -349,6 +349,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSD
 - (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)openLuckyVerseMain;
+- (void)openLuckyVersePageWithPageCode:(NSString * _Nonnull)pageCode;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 @end
