@@ -333,9 +333,13 @@ SWIFT_CLASS("_TtC10LuckyVerse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduce
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+enum LuckyVerseLocalPushType : NSInteger;
+@class UNNotificationSound;
 SWIFT_CLASS("_TtC10LuckyVerse19LuckyVerseLocalPush")
 @interface LuckyVerseLocalPush : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body type:(enum LuckyVerseLocalPushType)type repeats:(BOOL)repeats sound:(UNNotificationSound * _Nonnull)sound interverInSeconds:(NSInteger)interverInSeconds OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckyVerseLocalPushType, "LuckyVerseLocalPushType", open) {
@@ -358,7 +362,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, LuckyVerseLocalPushType, "LuckyVerseLocalPus
   LuckyVerseLocalPushTypeERROR = 876679,
 };
 
-@class NSString;
 SWIFT_CLASS("_TtC10LuckyVerse13LuckyVerseSDK")
 @interface LuckyVerseSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSDK * _Nonnull shared;)
