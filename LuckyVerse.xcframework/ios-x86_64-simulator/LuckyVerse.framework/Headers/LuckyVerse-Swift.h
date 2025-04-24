@@ -348,10 +348,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSD
 - (void)updateUSER_IDWithUserId:(NSString * _Nonnull)userId;
 - (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
-- (void)openLuckyVerseMain;
-- (void)openLuckyVersePageWithPageCode:(NSString * _Nonnull)pageCode;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
+- (void)openLuckyVerseMain;
+- (void)openLuckyVerseMyPage;
+- (void)openLuckyVerseSajuInfo;
+- (void)openLuckyVersePhoneAuth;
+- (void)openLuckyVersePointHistory;
+- (void)openLuckyVerseProductHistory;
+- (void)openLuckyVerseProductHistoryDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseFaq;
+- (void)openLuckyVerseFaqDetail;
+- (void)openLuckyVerseInquiry;
+- (void)openLuckyVerseInquiryHistory;
+- (void)openLuckyVerseInquiryHistoryDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseTermsAndPolicies;
+- (void)openLuckyVerseTermsAndPoliciesDetail;
+- (void)openLuckyVerseProductStore;
+- (void)openLuckyVerseProductStoreDetail;
+- (void)openLuckyVerseError;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
