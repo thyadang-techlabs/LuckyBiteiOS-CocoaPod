@@ -333,6 +333,31 @@ SWIFT_CLASS("_TtC10LuckyVerse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduce
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC10LuckyVerse19LuckyVerseLocalPush")
+@interface LuckyVerseLocalPush : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, LuckyVerseLocalPushType, "LuckyVerseLocalPushType", open) {
+  LuckyVerseLocalPushTypeMAIN = 876663,
+  LuckyVerseLocalPushTypeMY = 876664,
+  LuckyVerseLocalPushTypeSAJU_INFO = 876665,
+  LuckyVerseLocalPushTypePHONE_AUTH = 876666,
+  LuckyVerseLocalPushTypePOINT_HISTORY = 876667,
+  LuckyVerseLocalPushTypePRODUCT_HISTORY = 876668,
+  LuckyVerseLocalPushTypePRODUCT_HISTORY_DETAIL = 876669,
+  LuckyVerseLocalPushTypeFAQ = 876670,
+  LuckyVerseLocalPushTypeFAQ_DETAIL = 876671,
+  LuckyVerseLocalPushTypeINQUIRY = 876672,
+  LuckyVerseLocalPushTypeINQUIRY_HISTORY = 876673,
+  LuckyVerseLocalPushTypeINQUIRY_HISTORY_DETAIL = 876674,
+  LuckyVerseLocalPushTypeTERMS_AND_POLICIES = 876675,
+  LuckyVerseLocalPushTypeTERMS_AND_POLICIES_DETAIL = 876676,
+  LuckyVerseLocalPushTypePRODUCT_STORE = 876677,
+  LuckyVerseLocalPushTypePRODUCT_STORE_DETAIL = 876678,
+  LuckyVerseLocalPushTypeERROR = 876679,
+};
+
 @class NSString;
 SWIFT_CLASS("_TtC10LuckyVerse13LuckyVerseSDK")
 @interface LuckyVerseSDK : NSObject
@@ -367,6 +392,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSD
 - (void)openLuckyVerseProductStore;
 - (void)openLuckyVerseProductStoreDetail;
 - (void)openLuckyVerseError;
+- (void)setLuckyVerseLocalPushWithPush:(LuckyVerseLocalPush * _Nonnull)push;
+- (void)cancelLuckyVerseLocalPushWithPushType:(enum LuckyVerseLocalPushType)pushType;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
