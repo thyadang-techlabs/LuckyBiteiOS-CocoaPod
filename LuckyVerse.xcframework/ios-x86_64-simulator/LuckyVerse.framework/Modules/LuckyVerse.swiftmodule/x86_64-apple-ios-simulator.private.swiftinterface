@@ -85,9 +85,6 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
 @available(iOS 17.0, *)
 extension LuckyVerse.InterstitialAd : Observation.Observable {
 }
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckyVerseSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyVerse.LuckyVerseSDK
   @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
@@ -149,11 +146,6 @@ extension Swift.UInt64 {
   public var rawValue: Swift.Int {
     get
   }
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
 }
 @objc public enum HTTPMethod : Swift.Int {
   case get
@@ -218,6 +210,14 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 }
 @available(iOS 17.0, *)
 extension LuckyVerse.RewardAd : Observation.Observable {
+}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
 }
 extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
