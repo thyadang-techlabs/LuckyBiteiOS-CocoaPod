@@ -254,6 +254,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -265,16 +275,6 @@
         "printedName": "OpenBiddingHelper",
         "declKind": "Import",
         "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -2512,18 +2512,25 @@
           {
             "kind": "Function",
             "name": "openLuckyVerseFaqDetail",
-            "printedName": "openLuckyVerseFaqDetail()",
+            "printedName": "openLuckyVerseFaqDetail(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)openLuckyVerseFaqDetail",
-            "mangledName": "$s10LuckyVerse0aB3SDKC04openaB9FaqDetailyyF",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)openLuckyVerseFaqDetailWithId:",
+            "mangledName": "$s10LuckyVerse0aB3SDKC04openaB9FaqDetail2idySS_tF",
             "moduleName": "LuckyVerse",
+            "objc_name": "openLuckyVerseFaqDetailWithId:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2624,18 +2631,25 @@
           {
             "kind": "Function",
             "name": "openLuckyVerseTermsAndPoliciesDetail",
-            "printedName": "openLuckyVerseTermsAndPoliciesDetail()",
+            "printedName": "openLuckyVerseTermsAndPoliciesDetail(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)openLuckyVerseTermsAndPoliciesDetail",
-            "mangledName": "$s10LuckyVerse0aB3SDKC04openaB22TermsAndPoliciesDetailyyF",
+            "usr": "c:@M@LuckyVerse@objc(cs)LuckyVerseSDK(im)openLuckyVerseTermsAndPoliciesDetailWithId:",
+            "mangledName": "$s10LuckyVerse0aB3SDKC04openaB22TermsAndPoliciesDetail2idySS_tF",
             "moduleName": "LuckyVerse",
+            "objc_name": "openLuckyVerseTermsAndPoliciesDetailWithId:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -6304,161 +6318,161 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9713,
+      "offset": 9745,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9738,
+      "offset": 9770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 9804,
+      "offset": 9836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 9889,
+      "offset": 9921,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10049,
+      "offset": 10081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10120,
+      "offset": 10152,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10431,
+      "offset": 10463,
       "length": 6,
       "value": "876663"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10452,
+      "offset": 10484,
       "length": 6,
       "value": "876664"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10480,
+      "offset": 10512,
       "length": 6,
       "value": "876665"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10509,
+      "offset": 10541,
       "length": 6,
       "value": "876666"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10541,
+      "offset": 10573,
       "length": 6,
       "value": "876667"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10575,
+      "offset": 10607,
       "length": 6,
       "value": "876668"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10616,
+      "offset": 10648,
       "length": 6,
       "value": "876669"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10638,
+      "offset": 10670,
       "length": 6,
       "value": "876670"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10667,
+      "offset": 10699,
       "length": 6,
       "value": "876671"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10693,
+      "offset": 10725,
       "length": 6,
       "value": "876672"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10727,
+      "offset": 10759,
       "length": 6,
       "value": "876673"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10768,
+      "offset": 10800,
       "length": 6,
       "value": "876674"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10805,
+      "offset": 10837,
       "length": 6,
       "value": "876675"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10849,
+      "offset": 10881,
       "length": 6,
       "value": "876676"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10881,
+      "offset": 10913,
       "length": 6,
       "value": "876677"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10920,
+      "offset": 10952,
       "length": 6,
       "value": "876678"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 10945,
+      "offset": 10977,
       "length": 6,
       "value": "876679"
     },

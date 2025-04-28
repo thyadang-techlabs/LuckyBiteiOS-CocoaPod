@@ -386,12 +386,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSD
 - (void)openLuckyVerseProductHistory;
 - (void)openLuckyVerseProductHistoryDetailWithId:(NSString * _Nonnull)id;
 - (void)openLuckyVerseFaq;
-- (void)openLuckyVerseFaqDetail;
+- (void)openLuckyVerseFaqDetailWithId:(NSString * _Nonnull)id;
 - (void)openLuckyVerseInquiry;
 - (void)openLuckyVerseInquiryHistory;
 - (void)openLuckyVerseInquiryHistoryDetailWithId:(NSString * _Nonnull)id;
 - (void)openLuckyVerseTermsAndPolicies;
-- (void)openLuckyVerseTermsAndPoliciesDetail;
+- (void)openLuckyVerseTermsAndPoliciesDetailWithId:(NSString * _Nonnull)id;
 - (void)openLuckyVerseProductStore;
 - (void)openLuckyVerseProductStoreDetail;
 - (void)openLuckyVerseError;
