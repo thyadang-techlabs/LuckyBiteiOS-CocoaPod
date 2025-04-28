@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		WmAqvejE9oy44Nd++mq1oDgWEsk=
+		TZRDsYe/RiiIiFBVMA7ybQzxVyc=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		wNrra2stlm/5aupvqAplCh/KP38=
+		0UBp+N3Azvi6rjUhhpqhjXY3aac=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZiYFMoNpOIdzeRwFExnjYvUYaYs=
+		tLRKRkVmMSITBkzGPP6YfXznW/Q=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+6lAXDHef/qhYyMLtyqOMBw432c=
+		5FGZ1qWHjOBn+SR5MwjV7vFp0is=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nb2VDkHqsT7T+zpXVuoF/8hyJ/G+YhCJXJ8ZhdgPHKM=
+			ozTNh4E3ScYVvohDUuiVwC9GCLo12nv9Sfeh2ze6MxY=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -121,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PbE+DOAOvcdbP7jcrUjaS6nOpU5hQJNZI2PadGFsZNQ=
+			xa2N0BUuH6AmDGV+MUL+yYHxvQZ0LBIVA09FFw8/Txs=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sCeIoehUhloqhgR5M802xtmptssx1WjK+zomEEA/EIw=
+			mtMCzocPhfJrR3Z/kEuFiFPsqb/BOZz13kPPOnnaxGc=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMEk00cJG7iKq7T3b21bPDjKhDiei3ghxYZ+o36+HKY=
+			zssF9NYqZxi8u2YL7Y8XNvEhAAKpPTiU0nZacn9rNj8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
