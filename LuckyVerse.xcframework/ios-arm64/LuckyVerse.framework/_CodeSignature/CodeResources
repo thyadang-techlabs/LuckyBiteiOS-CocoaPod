@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		4NAZ0DeexJLBpDQIz4j0YrNKFuk=
+		Liu0PQ5W8xcehM6QC01MQ+oarhE=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		LjmKJAugPuOblbN/21l/rL7b/c8=
+		B99SkZqLoHBoxMGDMrWZC6AoWCQ=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		38imowpaAAcBU5/prXrDLt1pdpc=
+		AO4cm8nFad6DS94mN3F3hdzmCq4=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		li2yHDF7NroBJFzSpuwX6zvb7Qc=
+		pM5/wVYzB+/92fFibQFE3qWtZbs=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RXPBKuW4uwbwdnxBzYclzvcO810=
+		LKVHc4dKRPxhAnpdrvBhbcHjdvQ=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RXPBKuW4uwbwdnxBzYclzvcO810=
+		LKVHc4dKRPxhAnpdrvBhbcHjdvQ=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3jgwNgc4EGXHbCm0JXRHuqWDmas=
+		oDnDzRKKkitRHWkY4rjojkr2j60=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+qyCTVJI8/2+TjZqyUhADwwJvm4YZWfWEh5ka4h8YKs=
+			WLkdiwaVrstBPcDKBr2qArshfHJLJ1V0Zjp7Psa1ytU=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ZfSLKs9/W2OohSJhqn323gC9w8/fv71H+uD2jzjrgg=
+			k8YddTLovpVY693u8461uNBsjSTa8MebEo6Xz30kprA=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -121,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VBPyGbdL9LHM4mJYs/oAv4dw9GqGot2b3hXnMEaKttA=
+			EgZEA3YQsS1dOegBqATVCp8Kr0qUwCG7AThPEf2SMfk=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GI3vYe/4LCHCZMzCnb7rYv5aiFq7RHv+niTAaEoxCQE=
+			q38NIcjuNx57hNYIRbT/mO/lywgzmZhw+lD4+c8PJAg=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfTWqvP50Nqhn3MMcBTsoHnb3loMK0Z//2YbgUYMeu8=
+			NC1ESl43hiU04J8gw3lePqbG2suHfD3l86QtImDF1XI=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -170,14 +170,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfTWqvP50Nqhn3MMcBTsoHnb3loMK0Z//2YbgUYMeu8=
+			NC1ESl43hiU04J8gw3lePqbG2suHfD3l86QtImDF1XI=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tpPyGqKw87J0r66f5xpSIDq6d5VW2buL05nCM7Xu11k=
+			MLNREmYIaMsXPICbVu+3TDd3RWrrfPl5VmqIq8KV7jk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
