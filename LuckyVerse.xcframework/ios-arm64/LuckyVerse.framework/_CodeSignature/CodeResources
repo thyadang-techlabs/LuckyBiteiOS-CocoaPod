@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		YeNBu4B/T4J7IVWuXS+U1xAkPEY=
+		1SfZAqUnhobFVM0k88V87Pxd+fE=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		hUaLGenr1R9ODpWTBJ79xNfYMeo=
+		U4jLy6mFcBZDI0Ol4HMrZXOVVw4=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		ibmEmS8H1owg9ApfcNyclmnZKVU=
+		3xZBk8sIvL4pBaCOUIBCzrQYxrE=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			heA0F+sq3TwixWLrjPzJ9RkP5+xA3dphEpRXmDJW03M=
+			O0lUHog/3CQU8FDjiturV9dyFLTr32P6uLtVWwJ+lU8=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TY2DfJN9/WbBdKVb//gKem8f/dtrDoXpt+y8irbn7B0=
+			wxF4MQVIf2L5XUWeCd9M+flscgxar+gXXCWYJKl3fbg=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -121,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o6wTR4Y0lUpeIzvsHpmTsxu08zTzyHWNEm1rFRcTldk=
+			Gbmj3Q/lNBGeVuX0M1n3zOhqq9M/0dC7E6nG4JVlVqg=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
