@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		UFmKAYH23ZJctaBoAx970JcfcFM=
+		ai66bpaAsoRPCo2KTxIoKvIi9EM=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/UserMessagingPlatform</key>
 		<data>
-		CYUyh0OQ7MWaSloEC7iNAqdvS5Q=
+		ZHdvVoGt3P4M+I7trqUF7NyX63E=
 		</data>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		smZaJMK8xCDvymWwOWvs1KWG5nY=
+		5xI9D+nCE//uSFG4GdwwdpBXs8E=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qUI4tAw38KIHlYPJPt7LhryWRf4=
+		QtT97EmmSU2sL5bwf8p/SwpEZ/c=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qUI4tAw38KIHlYPJPt7LhryWRf4=
+		QtT97EmmSU2sL5bwf8p/SwpEZ/c=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r0f3RPoHj3qL/jy7pFuI3t49EOk=
+		O5RmhbcufPW52kbwJVWy140O6A8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBwYgh5nR9urepIQzmKeqnj2gng/FlCXKov8QSQi5Ac=
+			E3XtYL1dfbbOBk9NY3AEx4KOIdM4XA1jt44CEwhqjj0=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
@@ -121,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TR7DujIh11d34o7LHh+nT98FHSGnKhtWCxajiZ/nfaM=
+			yyXsXkKwsBDkaEyvFlyufXUxSa+f2eXN9GdxV3OCTLE=
 			</data>
 		</dict>
 		<key>Frameworks/UserMessagingPlatform.framework/_CodeSignature/CodeResources</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0e0xacfBNQu7DXnO7ATgUJpJm/+Mv2QCWiMvFmtBq6A=
+			rGBjLqAp3eZiGzOHUJLQt33zhca47ogn74CuxAx8bGc=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnaqaVAUHwPcQzVBHjg9+O5xhGRVsjuBEYHJgc/WEqk=
+			RNYYc4oJJsmIuELvBVaHzQyZdoEcI1UynHMxQ63Lvio=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -170,14 +170,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnaqaVAUHwPcQzVBHjg9+O5xhGRVsjuBEYHJgc/WEqk=
+			RNYYc4oJJsmIuELvBVaHzQyZdoEcI1UynHMxQ63Lvio=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hqfOrUopbzcfSr0Z/bb4mOVW+YGMu+jPbmUlAynRQ6A=
+			X60N9OJSEcAdoHU6BGeXAAL0OofEvesnFJt1r1BXcO8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
