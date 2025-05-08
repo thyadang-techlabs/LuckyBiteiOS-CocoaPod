@@ -99,6 +99,7 @@ extension LuckyVerse.InterstitialAd : Observation.Observable {
   @objc public func setInterstitialAdZoneId(_ zoneId: Swift.String)
   @objc public func setRewardAdZoneId(_ zoneId: Swift.String)
   @objc public func setBannerAdZoneId(_ zoneId: Swift.String)
+  @objc public static var sdkVersion: Swift.String
   @objc deinit
   @objc public func initialize()
   @objc public func updateUSER_ID(userId: Swift.String)
