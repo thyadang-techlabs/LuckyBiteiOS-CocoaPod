@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LuckyBiteiOS'
-  s.version          = '0.4.13'
+  s.version          = '0.4.14'
   s.summary          = 'LuckyBite Service for iOS'
   s.description      = 'LuckyBite Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
     'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
     'VALID_ARCHS[sdk=iphoneos*]' => 'arm64'
   }
-  s.dependency "BidmadSDK", "6.12.0"
-  s.dependency "OpenBiddingHelper", "6.12.0"
+  s.dependency "BidmadSDK"
+  s.dependency "OpenBiddingHelper"
 end
