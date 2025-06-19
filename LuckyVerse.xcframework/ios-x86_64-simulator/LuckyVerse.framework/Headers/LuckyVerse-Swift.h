@@ -367,9 +367,15 @@ SWIFT_CLASS("_TtC10LuckyVerse13LuckyVerseSDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSDK * _Nonnull shared;)
 + (LuckyVerseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
+- (void)setInterstitialAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
 - (void)setRewardAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
+- (void)setBannerAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
+- (void)setInterstitialAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
 - (void)setRewardAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
+- (void)setBannerAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
+- (void)setInterstitialAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
 - (void)setRewardAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
+- (void)setBannerAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setSdkVersion:(NSString * _Nonnull)value;
