@@ -6,27 +6,27 @@
 	<dict>
 		<key>Frameworks/BidmadSDK.framework/BidmadSDK</key>
 		<data>
-		4dytkXa3FREpq4WMBmSunKrGUhM=
+		iNOVKWGIAlkZyo3yHTcYa423iUw=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<data>
-		ihn4QueVrJ7QOe5qSkVFTD5RBSQ=
+		JZmo2+f7LK+ELpf8bdC86CqzmYM=
 		</data>
 		<key>Frameworks/BidmadSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		rnLLWcQbfRMrl9z8294WJUXl0Ns=
+		0D59+aFzaHTIZx9e6B3hE+sWQvk=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/Info.plist</key>
 		<data>
-		CyHMNjgk+XpKo4ASRC+LfRipopM=
+		ZXgjl1AXZB5MR2rW7QZon0xkvh0=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<data>
-		cR/S4wPsl8GZ8EIbuXlEH6vbQt4=
+		pDg3KLq6TznwQS5eHb+bu50BBVY=
 		</data>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<data>
-		sb8w5IYYjRA2mHAPSUBVFZZjbjs=
+		LuTTkslhEnIU60qCdAPJkJ0/dK4=
 		</data>
 		<key>Headers/LuckyVerse-Swift.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Rz3jhJINlVb92XIl+i5kH/Fk2oo=
+		XU7dMv4OA6kRAqnmCQk+hfF+Hpw=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		i8K4/ynLv5+O4AAzfqFcbUdmeOE=
+		RHhuTnmGSgdQXBTOZLbPr/NH+Xc=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		i8K4/ynLv5+O4AAzfqFcbUdmeOE=
+		RHhuTnmGSgdQXBTOZLbPr/NH+Xc=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZP2gZe6F5HicKr/31gFV3aFMANM=
+		Pgy4qiYeiNajxD5cdSsMJSpCb68=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,42 +71,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DS7YdJo+pH2PdpHZh9n2gW7Qym+Jx8agMQDxK9tNaJM=
+			/viileCsEtRLfCv5ShK6RYLXfKYWXzedb7X4QTUv25I=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WYpYC6F1Fzmed3V60Ku32YZCfoA3TVN49TTTcgGYcEk=
+			RVCIs9nIFDQ5nkSiucCdz1QBdR5Bv8mAB3p8dBh5/OA=
 			</data>
 		</dict>
 		<key>Frameworks/BidmadSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2IR7FvUu+Js7BCI9KxNK53N85QaMNxN0v5TDHxXD+9s=
+			PBMwYJ3vbRIQLvHklsUOf+4l28MwK8cQ7/xUjTpJwZ4=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1zVbjXK0GH+tfUhpIrKRey2cK4ZQkJSmDL9hY6V/Y3M=
+			MFbHZHWv/stYrKqa98OY22bDf1jIlDbpn7ctfUEGJic=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/OpenBiddingHelper</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZcaaXtT2sSfhiZFbHgeZIccoc4kcj6aNCQWRhZ9Nf4k=
+			6CGKfkPx7vuvEayrfi5zeoi9ljY8DEL2lXubCvpVmsk=
 			</data>
 		</dict>
 		<key>Frameworks/OpenBiddingHelper.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/pYO50SyumqExSJcLCmjSpLnipcjOYbAV8RDO+iM2Pc=
+			EAWryXyOyd9WSS3JXur2orO+T2gwUQbqx8sTz/BDa58=
 			</data>
 		</dict>
 		<key>Headers/LuckyVerse-Swift.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i84NjaseZlMgf6D8mix8K+zwkw8mMNTkFIcLh9yzxSI=
+			Eubp6stGn4MHf0aq7IVIGQztAfEZtTteSMQ/XY7zmOs=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TA836hZLhl5wJ+uRqUdIhXhlAlQ9Mj7WmaonlhHfHds=
+			yOqOCzAjmk1OlnFgfMeVEpRcotT7dFRYoHqQ5ER/MFs=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TA836hZLhl5wJ+uRqUdIhXhlAlQ9Mj7WmaonlhHfHds=
+			yOqOCzAjmk1OlnFgfMeVEpRcotT7dFRYoHqQ5ER/MFs=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+PgLQTwIAddyzdE6glk63WazRTDxilLSHB4foY2GsY=
+			0SwXg8PratqWRk92aPrYiBSvb4LHt0e2Kqd8cVpfwUo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
