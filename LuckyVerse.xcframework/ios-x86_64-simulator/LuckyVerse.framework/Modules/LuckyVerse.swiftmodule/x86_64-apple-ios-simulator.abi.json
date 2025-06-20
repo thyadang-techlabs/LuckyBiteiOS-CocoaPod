@@ -6,248 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "OpenBiddingHelper",
-        "printedName": "OpenBiddingHelper",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FloatingButtonManager",
-        "printedName": "FloatingButtonManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FloatingButtonManager",
-                "printedName": "LuckyVerse.FloatingButtonManager",
-                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(cpy)shared",
-            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC6sharedACvpZ",
-            "moduleName": "LuckyVerse",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FloatingButtonManager",
-                    "printedName": "LuckyVerse.FloatingButtonManager",
-                    "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(cm)shared",
-                "mangledName": "$s10LuckyVerse21FloatingButtonManagerC6sharedACvgZ",
-                "moduleName": "LuckyVerse",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "showFloatingButton",
-            "printedName": "showFloatingButton(on:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)showFloatingButtonOn:",
-            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC04showcD02onySo16UIViewControllerC_tF",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideFloatingButton",
-            "printedName": "hideFloatingButton()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)hideFloatingButton",
-            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC04hidecD0yyF",
-            "moduleName": "LuckyVerse",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FloatingButtonManager",
-                "printedName": "LuckyVerse.FloatingButtonManager",
-                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)init",
-            "mangledName": "$s10LuckyVerse21FloatingButtonManagerCACycfc",
-            "moduleName": "LuckyVerse",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager",
-        "mangledName": "$s10LuckyVerse21FloatingButtonManagerC",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "OpenBiddingHelper",
         "printedName": "OpenBiddingHelper",
         "declKind": "Import",
@@ -5872,6 +5630,248 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FloatingButtonManager",
+        "printedName": "FloatingButtonManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FloatingButtonManager",
+                "printedName": "LuckyVerse.FloatingButtonManager",
+                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(cpy)shared",
+            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC6sharedACvpZ",
+            "moduleName": "LuckyVerse",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FloatingButtonManager",
+                    "printedName": "LuckyVerse.FloatingButtonManager",
+                    "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(cm)shared",
+                "mangledName": "$s10LuckyVerse21FloatingButtonManagerC6sharedACvgZ",
+                "moduleName": "LuckyVerse",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "showFloatingButton",
+            "printedName": "showFloatingButton(on:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)showFloatingButtonOn:",
+            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC04showcD02onySo16UIViewControllerC_tF",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideFloatingButton",
+            "printedName": "hideFloatingButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)hideFloatingButton",
+            "mangledName": "$s10LuckyVerse21FloatingButtonManagerC04hidecD0yyF",
+            "moduleName": "LuckyVerse",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FloatingButtonManager",
+                "printedName": "LuckyVerse.FloatingButtonManager",
+                "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager(im)init",
+            "mangledName": "$s10LuckyVerse21FloatingButtonManagerCACycfc",
+            "moduleName": "LuckyVerse",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LuckyVerse@objc(cs)FloatingButtonManager",
+        "mangledName": "$s10LuckyVerse21FloatingButtonManagerC",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "UInt64",
         "printedName": "UInt64",
@@ -6498,7 +6498,7 @@
       "kind": "StringLiteral",
       "offset": 1543,
       "length": 8,
-      "value": "\"0.4.58\""
+      "value": "\"0.4.59\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
