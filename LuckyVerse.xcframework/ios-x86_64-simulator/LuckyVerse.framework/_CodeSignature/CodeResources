@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IM0FZzDFXYOAM+KuB7CD0D6j4vg=
+		fe+4nXYpMsPXqC+Y3mXDDps/7+w=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Z1xFM+aswIe14mXJIqPqYmn4hKE=
+		RoxEf39PsqSbvFYs02JlV1PJdG8=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,15 +54,19 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Z1xFM+aswIe14mXJIqPqYmn4hKE=
+		RoxEf39PsqSbvFYs02JlV1PJdG8=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K/q3SVa4SIegmP1jSfiaZc8IN8k=
+		xyx9HB59n/XRbkbxerEtehqiYFI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4xMvzX3banViXePhc6UNPmMuROo=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		nMmw2665TaSZ6ygux0xBWaYCMcA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -127,14 +131,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yz2Lm9TUGKcLMSKPuK67Yxt3wpOvTFugjdgcQzazibI=
+			PS7rdRSQkzx/FcUrWqJQcTRcAN8sHmnWJ8I1z5uG7v4=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XKP1me6z0o3aGwC0TDUwbFLWhzbBwpud/FeosoLzbqQ=
+			1L41ctU9QRtns12v994VeKf/HCSThV8O2ybdSmpPxoI=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XKP1me6z0o3aGwC0TDUwbFLWhzbBwpud/FeosoLzbqQ=
+			1L41ctU9QRtns12v994VeKf/HCSThV8O2ybdSmpPxoI=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			19FriRZXskPOkSUKJHDKd8x1iIvMhuFehMbqvSI5qfA=
+			cPs2xVLnHfx6/JgHy1UaLuAeZTUs0D/jPNVnYfWG1to=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,6 +167,13 @@
 			<key>hash2</key>
 			<data>
 			OhYqiosHMqATeICtMfDrtJ/om8vd/W4hti2e/x/xo5M=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lwQVnRxpRWXUgAd7vWiRPrElGvdUixoHfAZSqDqR8w0=
 			</data>
 		</dict>
 	</dict>

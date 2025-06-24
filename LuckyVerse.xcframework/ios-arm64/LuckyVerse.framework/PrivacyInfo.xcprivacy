@@ -1,0 +1,17 @@
+{
+  "privacyTypes": [
+    {
+      "privacyType": "Identifiers",
+      "dataTypes": [
+        "DeviceID",
+        "UserID"
+      ],
+      "purposes": [
+        "AppFunctionality",
+        "Analytics",
+        "ThirdPartyAdvertising"
+      ],
+      "thirdPartySharing": true
+    }
+  ]
+} 
