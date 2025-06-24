@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fe+4nXYpMsPXqC+Y3mXDDps/7+w=
+		oTM47oqMlL0Bg6cn2IlNvuX+FtY=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RoxEf39PsqSbvFYs02JlV1PJdG8=
+		1kgmlu72rQ47P4TJ40I2qI1rxb4=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RoxEf39PsqSbvFYs02JlV1PJdG8=
+		1kgmlu72rQ47P4TJ40I2qI1rxb4=
 		</data>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xyx9HB59n/XRbkbxerEtehqiYFI=
+		3xgYUEdzc4VwSSkPLMZXm1b2LTI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		nMmw2665TaSZ6ygux0xBWaYCMcA=
+		DFbaaf4BtO9zqD8ZVVeoxxNY7vc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,14 +131,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PS7rdRSQkzx/FcUrWqJQcTRcAN8sHmnWJ8I1z5uG7v4=
+			GDgGbffEVYB9mGZTJSMaXlIEn46rMFRIMh9Z//98h6I=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1L41ctU9QRtns12v994VeKf/HCSThV8O2ybdSmpPxoI=
+			6gyytrYXCSU+pvfd6E7W3idfi/Hv5908cxFamzOSbLs=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -152,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1L41ctU9QRtns12v994VeKf/HCSThV8O2ybdSmpPxoI=
+			6gyytrYXCSU+pvfd6E7W3idfi/Hv5908cxFamzOSbLs=
 			</data>
 		</dict>
 		<key>Modules/LuckyVerse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cPs2xVLnHfx6/JgHy1UaLuAeZTUs0D/jPNVnYfWG1to=
+			aQlmFYo7izdICAh07OWkmagSaCXrmtUDHxnsT4zwAXo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lwQVnRxpRWXUgAd7vWiRPrElGvdUixoHfAZSqDqR8w0=
+			QXOmGKfdmXquz25mHxDlKv3eIPSy5ptolxCxfkCj+QQ=
 			</data>
 		</dict>
 	</dict>
