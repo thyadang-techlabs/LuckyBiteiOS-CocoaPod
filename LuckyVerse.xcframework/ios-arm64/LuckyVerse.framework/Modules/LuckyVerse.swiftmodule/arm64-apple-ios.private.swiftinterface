@@ -15,10 +15,137 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
-        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-        .first?.rootViewController) -> UIKit.UIViewController?
+@objc @available(iOS 17.0, *)
+public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
+  public var isLoaded: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var cancellable: Combine.AnyCancellable? {
+    get
+    set
+    _modify
+  }
+  public var isRewarded: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  public var adClosureHandler: (() -> Swift.Void)? {
+    get
+    set
+    _modify
+  }
+  public init(_ zoneId: Swift.String)
+  public func show(_ adClosureHandler: (() -> Swift.Void)? = nil)
+  @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
+  @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
+  @objc public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
+  @objc deinit
+}
+@available(iOS 17.0, *)
+extension LuckyVerse.InterstitialAd : Observation.Observable {
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyVerse.LuckieverseSDK
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+  @objc public func setRewardAdZoneIdForSaju(_ zoneId: Swift.String)
+  @objc public func setRewardAdZoneIdForNotSaju(_ zoneId: Swift.String)
+  @objc public func setRewardAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc public func setBannerAdZoneIdForSaju(_ zoneId: Swift.String)
+  @objc public func setBannerAdZoneIdForNotSaju(_ zoneId: Swift.String)
+  @objc public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc public func setInterstitialAdZoneIdForSaju(_ zoneId: Swift.String)
+  @objc public func setInterstitialAdZoneIdForNotSaju(_ zoneId: Swift.String)
+  @objc public func setInterstitialAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc public static var sdkVersion: Swift.String
+  @objc deinit
+  @objc public func initialize()
+  @objc public func updateUSER_ID(userId: Swift.String)
+  @objc public func updateIDFA(IDFA: Swift.String)
+  @objc public func updateAPP_KEY(APP_KEY: Swift.String)
+  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
+  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
+  @objc public func openLuckieverseMain()
+  @objc public func openLuckieverseByPush(pushKey: Swift.String)
+  @objc public func openLuckieverseMyPage()
+  @objc public func openLuckieverseSajuInfo()
+  @objc public func openLuckieversePhoneAuth()
+  @objc public func openLuckieversePointHistory()
+  @objc public func openLuckieverseProductHistory()
+  @objc public func openLuckieverseProductHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseFaq()
+  @objc public func openLuckieverseFaqDetail(id: Swift.String)
+  @objc public func openLuckieverseInquiry()
+  @objc public func openLuckieverseInquiryHistory()
+  @objc public func openLuckieverseInquiryHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseTermsAndPolicies()
+  @objc public func openLuckieverseTermsAndPoliciesDetail(id: Swift.String)
+  @objc public func openLuckieverseProductStore()
+  @objc public func openLuckieverseProductStoreDetail()
+  @objc public func openLuckieverseError()
+  @objc public func setLuckieverseLocalPush(push: LuckyVerse.LuckieverseLocalPush)
+  @objc public func cancelLuckieverseLocalPush(pushType: LuckyVerse.LuckieverseLocalPushType)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public init(title: Swift.String, body: Swift.String, type: LuckyVerse.LuckieverseLocalPushType, repeats: Swift.Bool = false, sound: UserNotifications.UNNotificationSound = .default, interverInSeconds: Swift.Int = 5)
+  @objc deinit
+}
+@objc(LuckieverseLocalPushType) public enum LuckieverseLocalPushType : Swift.Int {
+  case MAIN = 876663
+  case MY = 876664
+  case SAJU_INFO = 876665
+  case PHONE_AUTH = 876666
+  case POINT_HISTORY = 876667
+  case PRODUCT_HISTORY = 876668
+  case PRODUCT_HISTORY_DETAIL = 876669
+  case FAQ = 876670
+  case FAQ_DETAIL = 876671
+  case INQUIRY = 876672
+  case INQUIRY_HISTORY = 876673
+  case INQUIRY_HISTORY_DETAIL = 876674
+  case TERMS_AND_POLICIES = 876675
+  case TERMS_AND_POLICIES_DETAIL = 876676
+  case PRODUCT_STORE = 876677
+  case PRODUCT_STORE_DETAIL = 876678
+  case ERROR = 876679
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum HTTPMethod : Swift.Int {
+  case get
+  case post
+  case put
+  case delete
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NetworkError : Swift.Int, Swift.Error {
+  case invalidResponse
+  case statusCode
+  case decodingError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NetworkManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyVerse.NetworkManager
+  final public func request<T>(_ url: Foundation.URL, method: LuckyVerse.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil) async throws -> T where T : Swift.Decodable
+  @objc final public func requestJSON(_ url: Foundation.URL, method: LuckyVerse.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil, completion: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
 }
 @objc @available(iOS 17.0, *)
 public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
@@ -54,156 +181,22 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 17.0, *)
 extension LuckyVerse.RewardAd : Observation.Observable {
 }
-@objc public enum HTTPMethod : Swift.Int {
-  case get
-  case post
-  case put
-  case delete
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum NetworkError : Swift.Int, Swift.Error {
-  case invalidResponse
-  case statusCode
-  case decodingError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class NetworkManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyVerse.NetworkManager
-  final public func request<T>(_ url: Foundation.URL, method: LuckyVerse.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil) async throws -> T where T : Swift.Decodable
-  @objc final public func requestJSON(_ url: Foundation.URL, method: LuckyVerse.HTTPMethod = .get, parameters: [Swift.String : Any]? = nil, completion: @escaping (Any?, (any Swift.Error)?) -> Swift.Void)
-  @objc deinit
-}
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckyVerseSDK : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyVerse.LuckyVerseSDK
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc public func setRewardAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc public func setRewardAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc public func setRewardAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc public func setBannerAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc public func setBannerAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc public func setInterstitialAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc public func setInterstitialAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc public func setInterstitialAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc public static var sdkVersion: Swift.String
-  @objc deinit
-  @objc public func initialize()
-  @objc public func updateUSER_ID(userId: Swift.String)
-  @objc public func updateIDFA(IDFA: Swift.String)
-  @objc public func updateAPP_KEY(APP_KEY: Swift.String)
-  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
-  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
-  @objc public func openLuckyVerseMain()
-  @objc public func openLuckyVerseByPush(pushKey: Swift.String)
-  @objc public func openLuckyVerseMyPage()
-  @objc public func openLuckyVerseSajuInfo()
-  @objc public func openLuckyVersePhoneAuth()
-  @objc public func openLuckyVersePointHistory()
-  @objc public func openLuckyVerseProductHistory()
-  @objc public func openLuckyVerseProductHistoryDetail(id: Swift.String)
-  @objc public func openLuckyVerseFaq()
-  @objc public func openLuckyVerseFaqDetail(id: Swift.String)
-  @objc public func openLuckyVerseInquiry()
-  @objc public func openLuckyVerseInquiryHistory()
-  @objc public func openLuckyVerseInquiryHistoryDetail(id: Swift.String)
-  @objc public func openLuckyVerseTermsAndPolicies()
-  @objc public func openLuckyVerseTermsAndPoliciesDetail(id: Swift.String)
-  @objc public func openLuckyVerseProductStore()
-  @objc public func openLuckyVerseProductStoreDetail()
-  @objc public func openLuckyVerseError()
-  @objc public func setLuckyVerseLocalPush(push: LuckyVerse.LuckyVerseLocalPush)
-  @objc public func cancelLuckyVerseLocalPush(pushType: LuckyVerse.LuckyVerseLocalPushType)
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIKit.UIViewController?
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckyVerseLocalPush : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public init(title: Swift.String, body: Swift.String, type: LuckyVerse.LuckyVerseLocalPushType, repeats: Swift.Bool = false, sound: UserNotifications.UNNotificationSound = .default, interverInSeconds: Swift.Int = 5)
-  @objc deinit
-}
-@objc(LuckyVerseLocalPushType) public enum LuckyVerseLocalPushType : Swift.Int {
-  case MAIN = 876663
-  case MY = 876664
-  case SAJU_INFO = 876665
-  case PHONE_AUTH = 876666
-  case POINT_HISTORY = 876667
-  case PRODUCT_HISTORY = 876668
-  case PRODUCT_HISTORY_DETAIL = 876669
-  case FAQ = 876670
-  case FAQ_DETAIL = 876671
-  case INQUIRY = 876672
-  case INQUIRY_HISTORY = 876673
-  case INQUIRY_HISTORY_DETAIL = 876674
-  case TERMS_AND_POLICIES = 876675
-  case TERMS_AND_POLICIES_DETAIL = 876676
-  case PRODUCT_STORE = 876677
-  case PRODUCT_STORE_DETAIL = 876678
-  case ERROR = 876679
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckyVerseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckieverseFloatingButton.Context)
   @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
-}
-@objc @available(iOS 17.0, *)
-public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
-  public var isLoaded: Swift.Bool {
-    get
-    set
-    _modify
-  }
-  public var cancellable: Combine.AnyCancellable? {
-    get
-    set
-    _modify
-  }
-  public var isRewarded: Swift.Bool {
-    get
-    set
-    _modify
-  }
-  public var adClosureHandler: (() -> Swift.Void)? {
-    get
-    set
-    _modify
-  }
-  public init(_ zoneId: Swift.String)
-  public func show(_ adClosureHandler: (() -> Swift.Void)? = nil)
-  @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
-  @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
-  @objc public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
-  @objc deinit
-}
-@available(iOS 17.0, *)
-extension LuckyVerse.InterstitialAd : Observation.Observable {
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyVerse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
@@ -227,15 +220,22 @@ extension LuckyVerse.InterstitialAd : Observation.Observable {
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyVerse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension LuckyVerse.LuckieverseLocalPushType : Swift.Equatable {}
+extension LuckyVerse.LuckieverseLocalPushType : Swift.Hashable {}
+extension LuckyVerse.LuckieverseLocalPushType : Swift.RawRepresentable {}
 extension LuckyVerse.HTTPMethod : Swift.Equatable {}
 extension LuckyVerse.HTTPMethod : Swift.Hashable {}
 extension LuckyVerse.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyVerse.NetworkError : Swift.Equatable {}
 extension LuckyVerse.NetworkError : Swift.Hashable {}
 extension LuckyVerse.NetworkError : Swift.RawRepresentable {}
-extension LuckyVerse.LuckyVerseLocalPushType : Swift.Equatable {}
-extension LuckyVerse.LuckyVerseLocalPushType : Swift.Hashable {}
-extension LuckyVerse.LuckyVerseLocalPushType : Swift.RawRepresentable {}
-extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
+extension LuckyVerse.LuckieverseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
 extension LuckyVerse.BannerAdView : Swift.Sendable {}
