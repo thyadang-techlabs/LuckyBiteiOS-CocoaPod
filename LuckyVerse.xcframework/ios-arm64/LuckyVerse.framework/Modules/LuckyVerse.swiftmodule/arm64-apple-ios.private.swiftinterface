@@ -15,6 +15,13 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyVerse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @available(iOS 17.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
   public var isLoaded: Swift.Bool {
@@ -189,15 +196,6 @@ extension UIKit.UIApplication {
         .compactMap { ($0 as? UIWindowScene)?.keyWindow }
         .first?.rootViewController) -> UIKit.UIViewController?
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckieverseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
@@ -220,12 +218,14 @@ extension UIKit.UIApplication {
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyVerse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
+@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckieverseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
 }
 extension LuckyVerse.LuckieverseLocalPushType : Swift.Equatable {}
 extension LuckyVerse.LuckieverseLocalPushType : Swift.Hashable {}
@@ -236,6 +236,6 @@ extension LuckyVerse.HTTPMethod : Swift.RawRepresentable {}
 extension LuckyVerse.NetworkError : Swift.Equatable {}
 extension LuckyVerse.NetworkError : Swift.Hashable {}
 extension LuckyVerse.NetworkError : Swift.RawRepresentable {}
-extension LuckyVerse.LuckieverseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
 extension LuckyVerse.BannerAdView : Swift.Sendable {}
+extension LuckyVerse.LuckieverseFloatingButton : Swift.Sendable {}
