@@ -334,38 +334,38 @@ SWIFT_CLASS("_TtC10LuckyVerse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduce
 @end
 
 @class NSString;
-enum LuckieverseLocalPushType : NSInteger;
+enum LuckyVerseLocalPushType : NSInteger;
 @class UNNotificationSound;
-SWIFT_CLASS("_TtC10LuckyVerse20LuckieverseLocalPush")
-@interface LuckieverseLocalPush : NSObject
+SWIFT_CLASS("_TtC10LuckyVerse19LuckyVerseLocalPush")
+@interface LuckyVerseLocalPush : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body type:(enum LuckieverseLocalPushType)type repeats:(BOOL)repeats sound:(UNNotificationSound * _Nonnull)sound interverInSeconds:(NSInteger)interverInSeconds OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body type:(enum LuckyVerseLocalPushType)type repeats:(BOOL)repeats sound:(UNNotificationSound * _Nonnull)sound interverInSeconds:(NSInteger)interverInSeconds OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseLocalPushType, "LuckieverseLocalPushType", open) {
-  LuckieverseLocalPushTypeMAIN = 876663,
-  LuckieverseLocalPushTypeMY = 876664,
-  LuckieverseLocalPushTypeSAJU_INFO = 876665,
-  LuckieverseLocalPushTypePHONE_AUTH = 876666,
-  LuckieverseLocalPushTypePOINT_HISTORY = 876667,
-  LuckieverseLocalPushTypePRODUCT_HISTORY = 876668,
-  LuckieverseLocalPushTypePRODUCT_HISTORY_DETAIL = 876669,
-  LuckieverseLocalPushTypeFAQ = 876670,
-  LuckieverseLocalPushTypeFAQ_DETAIL = 876671,
-  LuckieverseLocalPushTypeINQUIRY = 876672,
-  LuckieverseLocalPushTypeINQUIRY_HISTORY = 876673,
-  LuckieverseLocalPushTypeINQUIRY_HISTORY_DETAIL = 876674,
-  LuckieverseLocalPushTypeTERMS_AND_POLICIES = 876675,
-  LuckieverseLocalPushTypeTERMS_AND_POLICIES_DETAIL = 876676,
-  LuckieverseLocalPushTypePRODUCT_STORE = 876677,
-  LuckieverseLocalPushTypePRODUCT_STORE_DETAIL = 876678,
-  LuckieverseLocalPushTypeERROR = 876679,
+typedef SWIFT_ENUM_NAMED(NSInteger, LuckyVerseLocalPushType, "LuckyVerseLocalPushType", open) {
+  LuckyVerseLocalPushTypeMAIN = 876663,
+  LuckyVerseLocalPushTypeMY = 876664,
+  LuckyVerseLocalPushTypeSAJU_INFO = 876665,
+  LuckyVerseLocalPushTypePHONE_AUTH = 876666,
+  LuckyVerseLocalPushTypePOINT_HISTORY = 876667,
+  LuckyVerseLocalPushTypePRODUCT_HISTORY = 876668,
+  LuckyVerseLocalPushTypePRODUCT_HISTORY_DETAIL = 876669,
+  LuckyVerseLocalPushTypeFAQ = 876670,
+  LuckyVerseLocalPushTypeFAQ_DETAIL = 876671,
+  LuckyVerseLocalPushTypeINQUIRY = 876672,
+  LuckyVerseLocalPushTypeINQUIRY_HISTORY = 876673,
+  LuckyVerseLocalPushTypeINQUIRY_HISTORY_DETAIL = 876674,
+  LuckyVerseLocalPushTypeTERMS_AND_POLICIES = 876675,
+  LuckyVerseLocalPushTypeTERMS_AND_POLICIES_DETAIL = 876676,
+  LuckyVerseLocalPushTypePRODUCT_STORE = 876677,
+  LuckyVerseLocalPushTypePRODUCT_STORE_DETAIL = 876678,
+  LuckyVerseLocalPushTypeERROR = 876679,
 };
 
-SWIFT_CLASS("_TtC10LuckyVerse14LuckieverseSDK")
-@interface LuckieverseSDK : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseSDK * _Nonnull shared;)
-+ (LuckieverseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC10LuckyVerse13LuckyVerseSDK")
+@interface LuckyVerseSDK : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckyVerseSDK * _Nonnull shared;)
++ (LuckyVerseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
 - (void)setRewardAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
 - (void)setRewardAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
@@ -373,9 +373,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseS
 - (void)setBannerAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
-- (void)setInterstitialAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
-- (void)setInterstitialAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
-- (void)setInterstitialAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setSdkVersion:(NSString * _Nonnull)value;
@@ -387,26 +384,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
-- (void)openLuckieverseMain;
-- (void)openLuckieverseByPushWithPushKey:(NSString * _Nonnull)pushKey;
-- (void)openLuckieverseMyPage;
-- (void)openLuckieverseSajuInfo;
-- (void)openLuckieversePhoneAuth;
-- (void)openLuckieversePointHistory;
-- (void)openLuckieverseProductHistory;
-- (void)openLuckieverseProductHistoryDetailWithId:(NSString * _Nonnull)id;
-- (void)openLuckieverseFaq;
-- (void)openLuckieverseFaqDetailWithId:(NSString * _Nonnull)id;
-- (void)openLuckieverseInquiry;
-- (void)openLuckieverseInquiryHistory;
-- (void)openLuckieverseInquiryHistoryDetailWithId:(NSString * _Nonnull)id;
-- (void)openLuckieverseTermsAndPolicies;
-- (void)openLuckieverseTermsAndPoliciesDetailWithId:(NSString * _Nonnull)id;
-- (void)openLuckieverseProductStore;
-- (void)openLuckieverseProductStoreDetail;
-- (void)openLuckieverseError;
-- (void)setLuckieverseLocalPushWithPush:(LuckieverseLocalPush * _Nonnull)push;
-- (void)cancelLuckieverseLocalPushWithPushType:(enum LuckieverseLocalPushType)pushType;
+- (void)openLuckyVerseMain;
+- (void)openLuckyVerseByPushWithPushKey:(NSString * _Nonnull)pushKey;
+- (void)openLuckyVerseMyPage;
+- (void)openLuckyVerseSajuInfo;
+- (void)openLuckyVersePhoneAuth;
+- (void)openLuckyVersePointHistory;
+- (void)openLuckyVerseProductHistory;
+- (void)openLuckyVerseProductHistoryDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseFaq;
+- (void)openLuckyVerseFaqDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseInquiry;
+- (void)openLuckyVerseInquiryHistory;
+- (void)openLuckyVerseInquiryHistoryDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseTermsAndPolicies;
+- (void)openLuckyVerseTermsAndPoliciesDetailWithId:(NSString * _Nonnull)id;
+- (void)openLuckyVerseProductStore;
+- (void)openLuckyVerseProductStoreDetail;
+- (void)openLuckyVerseError;
+- (void)setLuckyVerseLocalPushWithPush:(LuckyVerseLocalPush * _Nonnull)push;
+- (void)cancelLuckyVerseLocalPushWithPushType:(enum LuckyVerseLocalPushType)pushType;
 @end
 
 typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
