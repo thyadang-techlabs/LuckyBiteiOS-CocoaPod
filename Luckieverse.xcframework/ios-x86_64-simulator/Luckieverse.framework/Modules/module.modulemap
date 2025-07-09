@@ -1,0 +1,11 @@
+framework module Luckieverse {
+  umbrella header "Luckieverse.h"
+  
+  export *
+  module * { export * }
+} 
+
+module Luckieverse.Swift {
+  header "Luckieverse-Swift.h"
+  requires objc
+}
