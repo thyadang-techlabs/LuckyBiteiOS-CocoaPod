@@ -276,44 +276,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "OpenBiddingHelper",
-        "printedName": "OpenBiddingHelper",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LuckyVerse",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -559,6 +521,20 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
       },
       {
         "kind": "Import",
@@ -2678,6 +2654,30 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "LuckyVerse"
+      },
+      {
         "kind": "TypeDecl",
         "name": "UInt64",
         "printedName": "UInt64",
@@ -3350,55 +3350,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "Array",
-      "offset": 149,
-      "length": 32,
-      "value": "[\"wss:\/\/socket.luckieverse.com\"]"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 827,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 904,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1646,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1767,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1904,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
       "kind": "StringLiteral",
       "offset": 1443,
@@ -3431,7 +3382,7 @@
       "kind": "StringLiteral",
       "offset": 1571,
       "length": 8,
-      "value": "\"0.4.81\""
+      "value": "\"0.4.82\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/LuckyVerseSDK.swift",
@@ -3593,6 +3544,55 @@
       "offset": 12631,
       "length": 6,
       "value": "876679"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "Array",
+      "offset": 149,
+      "length": 32,
+      "value": "[\"wss:\/\/socket.luckieverse.com\"]"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 904,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/LuckyVerse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1904,
+      "length": 1,
+      "value": "0"
     }
   ]
 }

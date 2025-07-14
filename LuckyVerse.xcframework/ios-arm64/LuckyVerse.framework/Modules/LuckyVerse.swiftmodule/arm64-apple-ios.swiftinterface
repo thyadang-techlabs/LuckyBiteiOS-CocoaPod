@@ -13,15 +13,14 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: LuckyVerse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
+@_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckyVerseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckyVerseSDK : ObjectiveC.NSObject {
   @objc public static let shared: LuckyVerse.LuckyVerseSDK
@@ -90,16 +89,17 @@ extension Swift.UInt64 {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: LuckyVerse.LuckyVerseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: LuckyVerse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
 }
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
 extension LuckyVerse.LuckyVerseLocalPushType : Swift.Equatable {}
 extension LuckyVerse.LuckyVerseLocalPushType : Swift.Hashable {}
 extension LuckyVerse.LuckyVerseLocalPushType : Swift.RawRepresentable {}
-extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}

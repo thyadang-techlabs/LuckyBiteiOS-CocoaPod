@@ -20,9 +20,6 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
 @_Concurrency.MainActor @preconcurrency public struct LuckyVerseFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
   @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: LuckyVerse.LuckyVerseFloatingButton.Context) -> UIKit.UIViewController
@@ -98,6 +95,9 @@ extension Swift.UInt64 {
   public var rawValue: Swift.Int {
     get
   }
+}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
 extension LuckyVerse.LuckyVerseFloatingButton : Swift.Sendable {}
 extension LuckyVerse.LuckyVerseLocalPushType : Swift.Equatable {}
