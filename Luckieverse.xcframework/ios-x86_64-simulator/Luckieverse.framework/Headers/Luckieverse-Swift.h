@@ -281,7 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 @import OpenBiddingHelper;
 #endif
@@ -315,13 +314,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 - (void)hideFloatingButton;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-typedef SWIFT_ENUM(NSInteger, HTTPMethod, open) {
-  HTTPMethodGet = 0,
-  HTTPMethodPost = 1,
-  HTTPMethodPut = 2,
-  HTTPMethodDelete = 3,
-};
 
 @class OpenBiddingInterstitial;
 SWIFT_CLASS("_TtC11Luckieverse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduced=17.0)
@@ -404,23 +396,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openLuckieverseError;
 - (void)setLuckieverseLocalPushWithPush:(LuckieverseLocalPush * _Nonnull)push;
 - (void)cancelLuckieverseLocalPushWithPushType:(enum LuckieverseLocalPushType)pushType;
-@end
-
-typedef SWIFT_ENUM(NSInteger, NetworkError, open) {
-  NetworkErrorInvalidResponse = 0,
-  NetworkErrorStatusCode = 1,
-  NetworkErrorDecodingError = 2,
-};
-static NSString * _Nonnull const NetworkErrorDomain = @"Luckieverse.NetworkError";
-
-@class NSURL;
-SWIFT_CLASS("_TtC11Luckieverse14NetworkManager")
-@interface NetworkManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NetworkManager * _Nonnull shared;)
-+ (NetworkManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)requestJSON:(NSURL * _Nonnull)url method:(enum HTTPMethod)method parameters:(NSDictionary<NSString *, id> * _Nullable)parameters completion:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))completion;
 @end
 
 @class OpenBiddingRewardVideo;
