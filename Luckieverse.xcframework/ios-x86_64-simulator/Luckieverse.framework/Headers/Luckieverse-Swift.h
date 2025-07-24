@@ -359,10 +359,9 @@ SWIFT_CLASS("_TtC11Luckieverse14LuckieverseSDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseSDK * _Nonnull shared;)
 + (LuckieverseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
-- (void)setRewardAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
-- (void)setRewardAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
-- (void)setRewardAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
-- (void)setInterstitialadZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
+- (void)setFullScreenAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
+- (void)setFullScreenAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
+- (void)setFullScreenAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
 - (void)setBannerAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
