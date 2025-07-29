@@ -15,18 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
-        if #available(iOS 15.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first { $0.isKeyWindow }?.rootViewController
-        } else {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
-        }
-    }()) -> UIKit.UIViewController?
-}
 @_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
   @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
@@ -200,6 +188,18 @@ extension Luckieverse.RewardAd : Observation.Observable {
 }
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }?.rootViewController
+        } else {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
+        }
+    }()) -> UIKit.UIViewController?
 }
 extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
