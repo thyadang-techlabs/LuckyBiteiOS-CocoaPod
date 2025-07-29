@@ -13,13 +13,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
         "name": "SafariServices",
         "printedName": "SafariServices",
         "declKind": "Import",
@@ -4912,6 +4905,13 @@
         "moduleName": "Luckieverse"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
         "kind": "TypeDecl",
         "name": "UInt64",
         "printedName": "UInt64",
@@ -5484,6 +5484,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -5690,7 +5697,7 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22290,
+      "offset": 22731,
       "length": 5,
       "value": "false"
     },
@@ -5797,7 +5804,7 @@
       "kind": "StringLiteral",
       "offset": 1577,
       "length": 8,
-      "value": "\"1.0.56\""
+      "value": "\"1.0.57\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/LuckieverseSDK.swift",
