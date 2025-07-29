@@ -6,6 +6,41 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4877,41 +4912,6 @@
         "moduleName": "Luckieverse"
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "OpenBiddingHelper",
-        "printedName": "OpenBiddingHelper",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
         "kind": "TypeDecl",
         "name": "UInt64",
         "printedName": "UInt64",
@@ -5484,13 +5484,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -5498,6 +5491,209 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 843,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 53,
+      "value": "\"https:\/\/thyadang-techlabs.github.io\/LuckyBiteReact\/\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1510,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1576,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1882,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2047,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2217,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2299,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2345,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2397,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2446,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2504,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2559,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2641,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2708,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2739,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2769,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2845,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3874,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3953,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4109,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4323,
+      "length": 17,
+      "value": "\"LuckyBiteBridge\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4481,
+      "length": 369,
+      "value": "\"    var originalConsoleLog = console.log;\n    console.log = function() {\n        var message = Array.from(arguments).join(' ');\n        window.webkit.messageHandlers.LuckyBiteBridge.postMessage('console:' + message);\n        originalConsoleLog.apply(console, arguments);\n    };\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4927,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5239,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5245,
+      "length": 17,
+      "value": "\"LuckyBiteSDKiOS\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23968,
+      "length": 5,
+      "value": "false"
+    },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/AdManager.swift",
       "kind": "StringLiteral",
@@ -5601,7 +5797,7 @@
       "kind": "StringLiteral",
       "offset": 1577,
       "length": 8,
-      "value": "\"1.0.60\""
+      "value": "\"1.0.61\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/LuckieverseSDK.swift",
@@ -5826,209 +6022,6 @@
       "offset": 1904,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 843,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 888,
-      "length": 53,
-      "value": "\"https:\/\/thyadang-techlabs.github.io\/LuckyBiteReact\/\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1510,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1576,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1720,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1882,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2047,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2217,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2299,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2345,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2397,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2446,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2504,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2559,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2606,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2641,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2708,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2739,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2769,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2845,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3874,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3953,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4109,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4323,
-      "length": 17,
-      "value": "\"LuckyBiteBridge\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4481,
-      "length": 369,
-      "value": "\"    var originalConsoleLog = console.log;\n    console.log = function() {\n        var message = Array.from(arguments).join(' ');\n        window.webkit.messageHandlers.LuckyBiteBridge.postMessage('console:' + message);\n        originalConsoleLog.apply(console, arguments);\n    };\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4927,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5239,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5245,
-      "length": 17,
-      "value": "\"LuckyBiteSDKiOS\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23915,
-      "length": 5,
-      "value": "false"
     }
   ]
 }
