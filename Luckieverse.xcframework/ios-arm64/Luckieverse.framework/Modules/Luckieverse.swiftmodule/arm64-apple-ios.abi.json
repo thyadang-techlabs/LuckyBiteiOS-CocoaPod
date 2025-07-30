@@ -5753,7 +5753,7 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25963,
+      "offset": 25583,
       "length": 5,
       "value": "false"
     },
@@ -5860,7 +5860,7 @@
       "kind": "StringLiteral",
       "offset": 1577,
       "length": 8,
-      "value": "\"1.0.69\""
+      "value": "\"1.0.70\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/LuckieverseSDK.swift",
