@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 @import OpenBiddingHelper;
 #endif
@@ -356,6 +357,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseLocalPushType, "LuckieverseLocalP
 
 SWIFT_CLASS("_TtC11Luckieverse14LuckieverseSDK")
 @interface LuckieverseSDK : NSObject
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull noADErrorCodeList;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseSDK * _Nonnull shared;)
 + (LuckieverseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
