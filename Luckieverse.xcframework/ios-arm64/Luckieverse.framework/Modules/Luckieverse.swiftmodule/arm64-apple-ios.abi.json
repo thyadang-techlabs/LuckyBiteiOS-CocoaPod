@@ -13,29 +13,8 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
         "name": "OpenBiddingHelper",
         "printedName": "OpenBiddingHelper",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Luckieverse"
       },
@@ -763,34 +742,6 @@
             "mangledName": "$ss8SendableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "Import",
-        "name": "OpenBiddingHelper",
-        "printedName": "OpenBiddingHelper",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
       },
       {
         "kind": "Import",
@@ -3989,254 +3940,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Luckieverse",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Luckieverse"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LuckieverseFloatingButton",
-        "printedName": "LuckieverseFloatingButton",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LuckieverseFloatingButton",
-                "printedName": "Luckieverse.LuckieverseFloatingButton",
-                "usr": "s:11Luckieverse0A14FloatingButtonV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11Luckieverse0A14FloatingButtonVACycfc",
-            "mangledName": "$s11Luckieverse0A14FloatingButtonVACycfc",
-            "moduleName": "Luckieverse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "makeUIViewController",
-            "printedName": "makeUIViewController(context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<Luckieverse.LuckieverseFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckieverseFloatingButton",
-                    "printedName": "Luckieverse.LuckieverseFloatingButton",
-                    "usr": "s:11Luckieverse0A14FloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Luckieverse0A14FloatingButtonV20makeUIViewController7contextSo0eF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
-            "mangledName": "$s11Luckieverse0A14FloatingButtonV20makeUIViewController7contextSo0eF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
-            "moduleName": "Luckieverse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIViewController",
-            "printedName": "updateUIViewController(_:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<Luckieverse.LuckieverseFloatingButton>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LuckieverseFloatingButton",
-                    "printedName": "Luckieverse.LuckieverseFloatingButton",
-                    "usr": "s:11Luckieverse0A14FloatingButtonV"
-                  }
-                ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Luckieverse0A14FloatingButtonV22updateUIViewController_7contextySo0eF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
-            "mangledName": "$s11Luckieverse0A14FloatingButtonV22updateUIViewController_7contextySo0eF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
-            "moduleName": "Luckieverse",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dismantleUIViewController",
-            "printedName": "dismantleUIViewController(_:coordinator:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Luckieverse0A14FloatingButtonV25dismantleUIViewController_11coordinatorySo0eF0C_yttFZ",
-            "mangledName": "$s11Luckieverse0A14FloatingButtonV25dismantleUIViewController_11coordinatorySo0eF0C_yttFZ",
-            "moduleName": "Luckieverse",
-            "static": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:11Luckieverse0A14FloatingButtonV",
-        "mangledName": "$s11Luckieverse0A14FloatingButtonV",
-        "moduleName": "Luckieverse",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UIViewControllerRepresentable",
-            "printedName": "UIViewControllerRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UIViewControllerType",
-                "printedName": "UIViewControllerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Coordinator",
-                "printedName": "Coordinator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
-            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "OpenBiddingHelper",
         "printedName": "OpenBiddingHelper",
         "declKind": "Import",
@@ -5018,6 +4721,268 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Luckieverse",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LuckieverseFloatingButton",
+        "printedName": "LuckieverseFloatingButton",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LuckieverseFloatingButton",
+                "printedName": "Luckieverse.LuckieverseFloatingButton",
+                "usr": "s:11Luckieverse0A14FloatingButtonV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Luckieverse0A14FloatingButtonVACycfc",
+            "mangledName": "$s11Luckieverse0A14FloatingButtonVACycfc",
+            "moduleName": "Luckieverse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<Luckieverse.LuckieverseFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckieverseFloatingButton",
+                    "printedName": "Luckieverse.LuckieverseFloatingButton",
+                    "usr": "s:11Luckieverse0A14FloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Luckieverse0A14FloatingButtonV20makeUIViewController7contextSo0eF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
+            "mangledName": "$s11Luckieverse0A14FloatingButtonV20makeUIViewController7contextSo0eF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
+            "moduleName": "Luckieverse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<Luckieverse.LuckieverseFloatingButton>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LuckieverseFloatingButton",
+                    "printedName": "Luckieverse.LuckieverseFloatingButton",
+                    "usr": "s:11Luckieverse0A14FloatingButtonV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Luckieverse0A14FloatingButtonV22updateUIViewController_7contextySo0eF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
+            "mangledName": "$s11Luckieverse0A14FloatingButtonV22updateUIViewController_7contextySo0eF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
+            "moduleName": "Luckieverse",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismantleUIViewController",
+            "printedName": "dismantleUIViewController(_:coordinator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Luckieverse0A14FloatingButtonV25dismantleUIViewController_11coordinatorySo0eF0C_yttFZ",
+            "mangledName": "$s11Luckieverse0A14FloatingButtonV25dismantleUIViewController_11coordinatorySo0eF0C_yttFZ",
+            "moduleName": "Luckieverse",
+            "static": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Luckieverse0A14FloatingButtonV",
+        "mangledName": "$s11Luckieverse0A14FloatingButtonV",
+        "moduleName": "Luckieverse",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5025,6 +4990,41 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenBiddingHelper",
+        "printedName": "OpenBiddingHelper",
+        "declKind": "Import",
+        "moduleName": "Luckieverse"
       },
       {
         "kind": "TypeDecl",
@@ -5599,6 +5599,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -5606,55 +5613,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "Array",
-      "offset": 149,
-      "length": 32,
-      "value": "[\"wss:\/\/socket.luckieverse.com\"]"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 827,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 904,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1646,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1767,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1904,
-      "length": 1,
-      "value": "0"
-    },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/AdManager.swift",
       "kind": "StringLiteral",
@@ -5710,230 +5668,6 @@
       "offset": 5221,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 637,
-      "length": 6,
-      "value": "\"main\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 895,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 940,
-      "length": 53,
-      "value": "\"https:\/\/thyadang-techlabs.github.io\/LuckyBiteReact\/\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1632,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1698,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1842,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2004,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2169,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2339,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2421,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2467,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2519,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2568,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2626,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2681,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2735,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2790,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2837,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2872,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2939,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2970,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3000,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3076,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4105,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4184,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4348,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4562,
-      "length": 17,
-      "value": "\"LuckyBiteBridge\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4720,
-      "length": 369,
-      "value": "\"    var originalConsoleLog = console.log;\n    console.log = function() {\n        var message = Array.from(arguments).join(' ');\n        window.webkit.messageHandlers.LuckyBiteBridge.postMessage('console:' + message);\n        originalConsoleLog.apply(console, arguments);\n    };\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5166,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5478,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5484,
-      "length": 17,
-      "value": "\"LuckyBiteSDKiOS\""
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 27756,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/InterstitialAdSwiftUIImpl.swift",
@@ -6003,7 +5737,7 @@
       "kind": "StringLiteral",
       "offset": 2029,
       "length": 8,
-      "value": "\"1.1.10\""
+      "value": "\"1.1.11\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/LuckieverseSDK.swift",
@@ -6184,6 +5918,279 @@
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/RewardAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 445,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "Array",
+      "offset": 149,
+      "length": 32,
+      "value": "[\"wss:\/\/socket.luckieverse.com\"]"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 904,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/SocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1904,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 6,
+      "value": "\"main\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 895,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 940,
+      "length": 53,
+      "value": "\"https:\/\/thyadang-techlabs.github.io\/LuckyBiteReact\/\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1632,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1698,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1842,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2004,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2169,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2339,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2467,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2519,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2568,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2626,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2681,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2739,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2794,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2841,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2876,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2943,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2974,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 3004,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3080,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4109,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4188,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4352,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4566,
+      "length": 17,
+      "value": "\"LuckyBiteBridge\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4724,
+      "length": 369,
+      "value": "\"    var originalConsoleLog = console.log;\n    console.log = function() {\n        var message = Array.from(arguments).join(' ');\n        window.webkit.messageHandlers.LuckyBiteBridge.postMessage('console:' + message);\n        originalConsoleLog.apply(console, arguments);\n    };\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5170,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5482,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5488,
+      "length": 17,
+      "value": "\"LuckyBiteSDKiOS\""
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Sources\/Cores\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27760,
       "length": 5,
       "value": "false"
     }
