@@ -382,6 +382,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openLuckieverseTarot;
 - (void)openLuckieverseMain;
 - (void)openLuckieverseByPushWithPushKey:(NSString * _Nonnull)pushKey;
+- (void)openLuckieverseTarotByPushWithPushKey:(NSString * _Nonnull)pushKey;
 - (void)openLuckieverseMyPage;
 - (void)openLuckieverseSajuInfo;
 - (void)openLuckieversePhoneAuth;
