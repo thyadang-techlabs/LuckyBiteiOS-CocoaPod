@@ -377,6 +377,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)update_TAROT_APP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
+- (void)enableBannerDebug:(BOOL)debug;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 - (void)openLuckieverseTarot;
