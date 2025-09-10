@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Luckieverse-Swift.h</key>
 		<data>
-		YTsp7N0sSu/GbJfgi0lbUyXHz/c=
+		vEnNHXOEcS0mt2Wuo5GRJyM274I=
 		</data>
 		<key>Headers/Luckieverse.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ef0FP8e5UzspZF7AqtjBnqe4Yro=
+		uj/c+hjO8vF04NT4EcamBF7xuZA=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		382FemiVL/FYh5rhWgiChrZVmUg=
+		fbSIW8iV94spTIYNJpxI8hK+zlg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		382FemiVL/FYh5rhWgiChrZVmUg=
+		fbSIW8iV94spTIYNJpxI8hK+zlg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		r6xp8T0LMv+NXn43Qf4kiUFTSeQ=
+		t/urDcKyMNWSa/hsQULvljTD4iE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5LcD8Y30gShEB5NeMqIr99cyN6y2HI/AXtjiR+geyNs=
+			cmD7QC5NYXctKJO8hGA0BueVxiksHocR7LqEYpcVPrk=
 			</data>
 		</dict>
 		<key>Headers/Luckieverse.h</key>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adkqQ48PnXRt9gEXJaHcLglFB3HtMBlEECzB6rbr/jA=
+			0iCmp1RQJ3jA3L+LntioNldEUK4Rc4j0boYVbCLKsdU=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBHE43JLjiqX764Yg1ZKvPKYey+KtZWaJyI+lHkCcYo=
+			Ktiy6d6nVLzuC9ngyQs26BCzHUVk3NJMY3tMIc7afMc=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBHE43JLjiqX764Yg1ZKvPKYey+KtZWaJyI+lHkCcYo=
+			Ktiy6d6nVLzuC9ngyQs26BCzHUVk3NJMY3tMIc7afMc=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SA4jFgMaJOAP/fA50XVSJ73bLkrzPZK70n1Ej5hhxXQ=
+			z7fzEo5hDxrHxxy/euAg7zulWBI9r7eXfgEJln67ZHA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

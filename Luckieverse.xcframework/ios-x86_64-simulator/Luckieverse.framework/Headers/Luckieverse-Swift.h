@@ -361,12 +361,12 @@ SWIFT_CLASS("_TtC11Luckieverse14LuckieverseSDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseSDK * _Nonnull shared;)
 + (LuckieverseSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
-- (void)setFullScreenAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
-- (void)setFullScreenAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
-- (void)setFullScreenAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
-- (void)setBannerAdZoneIdForSaju:(NSString * _Nonnull)zoneId;
-- (void)setBannerAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId;
-- (void)setBannerAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId;
+- (void)setFullScreenAdZoneIdForSaju:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
+- (void)setFullScreenAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
+- (void)setFullScreenAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
+- (void)setBannerAdZoneIdForSaju:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
+- (void)setBannerAdZoneIdForNotSaju:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
+- (void)setBannerAdZoneIdForFortuneCookie:(NSString * _Nonnull)zoneId SWIFT_DEPRECATED_MSG("이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.");
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setSdkVersion:(NSString * _Nonnull)value;
