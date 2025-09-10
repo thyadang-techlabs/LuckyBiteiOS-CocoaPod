@@ -15,50 +15,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
-        if #available(iOS 15.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first { $0.isKeyWindow }?.rootViewController
-        } else {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
-        }
-    }()) -> UIKit.UIViewController?
-}
-@available(iOS 13.0, *)
-@_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
-  @_Concurrency.MainActor @preconcurrency public init(zoneId: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: Luckieverse.BannerAdView.Context) -> UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> Luckieverse.BannerAdView.Coordinator
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UIView, context: Luckieverse.BannerAdView.Context)
-  @objc public class Coordinator : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
-    final public let ad: OpenBiddingHelper.BidmadBannerAd
-    final public let view: UIKit.UIView
-    public var cancellable: Combine.AnyCancellable?
-    public init(_ zoneId: Swift.String)
-    public func loadAd()
-    @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner)
-    @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
-    @objc deinit
-  }
-  @available(iOS 13.0, *)
-  public typealias Body = Swift.Never
-  @available(iOS 13.0, *)
-  public typealias UIViewType = UIKit.UIView
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: Luckieverse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc @available(iOS 17.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
   public var isLoaded: Swift.Bool {
@@ -90,6 +46,59 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
 }
 @available(iOS 17.0, *)
 extension Luckieverse.InterstitialAd : Observation.Observable {
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: Luckieverse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
+  @_Concurrency.MainActor @preconcurrency public init(zoneId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: Luckieverse.BannerAdView.Context) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> Luckieverse.BannerAdView.Coordinator
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UIView, context: Luckieverse.BannerAdView.Context)
+  @objc public class Coordinator : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
+    final public let ad: OpenBiddingHelper.BidmadBannerAd
+    final public let view: UIKit.UIView
+    public var cancellable: Combine.AnyCancellable?
+    public init(_ zoneId: Swift.String)
+    public func loadAd()
+    @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner)
+    @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
+    @objc deinit
+  }
+  @available(iOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, *)
+  public typealias UIViewType = UIKit.UIView
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }?.rootViewController
+        } else {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
+        }
+    }()) -> UIKit.UIViewController?
+}
+@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: Luckieverse.LuckieverseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
   @objc final public let noADErrorCodeList: [Swift.Int]
@@ -169,15 +178,6 @@ extension Luckieverse.InterstitialAd : Observation.Observable {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: Luckieverse.LuckieverseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
 @objc @available(iOS 17.0, *)
 public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
   public var isLoaded: Swift.Bool {
@@ -214,7 +214,7 @@ extension Luckieverse.RewardAd : Observation.Observable {
 }
 @available(iOS 13.0, *)
 extension Luckieverse.BannerAdView : Swift.Sendable {}
+extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.Equatable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.Hashable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
