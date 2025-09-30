@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		N/01ms8HG8UQV5ShPY8ltDSXHmE=
+		hmcShyCCoxjh8geJzbIbnF7ZQE4=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Yq3MPPYJCCJUs+1zdCp2o/yzyXo=
+		i1/4+5VUfzylnvxoSRMapbf42zg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Yq3MPPYJCCJUs+1zdCp2o/yzyXo=
+		i1/4+5VUfzylnvxoSRMapbf42zg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rzKKTlx+LorZPzwLPWIut+kQ7m0=
+		QdVb/Obz3HR2CKHtVkuVJlBGqWY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yryVt+endOlLjvveNrgq/HimnOXRxSmPHheGHLlM/Gg=
+			Zq1LLfuywnanxWHx18iJkBEBUF+F3jWcVnAwGeMVdig=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RtuP2nnzWhE9YKyH92zYMVVHwLmQLu1J+1zu/TjqtfM=
+			TjA4IYAYfBqL9UOKrS+gLVjxapzC7G06S4+QYv1KyCo=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RtuP2nnzWhE9YKyH92zYMVVHwLmQLu1J+1zu/TjqtfM=
+			TjA4IYAYfBqL9UOKrS+gLVjxapzC7G06S4+QYv1KyCo=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H3OV+3xn8Jcbo0kB1cX85lyjfMiYAwWOTqCRXY/jT30=
+			KG/fLoGUC/qMKf4BEkdXDIPu3Pgw91O7zq1HZqEwVqM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
