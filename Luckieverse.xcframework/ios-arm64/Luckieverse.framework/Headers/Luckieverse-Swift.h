@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
 @import OpenBiddingHelper;
@@ -373,11 +374,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initialize;
+- (NSString * _Nonnull)getSDKVersion SWIFT_WARN_UNUSED_RESULT;
+- (void)setSDKVersionWithVersion:(NSString * _Nonnull)version;
 - (void)updateUSER_IDWithUserId:(NSString * _Nonnull)userId;
 - (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)update_TAROT_APP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)enableBannerDebug:(BOOL)debug;
+- (void)enableFullScreenAdFailForTest:(BOOL)enable;
+- (void)updateBannerHeightLimit:(CGFloat)height;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 - (void)openLuckieverseTarot;
