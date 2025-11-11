@@ -15,6 +15,9 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
 @objc @available(iOS 17.0, *)
 public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingRewardVideoDelegate {
   public var isLoaded: Swift.Bool {
@@ -48,25 +51,6 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 }
 @available(iOS 17.0, *)
 extension Luckieverse.RewardAd : Observation.Observable {
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: Luckieverse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
-        if #available(iOS 15.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first { $0.isKeyWindow }?.rootViewController
-        } else {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
-        }
-    }()) -> UIKit.UIViewController?
 }
 @objc @available(iOS 17.0, *)
 public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingInterstitialDelegate {
@@ -130,6 +114,25 @@ extension Luckieverse.InterstitialAd : Observation.Observable {
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }?.rootViewController
+        } else {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
+        }
+    }()) -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: Luckieverse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
   @objc final public let noADErrorCodeList: [Swift.Int]
@@ -213,9 +216,6 @@ extension Luckieverse.InterstitialAd : Observation.Observable {
   public var rawValue: Swift.Int {
     get
   }
-}
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
 @available(iOS 13.0, *)
 extension Luckieverse.BannerAdView : Swift.Sendable {}
