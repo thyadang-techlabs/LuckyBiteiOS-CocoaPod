@@ -379,6 +379,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)updateUSER_IDWithUserId:(NSString * _Nonnull)userId;
 - (void)updateIDFAWithIDFA:(NSString * _Nonnull)IDFA;
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
+- (void)updateMAIN_KEYWithMAIN_KEY:(NSString * _Nonnull)MAIN_KEY;
 - (void)update_TAROT_APP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)enableBannerDebug:(BOOL)debug;
 - (void)enableFullScreenAdFailForTest:(BOOL)enable;
