@@ -15,6 +15,140 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
+  @objc final public let noADErrorCodeList: [Swift.Int]
+  @objc public static let shared: Luckieverse.LuckieverseSDK
+  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setFullScreenAdZoneIdForSaju(_ zoneId: Swift.String)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setFullScreenAdZoneIdForNotSaju(_ zoneId: Swift.String)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setFullScreenAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setBannerAdZoneIdForSaju(_ zoneId: Swift.String)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setBannerAdZoneIdForNotSaju(_ zoneId: Swift.String)
+  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
+  public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc public static var sdkVersion: Swift.String
+  @objc deinit
+  @objc public func initialize()
+  @objc public func getSDKVersion() -> Swift.String
+  @objc public func setSDKVersion(version: Swift.String)
+  @objc public func updateUSER_ID(userId: Swift.String)
+  @objc public func updateIDFA(IDFA: Swift.String)
+  @objc public func updateAPP_KEY(APP_KEY: Swift.String)
+  @objc public func updateMAIN_KEY(MAIN_KEY: Swift.String)
+  @objc public func update_TAROT_APP_KEY(APP_KEY: Swift.String)
+  @objc public func enableBannerDebug(_ debug: Swift.Bool)
+  @objc public func enableFullScreenAdFailForTest(_ enable: Swift.Bool)
+  @objc public func updateBannerHeightLimit(_ height: CoreFoundation.CGFloat)
+  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
+  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
+  @objc public func openLuckieverseTarot()
+  @objc public func openLuckieverseMain()
+  @objc public func openLuckieverseByPush(pushKey: Swift.String)
+  @objc public func openLuckieverseTarotByPush(pushKey: Swift.String)
+  @objc public func openLuckieverseMyPage()
+  @objc public func openLuckieverseSajuInfo()
+  @objc public func openLuckieversePhoneAuth()
+  @objc public func openLuckieversePointHistory()
+  @objc public func openLuckieverseProductHistory()
+  @objc public func openLuckieverseProductHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseFaq()
+  @objc public func openLuckieverseFaqDetail(id: Swift.String)
+  @objc public func openLuckieverseInquiry()
+  @objc public func openLuckieverseInquiryHistory()
+  @objc public func openLuckieverseInquiryHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseTermsAndPolicies()
+  @objc public func openLuckieverseTermsAndPoliciesDetail(id: Swift.String)
+  @objc public func openLuckieverseProductStore()
+  @objc public func openLuckieverseProductStoreDetail()
+  @objc public func openLuckieverseError()
+  @objc public func setLuckieverseLocalPush(push: Luckieverse.LuckieverseLocalPush)
+  @objc public func cancelLuckieverseLocalPush(pushType: Luckieverse.LuckieverseLocalPushType)
+  @objc public func openEmailApp()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public init(title: Swift.String, body: Swift.String, type: Luckieverse.LuckieverseLocalPushType, repeats: Swift.Bool = false, sound: UserNotifications.UNNotificationSound = .default, interverInSeconds: Swift.Int = 5)
+  @objc deinit
+}
+@objc(LuckieverseLocalPushType) public enum LuckieverseLocalPushType : Swift.Int {
+  case MAIN = 876663
+  case MY = 876664
+  case SAJU_INFO = 876665
+  case PHONE_AUTH = 876666
+  case POINT_HISTORY = 876667
+  case PRODUCT_HISTORY = 876668
+  case PRODUCT_HISTORY_DETAIL = 876669
+  case FAQ = 876670
+  case FAQ_DETAIL = 876671
+  case INQUIRY = 876672
+  case INQUIRY_HISTORY = 876673
+  case INQUIRY_HISTORY_DETAIL = 876674
+  case TERMS_AND_POLICIES = 876675
+  case TERMS_AND_POLICIES_DETAIL = 876676
+  case PRODUCT_STORE = 876677
+  case PRODUCT_STORE_DETAIL = 876678
+  case ERROR = 876679
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
+  @_Concurrency.MainActor @preconcurrency public init(zoneId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: Luckieverse.BannerAdView.Context) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> Luckieverse.BannerAdView.Coordinator
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UIView, context: Luckieverse.BannerAdView.Context)
+  @objc public class Coordinator : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
+    final public let ad: OpenBiddingHelper.BidmadBannerAd
+    final public let view: UIKit.UIView
+    public var cancellable: Combine.AnyCancellable?
+    public init(_ zoneId: Swift.String)
+    public func loadAd()
+    @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner)
+    @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
+    @objc deinit
+  }
+  @available(iOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, *)
+  public typealias UIViewType = UIKit.UIView
+}
+@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: Luckieverse.LuckieverseFloatingButton.Context)
+  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
+  public typealias Body = Swift.Never
+  public typealias Coordinator = ()
+  public typealias UIViewControllerType = UIKit.UIViewController
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }?.rootViewController
+        } else {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
+        }
+    }()) -> UIKit.UIViewController?
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: Luckieverse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
@@ -84,142 +218,9 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
 @available(iOS 17.0, *)
 extension Luckieverse.InterstitialAd : Observation.Observable {
 }
-@available(iOS 13.0, *)
-@_Concurrency.MainActor @preconcurrency public struct BannerAdView : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public let zoneId: Swift.String
-  @_Concurrency.MainActor @preconcurrency public init(zoneId: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: Luckieverse.BannerAdView.Context) -> UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> Luckieverse.BannerAdView.Coordinator
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UIView, context: Luckieverse.BannerAdView.Context)
-  @objc public class Coordinator : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBiddingBannerDelegate {
-    final public let ad: OpenBiddingHelper.BidmadBannerAd
-    final public let view: UIKit.UIView
-    public var cancellable: Combine.AnyCancellable?
-    public init(_ zoneId: Swift.String)
-    public func loadAd()
-    @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner)
-    @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingBanner, error: any Swift.Error)
-    @objc deinit
-  }
-  @available(iOS 13.0, *)
-  public typealias Body = Swift.Never
-  @available(iOS 13.0, *)
-  public typealias UIViewType = UIKit.UIView
-}
-@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: Luckieverse.LuckieverseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
-  public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
-        if #available(iOS 15.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first { $0.isKeyWindow }?.rootViewController
-        } else {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
-        }
-    }()) -> UIKit.UIViewController?
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: Luckieverse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
-  @objc final public let noADErrorCodeList: [Swift.Int]
-  @objc public static let shared: Luckieverse.LuckieverseSDK
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc public static var sdkVersion: Swift.String
-  @objc deinit
-  @objc public func initialize()
-  @objc public func getSDKVersion() -> Swift.String
-  @objc public func setSDKVersion(version: Swift.String)
-  @objc public func updateUSER_ID(userId: Swift.String)
-  @objc public func updateIDFA(IDFA: Swift.String)
-  @objc public func updateAPP_KEY(APP_KEY: Swift.String)
-  @objc public func updateMAIN_KEY(MAIN_KEY: Swift.String)
-  @objc public func update_TAROT_APP_KEY(APP_KEY: Swift.String)
-  @objc public func enableBannerDebug(_ debug: Swift.Bool)
-  @objc public func enableFullScreenAdFailForTest(_ enable: Swift.Bool)
-  @objc public func updateBannerHeightLimit(_ height: CoreFoundation.CGFloat)
-  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
-  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
-  @objc public func openLuckieverseTarot()
-  @objc public func openLuckieverseMain()
-  @objc public func openLuckieverseByPush(pushKey: Swift.String)
-  @objc public func openLuckieverseTarotByPush(pushKey: Swift.String)
-  @objc public func openLuckieverseMyPage()
-  @objc public func openLuckieverseSajuInfo()
-  @objc public func openLuckieversePhoneAuth()
-  @objc public func openLuckieversePointHistory()
-  @objc public func openLuckieverseProductHistory()
-  @objc public func openLuckieverseProductHistoryDetail(id: Swift.String)
-  @objc public func openLuckieverseFaq()
-  @objc public func openLuckieverseFaqDetail(id: Swift.String)
-  @objc public func openLuckieverseInquiry()
-  @objc public func openLuckieverseInquiryHistory()
-  @objc public func openLuckieverseInquiryHistoryDetail(id: Swift.String)
-  @objc public func openLuckieverseTermsAndPolicies()
-  @objc public func openLuckieverseTermsAndPoliciesDetail(id: Swift.String)
-  @objc public func openLuckieverseProductStore()
-  @objc public func openLuckieverseProductStoreDetail()
-  @objc public func openLuckieverseError()
-  @objc public func setLuckieverseLocalPush(push: Luckieverse.LuckieverseLocalPush)
-  @objc public func cancelLuckieverseLocalPush(pushType: Luckieverse.LuckieverseLocalPushType)
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public init(title: Swift.String, body: Swift.String, type: Luckieverse.LuckieverseLocalPushType, repeats: Swift.Bool = false, sound: UserNotifications.UNNotificationSound = .default, interverInSeconds: Swift.Int = 5)
-  @objc deinit
-}
-@objc(LuckieverseLocalPushType) public enum LuckieverseLocalPushType : Swift.Int {
-  case MAIN = 876663
-  case MY = 876664
-  case SAJU_INFO = 876665
-  case PHONE_AUTH = 876666
-  case POINT_HISTORY = 876667
-  case PRODUCT_HISTORY = 876668
-  case PRODUCT_HISTORY_DETAIL = 876669
-  case FAQ = 876670
-  case FAQ_DETAIL = 876671
-  case INQUIRY = 876672
-  case INQUIRY_HISTORY = 876673
-  case INQUIRY_HISTORY_DETAIL = 876674
-  case TERMS_AND_POLICIES = 876675
-  case TERMS_AND_POLICIES_DETAIL = 876676
-  case PRODUCT_STORE = 876677
-  case PRODUCT_STORE_DETAIL = 876678
-  case ERROR = 876679
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@available(iOS 13.0, *)
-extension Luckieverse.BannerAdView : Swift.Sendable {}
-extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.Equatable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.Hashable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension Luckieverse.BannerAdView : Swift.Sendable {}
+extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
