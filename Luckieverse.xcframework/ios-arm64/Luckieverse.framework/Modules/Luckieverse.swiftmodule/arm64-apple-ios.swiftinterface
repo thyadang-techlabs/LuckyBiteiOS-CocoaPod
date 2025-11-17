@@ -49,9 +49,6 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 @available(iOS 17.0, *)
 extension Luckieverse.RewardAd : Observation.Observable {
 }
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
 @_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
   @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
@@ -126,6 +123,16 @@ extension UIKit.UIApplication {
             return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
         }
     }()) -> UIKit.UIViewController?
+}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
+  @objc public static let shared: Luckieverse.FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+  @objc public func hideFloatingButton()
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
   @objc final public let noADErrorCodeList: [Swift.Int]
@@ -210,13 +217,6 @@ extension UIKit.UIApplication {
   public var rawValue: Swift.Int {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: Luckieverse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
-  @objc public func hideFloatingButton()
-  @objc override dynamic public init()
-  @objc deinit
 }
 extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
