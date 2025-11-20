@@ -409,7 +409,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)setLuckieverseLocalPushWithPush:(LuckieverseLocalPush * _Nonnull)push;
 - (void)cancelLuckieverseLocalPushWithPushType:(enum LuckieverseLocalPushType)pushType;
 /// 이메일 앱을 엽니다
-- (void)openEmailApp;
+- (void)openEmailAppWithRecipient:(NSString * _Nullable)recipient;
+- (void)openNewYearFortune;
+- (void)openFaceReading;
 @end
 
 @class OpenBiddingRewardVideo;
