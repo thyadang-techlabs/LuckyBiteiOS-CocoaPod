@@ -81,9 +81,6 @@ extension Luckieverse.InterstitialAd : Observation.Observable {
   @available(iOS 13.0, *)
   public typealias UIViewType = UIKit.UIView
 }
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
-}
 @_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
   @_Concurrency.MainActor @preconcurrency public init()
   @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
@@ -92,6 +89,9 @@ extension Swift.UInt64 {
   public typealias Body = Swift.Never
   public typealias Coordinator = ()
   public typealias UIViewControllerType = UIKit.UIViewController
+}
+extension Swift.UInt64 {
+  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
   @objc final public let noADErrorCodeList: [Swift.Int]
