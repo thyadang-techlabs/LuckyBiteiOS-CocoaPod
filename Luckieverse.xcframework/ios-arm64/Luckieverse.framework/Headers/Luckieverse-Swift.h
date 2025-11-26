@@ -384,6 +384,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)enableBannerDebug:(BOOL)debug;
 - (void)enableFullScreenAdFailForTest:(BOOL)enable;
 - (void)updateBannerHeightLimit:(CGFloat)height;
+- (void)updateWebviewInspector:(BOOL)enabled;
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 - (void)openLuckieverseTarot;
