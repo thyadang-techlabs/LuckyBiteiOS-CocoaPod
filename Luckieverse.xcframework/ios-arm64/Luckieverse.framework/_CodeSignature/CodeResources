@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Luckieverse-Swift.h</key>
 		<data>
-		jx590GZXzYeW8LWTKLiZXN7YYhM=
+		CGGf8/mn4SN58df0lpqmvP14AJ0=
 		</data>
 		<key>Headers/Luckieverse.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SiOW0c05cISv6gUpp9VbuuVhoCs=
+		y19dEY897KFhgxYV1NsUhx4wAOs=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8/U7oW3zAUMqycE21nvN6LCsmHI=
+		7s/WJr2fo8Y1olpHsM8j9ImUINM=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		w06j/24M7l8M/aAin7pp5RpwfIQ=
+		misOBSMcAoSNAhKhcuRtZEXOJCs=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		k6PODZBe+gSIeAdJMimzUVlYqvo=
+		a7jRKq/6gaPOy9EpgDDNWyEfWFM=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		w06j/24M7l8M/aAin7pp5RpwfIQ=
+		misOBSMcAoSNAhKhcuRtZEXOJCs=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xEWL4IbmZdwYQt0ikHqreSM5ygk=
+		8gzwVGCaF9RiTGZ7fWnl6VHMnpI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9pH/FaHg0jfbuWFRbKO6RmCbmgxg2UaSK46K2PDt/M4=
+			8BtXO/tK1RXaOawqxyzMXH3Ufx1cdb3y63l15grs260=
 			</data>
 		</dict>
 		<key>Headers/Luckieverse.h</key>
@@ -76,35 +76,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nULydehcZKTSadkpGbH9uxZSLDA36BowW1kCxEFOCK0=
+			YgsY9ES3Qc+pv0vGhu25bXcWC6RunVCmlPfiDpKD2l4=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Wy9PwdHL1BnU1RhtX9Z638nTmRZXSZ2meQKvoOuWY4=
+			dBDUX7oxBGA8YQdeqYFueeAfPl1K+obygvGoijhznm0=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MLWFsf78GBHBO4vDHVn6IUG7D83I+tetMnwNHWM9rew=
+			gJjNKc4DXpN84MSzezZ1UATdppiiotM4cH/x9xeteKA=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Wy9PwdHL1BnU1RhtX9Z638nTmRZXSZ2meQKvoOuWY4=
+			dBDUX7oxBGA8YQdeqYFueeAfPl1K+obygvGoijhznm0=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9HSEHsHLxtooIN7/QAsxXbZ81AETBeeuobyOutrxCvo=
+			c2qiwhYNMbgP0EQg+LWaBDoXr77FBc4n6HU5KOsXqUI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
