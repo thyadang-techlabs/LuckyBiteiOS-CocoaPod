@@ -8338,7 +8338,7 @@
       "kind": "StringLiteral",
       "offset": 3727,
       "length": 8,
-      "value": "\"1.2.37\""
+      "value": "\"1.2.38\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/LuckieverseSDK.swift",
@@ -8819,28 +8819,28 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/InterstitialAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 340,
+      "offset": 344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/InterstitialAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 464,
+      "offset": 468,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/RewardAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 327,
+      "offset": 331,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/RewardAdSwiftUIImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 445,
+      "offset": 449,
       "length": 5,
       "value": "false"
     },
