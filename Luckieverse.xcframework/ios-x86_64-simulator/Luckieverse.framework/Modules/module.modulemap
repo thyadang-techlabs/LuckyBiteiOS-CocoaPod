@@ -7,5 +7,4 @@ framework module Luckieverse {
 
 module Luckieverse.Swift {
   header "Luckieverse-Swift.h"
-  requires objc
 }

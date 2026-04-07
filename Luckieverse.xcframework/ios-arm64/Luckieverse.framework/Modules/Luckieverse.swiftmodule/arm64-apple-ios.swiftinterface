@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Luckieverse
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Luckieverse
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import Combine
 import Foundation
 @_exported import Luckieverse
@@ -36,6 +36,21 @@ extension Swift.UInt64 {
   @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
   public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
   @objc public static var sdkVersion: Swift.String
+  @objc public var birth: Swift.String {
+    get
+  }
+  @objc public var calendarType: Luckieverse.LuckieverseCalendarType {
+    get
+  }
+  @objc public var chineseZodiacTime: Luckieverse.LuckieverseChineseZodiacTime {
+    get
+  }
+  @objc public var gender: Luckieverse.LuckieverseGender {
+    get
+  }
+  @objc public var zodiac: Luckieverse.LuckieverseZodiac {
+    get
+  }
   @objc deinit
   @objc public func initialize()
   @objc public func getSDKVersion() -> Swift.String
@@ -73,9 +88,7 @@ extension Swift.UInt64 {
   @objc public func openLuckieverseError()
   @objc public func setLuckieverseLocalPush(push: Luckieverse.LuckieverseLocalPush)
   @objc public func cancelLuckieverseLocalPush(pushType: Luckieverse.LuckieverseLocalPushType)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func openEmailApp(recipient: Swift.String? = nil)
-  #endif
   @objc public func openNewYearFortune()
   @objc public func openFaceReading()
 }
@@ -102,9 +115,69 @@ extension Swift.UInt64 {
   case PRODUCT_STORE = 876677
   case PRODUCT_STORE_DETAIL = 876678
   case ERROR = 876679
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(LuckieverseCalendarType) public enum LuckieverseCalendarType : Swift.Int {
+  case INIT = -1
+  case SOLAR = 0
+  case LUNAR = 1
+  case LUNAR_LEAP = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(LuckieverseChineseZodiacTime) public enum LuckieverseChineseZodiacTime : Swift.Int {
+  case INIT = -1
+  case JA = 0
+  case CHUK = 1
+  case IN = 2
+  case MYO = 3
+  case JIN = 4
+  case SA = 5
+  case O = 6
+  case MI = 7
+  case SHIN = 8
+  case YU = 9
+  case SUL = 10
+  case HAE = 11
+  case UNKNOWN = 12
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(LuckieverseGender) public enum LuckieverseGender : Swift.Int {
+  case INIT = -1
+  case MALE = 0
+  case FEMALE = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(LuckieverseZodiac) public enum LuckieverseZodiac : Swift.Int {
+  case INIT = -1
+  case AQUARIUS = 0
+  case PISCES = 1
+  case ARIES = 2
+  case TAURUS = 3
+  case GEMINI = 4
+  case CANCER = 5
+  case LEO = 6
+  case VIRGO = 7
+  case LIBRA = 8
+  case SCORPIO = 9
+  case SAGITTARIUS = 10
+  case CAPRICORN = 11
+  public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -155,29 +228,23 @@ public class InterstitialAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenB
     set
     _modify
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var cancellable: Combine.AnyCancellable? {
     get
     set
     _modify
   }
-  #endif
   public var isRewarded: Swift.Bool {
     get
     set
     _modify
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var adClosureHandler: (() -> Swift.Void)? {
     get
     set
     _modify
   }
-  #endif
   public init(_ zoneId: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func show(_ adClosureHandler: (() -> Swift.Void)? = nil)
-  #endif
   @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
   @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial, error: any Swift.Error)
   @objc public func onCloseAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingInterstitial)
@@ -193,29 +260,23 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
     set
     _modify
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var cancellable: Combine.AnyCancellable? {
     get
     set
     _modify
   }
-  #endif
   public var isRewarded: Swift.Bool {
     get
     set
     _modify
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var adClosureHandler: ((Swift.Bool) -> Swift.Void)? {
     get
     set
     _modify
   }
-  #endif
   public init(_ zoneId: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func show(_ adClosureHandler: ((Swift.Bool) -> Swift.Void)? = nil)
-  #endif
   @objc public func onLoadAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo)
   @objc public func onLoadFailAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo, error: any Swift.Error)
   @objc public func onSkipAd(_ bidmadAd: OpenBiddingHelper.OpenBiddingRewardVideo)
@@ -227,7 +288,6 @@ public class RewardAd : ObjectiveC.NSObject, OpenBiddingHelper.BIDMADOpenBidding
 extension Luckieverse.RewardAd : nonisolated Observation.Observable {
 }
 extension UIKit.UIApplication {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
         if #available(iOS 15.0, *) {
             return UIApplication.shared.connectedScenes
@@ -238,11 +298,22 @@ extension UIKit.UIApplication {
             return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
         }
     }()) -> UIKit.UIViewController?
-  #endif
 }
 extension Luckieverse.LuckieverseLocalPushType : Swift.Equatable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.Hashable {}
 extension Luckieverse.LuckieverseLocalPushType : Swift.RawRepresentable {}
+extension Luckieverse.LuckieverseCalendarType : Swift.Equatable {}
+extension Luckieverse.LuckieverseCalendarType : Swift.Hashable {}
+extension Luckieverse.LuckieverseCalendarType : Swift.RawRepresentable {}
+extension Luckieverse.LuckieverseChineseZodiacTime : Swift.Equatable {}
+extension Luckieverse.LuckieverseChineseZodiacTime : Swift.Hashable {}
+extension Luckieverse.LuckieverseChineseZodiacTime : Swift.RawRepresentable {}
+extension Luckieverse.LuckieverseGender : Swift.Equatable {}
+extension Luckieverse.LuckieverseGender : Swift.Hashable {}
+extension Luckieverse.LuckieverseGender : Swift.RawRepresentable {}
+extension Luckieverse.LuckieverseZodiac : Swift.Equatable {}
+extension Luckieverse.LuckieverseZodiac : Swift.Hashable {}
+extension Luckieverse.LuckieverseZodiac : Swift.RawRepresentable {}
 extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
 @available(iOS 13.0, *)
 extension Luckieverse.BannerAdView : Swift.Sendable {}
