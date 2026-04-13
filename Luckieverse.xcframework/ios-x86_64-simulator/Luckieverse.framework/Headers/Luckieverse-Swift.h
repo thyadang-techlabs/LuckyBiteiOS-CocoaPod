@@ -349,7 +349,6 @@ extern "C" {
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import OpenBiddingHelper;
 #endif
 
 #endif // defined(__OBJC__)
@@ -380,16 +379,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FloatingButt
 - (void)showFloatingButtonOn:(UIViewController * _Nonnull)viewController;
 - (void)hideFloatingButton;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class OpenBiddingInterstitial;
-SWIFT_CLASS("_TtC11Luckieverse14InterstitialAd") SWIFT_AVAILABILITY(ios,introduced=17.0)
-@interface InterstitialAd : NSObject <BIDMADOpenBiddingInterstitialDelegate>
-- (void)onLoadAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
-- (void)onCloseAd:(OpenBiddingInterstitial * _Nonnull)bidmadAd;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseCalendarType, "LuckieverseCalendarType", open) {
@@ -531,18 +520,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseZodiac, "LuckieverseZodiac", open
   LuckieverseZodiacSAGITTARIUS = 10,
   LuckieverseZodiacCAPRICORN = 11,
 };
-
-@class OpenBiddingRewardVideo;
-SWIFT_CLASS("_TtC11Luckieverse8RewardAd") SWIFT_AVAILABILITY(ios,introduced=17.0)
-@interface RewardAd : NSObject <BIDMADOpenBiddingRewardVideoDelegate>
-- (void)onLoadAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
-- (void)onLoadFailAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd error:(NSError * _Nonnull)error;
-- (void)onSkipAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
-- (void)onCompleteAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
-- (void)onCloseAd:(OpenBiddingRewardVideo * _Nonnull)bidmadAd;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 #endif // defined(__OBJC__)
 #if __has_attribute(external_source_symbol)
