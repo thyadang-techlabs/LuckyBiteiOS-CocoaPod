@@ -504,6 +504,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openNewYearFortune;
 - (void)openFaceReading;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID;
+- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(void))onLoadFail onAdComplete:(void (^ _Nullable)(void))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseZodiac, "LuckieverseZodiac", open) {

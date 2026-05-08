@@ -90,6 +90,7 @@ extension Swift.UInt64 {
   @objc public func openNewYearFortune()
   @objc public func openFaceReading()
   @objc public func showRVWithDynamicZoneID(_ zoneID: Swift.String)
+  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) () -> Swift.Void)?, onAdComplete: (@convention(block) () -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
   @objc override dynamic public init()
