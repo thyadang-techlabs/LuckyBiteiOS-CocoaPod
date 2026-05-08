@@ -503,6 +503,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openEmailAppWithRecipient:(NSString * _Nullable)recipient;
 - (void)openNewYearFortune;
 - (void)openFaceReading;
+- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseZodiac, "LuckieverseZodiac", open) {

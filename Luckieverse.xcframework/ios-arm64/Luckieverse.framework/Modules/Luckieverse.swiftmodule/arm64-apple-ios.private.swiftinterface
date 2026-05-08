@@ -89,6 +89,7 @@ extension Swift.UInt64 {
   @objc public func openEmailApp(recipient: Swift.String? = nil)
   @objc public func openNewYearFortune()
   @objc public func openFaceReading()
+  @objc public func showRVWithDynamicZoneID(_ zoneID: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
   @objc override dynamic public init()
