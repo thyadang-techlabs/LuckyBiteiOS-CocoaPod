@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Luckieverse-Swift.h</key>
 		<data>
-		ELdNV+gmaEx3SHZSIPvoroakvsU=
+		WYWCA5JBr/4uml6116NHrwoItOM=
 		</data>
 		<key>Headers/Luckieverse.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/X4ihpi6hymu68USlWmwlAs2IKo=
+		3pGcRgfahaxMWM7WdRDap6zsKwA=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TLdEL7MA0tW2kgMsKbRxPFPemTo=
+		KMavqJN/RdQBia0BDQStpabDPFg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TLdEL7MA0tW2kgMsKbRxPFPemTo=
+		KMavqJN/RdQBia0BDQStpabDPFg=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XRT/6gSgm7RxlyUK/RhevtTVGHY=
+		bCVJvVNAmjGxjl+Xh6HZ3OEt04I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+vAp+NCy5L4dOWhlXo2eo38L05ZJzi6bJyrz17MfA7U=
+			Px3nmbbw7nKmSH8/PZ9AnA2rY+aXM8xHkSJvmjkW/zM=
 			</data>
 		</dict>
 		<key>Headers/Luckieverse.h</key>
@@ -76,14 +76,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBKCUS1yBGZC22iA+ubtrp/bMytRDidygPUarw9i8B4=
+			M8Iq6iSpTVv6AHi/RqU2PaC1+TjnlB0oFw1LtJrxqZg=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xDQ776UdLkOLQR47D0odwErssbD99vs6hOLUAXvmUk4=
+			2dV/tZuom3yesvO5DJ9s8miYaX5VRGx/2LeF/2EqyVI=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -97,14 +97,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xDQ776UdLkOLQR47D0odwErssbD99vs6hOLUAXvmUk4=
+			2dV/tZuom3yesvO5DJ9s8miYaX5VRGx/2LeF/2EqyVI=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aNPyBcchcr+qExlvDgIm4yzMmCbQ4utWouriZOQSmFs=
+			Gt+0ycLaRCAtyX7+oqtTm8wNTDZVOWcplXCuACvwrVg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

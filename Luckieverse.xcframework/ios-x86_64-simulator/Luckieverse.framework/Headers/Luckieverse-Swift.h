@@ -505,7 +505,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openFaceReading;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(void))onLoadFail onAdComplete:(void (^ _Nullable)(void))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser;
-- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(void))onLoadFail onAdComplete:(void (^ _Nullable)(void))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser onAdLoad:(void (^ _Nullable)(void))onAdLoad onAdShow:(void (^ _Nullable)(void))onAdShow onAdSkip:(void (^ _Nullable)(void))onAdSkip onAdClose:(void (^ _Nullable)(void))onAdClose;
+- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(void))onLoadFail onAdComplete:(void (^ _Nullable)(void))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser onAdLoad:(void (^ _Nullable)(void))onAdLoad onAdShow:(void (^ _Nullable)(void))onAdShow onAdSkip:(void (^ _Nullable)(void))onAdSkip onAdClose:(void (^ _Nullable)(void))onAdClose onAdClick:(void (^ _Nullable)(void))onAdClick;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseZodiac, "LuckieverseZodiac", open) {
