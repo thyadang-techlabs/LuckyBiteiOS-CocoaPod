@@ -21,18 +21,8 @@ extension Swift.UInt64 {
   @objc final public let noADErrorCodeList: [Swift.Int]
   @objc public static let shared: Luckieverse.LuckieverseSDK
   @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setFullScreenAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForNotSaju(_ zoneId: Swift.String)
-  @objc @available(*, deprecated, message: "이 함수는 더이상 사용하지 않습니다. 아무런 동작도 하지 않습니다. 이제 광고 존 아이디는 내부적으로 자동 설정 됩니다.")
-  public func setBannerAdZoneIdForFortuneCookie(_ zoneId: Swift.String)
+  @objc public func setConsumableFullscreenZoneIds(_ zoneIds: [Swift.String])
+  @objc public func setConsumableBannerZoneIds(_ zoneIds: [Swift.String])
   @objc public static var sdkVersion: Swift.String
   @objc public var birth: Swift.String {
     get
