@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Luckieverse
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Foundation
 @_exported import Luckieverse
 import OpenBiddingHelper
@@ -16,6 +16,19 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 extension Swift.UInt64 {
   public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+}
+@objc @objcMembers public class LuckieverseAdInfo : ObjectiveC.NSObject {
+  @objc final public let zoneId: Swift.String
+  @objc final public let network: Swift.String?
+  @objc final public let adType: Swift.String?
+  @objc public init(zoneId: Swift.String, network: Swift.String?, adType: Swift.String?)
+  @objc deinit
+}
+@objc @objcMembers public class LuckieverseAdError : ObjectiveC.NSObject {
+  @objc final public let code: Swift.Int
+  @objc final public let message: Swift.String?
+  @objc public init(code: Swift.Int, message: Swift.String?)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
   @objc final public let noADErrorCodeList: [Swift.Int]
@@ -80,8 +93,8 @@ extension Swift.UInt64 {
   @objc public func openNewYearFortune()
   @objc public func openFaceReading()
   @objc public func showRVWithDynamicZoneID(_ zoneID: Swift.String)
-  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) () -> Swift.Void)?, onAdComplete: (@convention(block) () -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?)
-  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:onAdLoad:onAdShow:onAdSkip:onAdClose:onAdClick:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) () -> Swift.Void)?, onAdComplete: (@convention(block) () -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?, onAdLoad: (@convention(block) () -> Swift.Void)?, onAdShow: (@convention(block) () -> Swift.Void)?, onAdSkip: (@convention(block) () -> Swift.Void)?, onAdClose: (@convention(block) () -> Swift.Void)?, onAdClick: (@convention(block) () -> Swift.Void)?)
+  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) (Luckieverse.LuckieverseAdError) -> Swift.Void)?, onAdComplete: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?)
+  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:onAdLoad:onAdShow:onAdSkip:onAdClose:onAdClick:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) (Luckieverse.LuckieverseAdError) -> Swift.Void)?, onAdComplete: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?, onAdLoad: (@convention(block) () -> Swift.Void)?, onAdShow: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdSkip: (@convention(block) () -> Swift.Void)?, onAdClose: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdClick: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
   @objc override dynamic public init()
