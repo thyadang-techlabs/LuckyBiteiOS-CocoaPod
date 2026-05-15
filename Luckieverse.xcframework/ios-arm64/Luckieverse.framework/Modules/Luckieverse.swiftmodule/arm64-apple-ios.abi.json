@@ -6979,8 +6979,8 @@
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/AdBlockDetector.swift",
       "kind": "Array",
       "offset": 4031,
-      "length": 127,
-      "value": "[\"https:\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\", \"https:\/\/googleads.g.doubleclick.net\"]"
+      "length": 80,
+      "value": "[\"https:\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/AdManager.swift",
@@ -7155,7 +7155,7 @@
       "kind": "StringLiteral",
       "offset": 2823,
       "length": 7,
-      "value": "\"2.0.8\""
+      "value": "\"2.0.9\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/LuckieverseSDK.swift",
