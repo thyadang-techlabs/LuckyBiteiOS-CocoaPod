@@ -486,6 +486,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)updateAPP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)updateMAIN_KEYWithMAIN_KEY:(NSString * _Nonnull)MAIN_KEY;
 - (void)update_TAROT_APP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
+- (void)update_GAME_APP_KEYWithAPP_KEY:(NSString * _Nonnull)APP_KEY;
 - (void)enableBannerDebug:(BOOL)debug;
 - (void)enableFullScreenAdFailForTest:(BOOL)enable;
 - (void)updateBannerHeightLimit:(CGFloat)height;
@@ -493,9 +494,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)setGoToSettingObjc:(void (^ _Nonnull)(void))callback;
 - (void)setGoToSettingSwift:(void (^ _Nonnull)(void))callback;
 - (void)openLuckieverseTarot;
+- (void)openLuckieverseGame;
 - (void)openLuckieverseMain;
 - (void)openLuckieverseByPushWithPushKey:(NSString * _Nonnull)pushKey;
 - (void)openLuckieverseTarotByPushWithPushKey:(NSString * _Nonnull)pushKey;
+- (void)openLuckieverseGameByPushWithPushKey:(NSString * _Nonnull)pushKey;
 - (void)openLuckieverseMyPage;
 - (void)openLuckieverseSajuInfo;
 - (void)openLuckieversePhoneAuth;
