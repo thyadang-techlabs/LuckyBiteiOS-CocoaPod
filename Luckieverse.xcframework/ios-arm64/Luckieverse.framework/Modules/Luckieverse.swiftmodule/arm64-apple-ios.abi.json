@@ -7104,49 +7104,49 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 766,
+      "offset": 809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 824,
+      "offset": 867,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 4838,
+      "offset": 4939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Dictionary",
-      "offset": 6856,
+      "offset": 6957,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Dictionary",
-      "offset": 6921,
+      "offset": 7022,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 6980,
+      "offset": 7081,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 7034,
+      "offset": 7135,
       "length": 2,
       "value": "[]"
     },
@@ -7239,7 +7239,7 @@
       "kind": "StringLiteral",
       "offset": 2922,
       "length": 7,
-      "value": "\"2.2.0\""
+      "value": "\"2.2.1\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/LuckieverseSDK.swift",
