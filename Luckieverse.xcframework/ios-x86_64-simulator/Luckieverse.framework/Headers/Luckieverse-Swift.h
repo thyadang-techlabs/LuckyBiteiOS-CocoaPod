@@ -468,6 +468,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseS
 - (void)setFloatingButtonWithViewController:(UIViewController * _Nonnull)viewController show:(BOOL)show;
 - (void)setConsumableFullscreenZoneIds:(NSArray<NSString *> * _Nonnull)zoneIds;
 - (void)setConsumableBannerZoneIds:(NSArray<NSString *> * _Nonnull)zoneIds;
+/// 풀스크린 광고 load() 진입 후 응답이 없을 때 타임아웃 처리까지 대기하는 시간(초)을 설정한다. 기본 40초.
+/// 1.0초 미만(음수/0/NaN/Infinity 포함)은 무시되고 기존 값이 유지된다.
+/// 주의: 40초 미만으로 설정하면 showRVWithDynamicZoneID의 내부 no-fill 타이머(40초 고정)보다 먼저 발화하여,
+/// 해당 경로의 콜백이 onAdNoFill() 대신 onLoadFail(타임아웃 에러)로 전달될 수 있다.
+- (void)setFullscreenAdLoadTimeout:(NSTimeInterval)timeout;
+/// 풀스크린 광고 show() 진입 후 onClose 없이 응답이 없을 때 타임아웃 처리까지 대기하는 시간(초)을 설정한다. 기본 180초.
+/// 1.0초 미만(음수/0/NaN/Infinity 포함)은 무시되고 기존 값이 유지된다.
+- (void)setFullscreenAdShowTimeout:(NSTimeInterval)timeout;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setSdkVersion:(NSString * _Nonnull)value;

@@ -37,6 +37,8 @@ extension Swift.UInt64 {
   @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
   @objc public func setConsumableFullscreenZoneIds(_ zoneIds: [Swift.String])
   @objc public func setConsumableBannerZoneIds(_ zoneIds: [Swift.String])
+  @objc public func setFullscreenAdLoadTimeout(_ timeout: Foundation.TimeInterval)
+  @objc public func setFullscreenAdShowTimeout(_ timeout: Foundation.TimeInterval)
   @objc public static var sdkVersion: Swift.String
   @objc public var birth: Swift.String {
     get
