@@ -470,8 +470,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseS
 - (void)setConsumableBannerZoneIds:(NSArray<NSString *> * _Nonnull)zoneIds;
 /// 풀스크린 광고 load() 진입 후 응답이 없을 때 타임아웃 처리까지 대기하는 시간(초)을 설정한다. 기본 40초.
 /// 1.0초 미만(음수/0/NaN/Infinity 포함)은 무시되고 기존 값이 유지된다.
-/// 주의: 40초 미만으로 설정하면 showRVWithDynamicZoneID의 내부 no-fill 타이머(40초 고정)보다 먼저 발화하여,
-/// 해당 경로의 콜백이 onAdNoFill() 대신 onLoadFail(타임아웃 에러)로 전달될 수 있다.
+/// 네이티브 showRVWithDynamicZoneID(…)에는 더 이상 별도의 SDK 자체 no-fill 타이머가 없으며,
+/// 이 값이 해당 API의 로드 타임아웃을 결정하는 유일한 값이다(WebView JS 브릿지 경로는 별도의
+/// 독립적인 타임아웃을 사용하므로 이 값의 영향을 받지 않는다). 타임아웃 시 onLoadFail(로드
+/// 타임아웃 전용 에러, code -201)이 호출된다(단, 애드블록 감지 시 onAdBlockUser가 우선).
 - (void)setFullscreenAdLoadTimeout:(NSTimeInterval)timeout;
 /// 과거에는 풀스크린 광고 show() 진입 후 onClose 없이 응답이 없을 때 타임아웃 처리까지
 /// 대기하는 시간(초)을 설정하는 API였으나, 해당 타이머 기반 강제 타임아웃 발화 메커니즘은
