@@ -473,8 +473,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LuckieverseS
 /// 주의: 40초 미만으로 설정하면 showRVWithDynamicZoneID의 내부 no-fill 타이머(40초 고정)보다 먼저 발화하여,
 /// 해당 경로의 콜백이 onAdNoFill() 대신 onLoadFail(타임아웃 에러)로 전달될 수 있다.
 - (void)setFullscreenAdLoadTimeout:(NSTimeInterval)timeout;
-/// 풀스크린 광고 show() 진입 후 onClose 없이 응답이 없을 때 타임아웃 처리까지 대기하는 시간(초)을 설정한다. 기본 180초.
-/// 1.0초 미만(음수/0/NaN/Infinity 포함)은 무시되고 기존 값이 유지된다.
+/// 과거에는 풀스크린 광고 show() 진입 후 onClose 없이 응답이 없을 때 타임아웃 처리까지
+/// 대기하는 시간(초)을 설정하는 API였으나, 해당 타이머 기반 강제 타임아웃 발화 메커니즘은
+/// 제거되었다. 이 값은 더 이상 인위적 show 타임아웃 발화에는 쓰이지 않지만, 여전히
+/// <code>holdReleaseDuration()</code>이 wrapper 인스턴스를 얼마나 오래 강한 참조로
+/// 유지할지(콜백 유실 방지를 위한 메모리 보유 기간)를 계산하는 데 사용된다.
+/// 하위 호환을 위해 시그니처와 유효성 검사(1.0초 미만 무시)는 그대로 유지한다.
 - (void)setFullscreenAdShowTimeout:(NSTimeInterval)timeout;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
@@ -531,7 +535,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openFaceReading;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onLoadFail onAdComplete:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser;
-- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onLoadFail onAdComplete:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser onAdLoad:(void (^ _Nullable)(void))onAdLoad onAdShow:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdShow onAdSkip:(void (^ _Nullable)(void))onAdSkip onAdClose:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClose onAdClick:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClick;
+- (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onLoadFail onAdComplete:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser onAdLoad:(void (^ _Nullable)(void))onAdLoad onAdShow:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdShow onAdSkip:(void (^ _Nullable)(void))onAdSkip onAdClose:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClose onAdClick:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClick onAdShowFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onAdShowFail;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, LuckieverseZodiac, "LuckieverseZodiac", open) {
