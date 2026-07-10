@@ -7153,84 +7153,91 @@
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "FloatLiteral",
-      "offset": 705,
+      "offset": 1711,
       "length": 4,
       "value": "40.0"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "FloatLiteral",
-      "offset": 870,
+      "offset": 1876,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 1428,
+      "offset": 2434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 1556,
+      "offset": 2562,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 1614,
+      "offset": 2620,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 2020,
+      "offset": 3026,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3900,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "BooleanLiteral",
-      "offset": 2267,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10359,
+      "offset": 21322,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Dictionary",
-      "offset": 12377,
+      "offset": 23340,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Dictionary",
-      "offset": 12442,
+      "offset": 23405,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 12501,
+      "offset": 23464,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/Consumable.swift",
       "kind": "Array",
-      "offset": 12555,
+      "offset": 23518,
       "length": 2,
       "value": "[]"
     },
@@ -7330,7 +7337,7 @@
       "kind": "StringLiteral",
       "offset": 5704,
       "length": 7,
-      "value": "\"2.5.0\""
+      "value": "\"2.4.1\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/LuckieverseSDK.swift",
