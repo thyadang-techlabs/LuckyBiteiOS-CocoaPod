@@ -7386,7 +7386,7 @@
       "kind": "StringLiteral",
       "offset": 6374,
       "length": 7,
-      "value": "\"2.7.0\""
+      "value": "\"2.7.1\""
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/Service\/LuckieverseSDK.swift",
@@ -8069,8 +8069,15 @@
     },
     {
       "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/WebViewController.swift",
+      "kind": "Array",
+      "offset": 9766,
+      "length": 67,
+      "value": "[\"luckieverse.com\", \"jeomsin.co.kr\", \"contentslabs.com\", \"adop.cc\"]"
+    },
+    {
+      "filePath": "\/Users\/jeonhaedong\/Developer\/LuckieverseCollection\/LuckyVerseiOS\/Luckieverse\/UI\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37843,
+      "offset": 39071,
       "length": 5,
       "value": "false"
     }
