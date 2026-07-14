@@ -535,6 +535,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sdkV
 - (void)openEmailAppWithRecipient:(NSString * _Nullable)recipient;
 - (void)openNewYearFortune;
 - (void)openFaceReading;
+/// 구글 애드몹 “WebView API for Ads” 연동(WKWebView 광고 최적화 설정 + GMA SDK
+/// registerWebView 등록)이 정상 적용됐는지 눈으로 확인할 수 있도록, 구글 공식 테스트
+/// URL(googleAdmobWebviewAPICheckURL)을 로드하는 풀스크린 웹뷰를 연다. 판정은 해당
+/// 페이지가 화면에 시각적으로 보여주므로 별도의 리턴값/콜백은 없다.
+- (void)checkGoogleAdmobWebviewAPI;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onLoadFail onAdComplete:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser;
 - (void)showRVWithDynamicZoneID:(NSString * _Nonnull)zoneID onLoadFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onLoadFail onAdComplete:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdComplete onAdNoFill:(void (^ _Nullable)(void))onAdNoFill onAdBlockUser:(void (^ _Nullable)(void))onAdBlockUser onAdLoad:(void (^ _Nullable)(void))onAdLoad onAdShow:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdShow onAdSkip:(void (^ _Nullable)(void))onAdSkip onAdClose:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClose onAdClick:(void (^ _Nullable)(LuckieverseAdInfo * _Nonnull))onAdClick onAdShowFail:(void (^ _Nullable)(LuckieverseAdError * _Nonnull))onAdShowFail;
