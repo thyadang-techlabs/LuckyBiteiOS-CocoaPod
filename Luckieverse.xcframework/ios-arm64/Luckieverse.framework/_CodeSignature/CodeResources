@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		RvYehLZmKdOlEAqA1O/uOXAObIE=
+		qiLsrpX2xZCc+/qYVJZgldh9YB4=
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KA5xWa8eP7AnW7xgX0pXTTRohG0=
+		9A2eYyy/wB4tyO726aUFpZgE6EM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iZopevp742NZ2rcOB9yY0A4NN86Dh2332u76mulmSFQ=
+			K6GQ42J+duCdNZLp/9i8M5aeG+iA2i8QdER6jaP4J+E=
 			</data>
 		</dict>
 		<key>Modules/Luckieverse.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Ym9IU6zBiGmb0CGz3bgeDrI9tGerO491FXhm7721kE=
+			J8JZy9aCtN9SuUkaPH9YyGlmBXH1Ekuim+/wEPXxz6A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
