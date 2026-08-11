@@ -1,20 +1,20 @@
 Pod::Spec.new do |s|
   s.name             = 'Luckieverse'
-  s.version          = '2.7.2'
+  s.version          = '2.8.1'
   s.summary          = 'Luckieverse Service for iOS'
   s.description      = 'Luckieverse Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Haedong Jeon' => 'goehd2538@techlabs.co.kr' }
   s.source           = { :git => 'https://github.com/thyadang-techlabs/LuckyBiteiOS-CocoaPod.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '14.0'
   s.swift_version = '5.0'
   s.vendored_frameworks = "Luckieverse.xcframework"
   s.pod_target_xcconfig = {
     'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
     'VALID_ARCHS[sdk=iphoneos*]' => 'arm64'
   }
-  s.dependency "BidmadSDK", "6.13.9"
-  s.dependency "OpenBiddingHelper", "6.13.7"
-  s.dependency "BidmadGoogleGDPRAdapter", "6.13.1"
+  s.dependency "BidmadSDK", "7.0.1"
+  s.dependency "OpenBiddingHelper", "7.0.1"
+  s.dependency "BidmadGoogleGDPRAdapter", "7.0.1"
 end
