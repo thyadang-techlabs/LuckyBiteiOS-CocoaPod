@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Luckieverse
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Luckieverse
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Darwin
 import Foundation
 @_exported import Luckieverse
@@ -15,100 +15,100 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension Swift.UInt64 {
-  public static func nanoSeconds(from seconds: Swift.Int) -> Swift.UInt64
+extension Swift::UInt64 {
+  public static func nanoSeconds(from seconds: Swift::Int) -> Swift::UInt64
 }
-@objc @objcMembers public class LuckieverseAdInfo : ObjectiveC.NSObject {
-  @objc final public let zoneId: Swift.String
-  @objc final public let network: Swift.String?
-  @objc final public let adType: Swift.String?
-  @objc public init(zoneId: Swift.String, network: Swift.String?, adType: Swift.String?)
+@objc @objcMembers public class LuckieverseAdInfo : ObjectiveC::NSObject {
+  @objc final public let zoneId: Swift::String
+  @objc final public let network: Swift::String?
+  @objc final public let adType: Swift::String?
+  @objc public init(zoneId: Swift::String, network: Swift::String?, adType: Swift::String?)
   @objc deinit
 }
-@objc @objcMembers public class LuckieverseAdError : ObjectiveC.NSObject {
-  @objc final public let code: Swift.Int
-  @objc final public let message: Swift.String?
-  @objc public init(code: Swift.Int, message: Swift.String?)
+@objc @objcMembers public class LuckieverseAdError : ObjectiveC::NSObject {
+  @objc final public let code: Swift::Int
+  @objc final public let message: Swift::String?
+  @objc public init(code: Swift::Int, message: Swift::String?)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC.NSObject {
-  @objc final public let noADErrorCodeList: [Swift.Int]
-  @objc public static let shared: Luckieverse.LuckieverseSDK
-  @objc public func setFloatingButton(viewController: UIKit.UIViewController, show: Swift.Bool)
-  @objc public func setConsumableFullscreenZoneIds(_ zoneIds: [Swift.String])
-  @objc public func setConsumableBannerZoneIds(_ zoneIds: [Swift.String])
-  @objc public func setFullscreenAdLoadTimeout(_ timeout: Foundation.TimeInterval)
-  @objc public func setFullscreenAdShowTimeout(_ timeout: Foundation.TimeInterval)
-  @objc public static var sdkVersion: Swift.String
-  @objc public var birth: Swift.String {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class LuckieverseSDK : ObjectiveC::NSObject {
+  @objc final public let noADErrorCodeList: [Swift::Int]
+  @objc public static let shared: Luckieverse::LuckieverseSDK
+  @objc public func setFloatingButton(viewController: UIKit::UIViewController, show: Swift::Bool)
+  @objc public func setConsumableFullscreenZoneIds(_ zoneIds: [Swift::String])
+  @objc public func setConsumableBannerZoneIds(_ zoneIds: [Swift::String])
+  @objc public func setFullscreenAdLoadTimeout(_ timeout: Foundation::TimeInterval)
+  @objc public func setFullscreenAdShowTimeout(_ timeout: Foundation::TimeInterval)
+  @objc public static var sdkVersion: Swift::String
+  @objc public var birth: Swift::String {
     get
   }
-  @objc public var calendarType: Luckieverse.LuckieverseCalendarType {
+  @objc public var calendarType: Luckieverse::LuckieverseCalendarType {
     get
   }
-  @objc public var chineseZodiacTime: Luckieverse.LuckieverseChineseZodiacTime {
+  @objc public var chineseZodiacTime: Luckieverse::LuckieverseChineseZodiacTime {
     get
   }
-  @objc public var gender: Luckieverse.LuckieverseGender {
+  @objc public var gender: Luckieverse::LuckieverseGender {
     get
   }
-  @objc public var zodiac: Luckieverse.LuckieverseZodiac {
+  @objc public var zodiac: Luckieverse::LuckieverseZodiac {
     get
   }
   @objc deinit
   @objc public func initialize()
-  @objc public func getSDKVersion() -> Swift.String
-  @objc public func setSDKVersion(version: Swift.String)
-  @objc public func updateUSER_ID(userId: Swift.String)
-  @objc public func updateIDFA(IDFA: Swift.String)
-  @objc public func updateAPP_KEY(APP_KEY: Swift.String)
-  @objc public func updateMAIN_KEY(MAIN_KEY: Swift.String)
-  @objc public func update_TAROT_APP_KEY(APP_KEY: Swift.String)
-  @objc public func update_GAME_APP_KEY(APP_KEY: Swift.String)
-  @objc public func enableBannerDebug(_ debug: Swift.Bool)
-  @objc public func enableFullScreenAdFailForTest(_ enable: Swift.Bool)
-  @objc public func updateBannerHeightLimit(_ height: CoreFoundation.CGFloat)
-  @objc public func updateWebviewInspector(_ enabled: Swift.Bool)
-  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift.Void)
-  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift.Void)
+  @objc public func getSDKVersion() -> Swift::String
+  @objc public func setSDKVersion(version: Swift::String)
+  @objc public func updateUSER_ID(userId: Swift::String)
+  @objc public func updateIDFA(IDFA: Swift::String)
+  @objc public func updateAPP_KEY(APP_KEY: Swift::String)
+  @objc public func updateMAIN_KEY(MAIN_KEY: Swift::String)
+  @objc public func update_TAROT_APP_KEY(APP_KEY: Swift::String)
+  @objc public func update_GAME_APP_KEY(APP_KEY: Swift::String)
+  @objc public func enableBannerDebug(_ debug: Swift::Bool)
+  @objc public func enableFullScreenAdFailForTest(_ enable: Swift::Bool)
+  @objc public func updateBannerHeightLimit(_ height: CoreFoundation::CGFloat)
+  @objc public func updateWebviewInspector(_ enabled: Swift::Bool)
+  @objc public func setGoToSettingObjc(_ callback: @escaping @convention(block) () -> Swift::Void)
+  @objc public func setGoToSettingSwift(_ callback: @escaping () -> Swift::Void)
   @objc public func openLuckieverseTarot()
   @objc public func openLuckieverseGame()
   @objc public func openLuckieverseMain()
-  @objc public func openLuckieverseByPush(pushKey: Swift.String)
-  @objc public func openLuckieverseTarotByPush(pushKey: Swift.String)
-  @objc public func openLuckieverseGameByPush(pushKey: Swift.String)
+  @objc public func openLuckieverseByPush(pushKey: Swift::String)
+  @objc public func openLuckieverseTarotByPush(pushKey: Swift::String)
+  @objc public func openLuckieverseGameByPush(pushKey: Swift::String)
   @objc public func openLuckieverseMyPage()
   @objc public func openLuckieverseSajuInfo()
   @objc public func openLuckieversePhoneAuth()
   @objc public func openLuckieversePointHistory()
   @objc public func openLuckieverseProductHistory()
-  @objc public func openLuckieverseProductHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseProductHistoryDetail(id: Swift::String)
   @objc public func openLuckieverseFaq()
-  @objc public func openLuckieverseFaqDetail(id: Swift.String)
+  @objc public func openLuckieverseFaqDetail(id: Swift::String)
   @objc public func openLuckieverseInquiry()
   @objc public func openLuckieverseInquiryHistory()
-  @objc public func openLuckieverseInquiryHistoryDetail(id: Swift.String)
+  @objc public func openLuckieverseInquiryHistoryDetail(id: Swift::String)
   @objc public func openLuckieverseTermsAndPolicies()
-  @objc public func openLuckieverseTermsAndPoliciesDetail(id: Swift.String)
+  @objc public func openLuckieverseTermsAndPoliciesDetail(id: Swift::String)
   @objc public func openLuckieverseProductStore()
   @objc public func openLuckieverseProductStoreDetail()
   @objc public func openLuckieverseError()
-  @objc public func setLuckieverseLocalPush(push: Luckieverse.LuckieverseLocalPush)
-  @objc public func cancelLuckieverseLocalPush(pushType: Luckieverse.LuckieverseLocalPushType)
-  @objc public func openEmailApp(recipient: Swift.String? = nil)
+  @objc public func setLuckieverseLocalPush(push: Luckieverse::LuckieverseLocalPush)
+  @objc public func cancelLuckieverseLocalPush(pushType: Luckieverse::LuckieverseLocalPushType)
+  @objc public func openEmailApp(recipient: Swift::String? = nil)
   @objc public func openNewYearFortune()
   @objc public func openFaceReading()
   @objc public func checkGoogleAdmobWebviewAPI()
-  @objc public func showRVWithDynamicZoneID(_ zoneID: Swift.String)
-  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) (Luckieverse.LuckieverseAdError) -> Swift.Void)?, onAdComplete: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?)
-  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:onAdLoad:onAdShow:onAdSkip:onAdClose:onAdClick:onAdShowFail:) public func showRVWithDynamicZoneID(_ zoneID: Swift.String, onLoadFail: (@convention(block) (Luckieverse.LuckieverseAdError) -> Swift.Void)?, onAdComplete: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdNoFill: (@convention(block) () -> Swift.Void)?, onAdBlockUser: (@convention(block) () -> Swift.Void)?, onAdLoad: (@convention(block) () -> Swift.Void)?, onAdShow: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdSkip: (@convention(block) () -> Swift.Void)?, onAdClose: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdClick: (@convention(block) (Luckieverse.LuckieverseAdInfo) -> Swift.Void)?, onAdShowFail: (@convention(block) (Luckieverse.LuckieverseAdError) -> Swift.Void)? = nil)
+  @objc public func showRVWithDynamicZoneID(_ zoneID: Swift::String)
+  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:) public func showRVWithDynamicZoneID(_ zoneID: Swift::String, onLoadFail: (@convention(block) (Luckieverse::LuckieverseAdError) -> Swift::Void)?, onAdComplete: (@convention(block) (Luckieverse::LuckieverseAdInfo) -> Swift::Void)?, onAdNoFill: (@convention(block) () -> Swift::Void)?, onAdBlockUser: (@convention(block) () -> Swift::Void)?)
+  @objc(showRVWithDynamicZoneID:onLoadFail:onAdComplete:onAdNoFill:onAdBlockUser:onAdLoad:onAdShow:onAdSkip:onAdClose:onAdClick:onAdShowFail:) public func showRVWithDynamicZoneID(_ zoneID: Swift::String, onLoadFail: (@convention(block) (Luckieverse::LuckieverseAdError) -> Swift::Void)?, onAdComplete: (@convention(block) (Luckieverse::LuckieverseAdInfo) -> Swift::Void)?, onAdNoFill: (@convention(block) () -> Swift::Void)?, onAdBlockUser: (@convention(block) () -> Swift::Void)?, onAdLoad: (@convention(block) () -> Swift::Void)?, onAdShow: (@convention(block) (Luckieverse::LuckieverseAdInfo) -> Swift::Void)?, onAdSkip: (@convention(block) () -> Swift::Void)?, onAdClose: (@convention(block) (Luckieverse::LuckieverseAdInfo) -> Swift::Void)?, onAdClick: (@convention(block) (Luckieverse::LuckieverseAdInfo) -> Swift::Void)?, onAdShowFail: (@convention(block) (Luckieverse::LuckieverseAdError) -> Swift::Void)? = nil)
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class LuckieverseLocalPush : ObjectiveC::NSObject {
   @objc override dynamic public init()
-  @objc public init(title: Swift.String, body: Swift.String, type: Luckieverse.LuckieverseLocalPushType, repeats: Swift.Bool = false, sound: UserNotifications.UNNotificationSound = .default, interverInSeconds: Swift.Int = 5)
+  @objc public init(title: Swift::String, body: Swift::String, type: Luckieverse::LuckieverseLocalPushType, repeats: Swift::Bool = false, sound: UserNotifications::UNNotificationSound = .default, interverInSeconds: Swift::Int = 5)
   @objc deinit
 }
-@objc(LuckieverseLocalPushType) public enum LuckieverseLocalPushType : Swift.Int {
+@objc(LuckieverseLocalPushType) public enum LuckieverseLocalPushType : Swift::Int {
   case MAIN = 876663
   case MY = 876664
   case SAJU_INFO = 876665
@@ -126,24 +126,24 @@ extension Swift.UInt64 {
   case PRODUCT_STORE = 876677
   case PRODUCT_STORE_DETAIL = 876678
   case ERROR = 876679
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc(LuckieverseCalendarType) public enum LuckieverseCalendarType : Swift.Int {
+@objc(LuckieverseCalendarType) public enum LuckieverseCalendarType : Swift::Int {
   case INIT = -1
   case SOLAR = 0
   case LUNAR = 1
   case LUNAR_LEAP = 2
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc(LuckieverseChineseZodiacTime) public enum LuckieverseChineseZodiacTime : Swift.Int {
+@objc(LuckieverseChineseZodiacTime) public enum LuckieverseChineseZodiacTime : Swift::Int {
   case INIT = -1
   case JA = 0
   case CHUK = 1
@@ -158,23 +158,23 @@ extension Swift.UInt64 {
   case SUL = 10
   case HAE = 11
   case UNKNOWN = 12
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc(LuckieverseGender) public enum LuckieverseGender : Swift.Int {
+@objc(LuckieverseGender) public enum LuckieverseGender : Swift::Int {
   case INIT = -1
   case MALE = 0
   case FEMALE = 1
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc(LuckieverseZodiac) public enum LuckieverseZodiac : Swift.Int {
+@objc(LuckieverseZodiac) public enum LuckieverseZodiac : Swift::Int {
   case INIT = -1
   case AQUARIUS = 0
   case PISCES = 1
@@ -188,53 +188,49 @@ extension Swift.UInt64 {
   case SCORPIO = 9
   case SAGITTARIUS = 10
   case CAPRICORN = 11
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: Luckieverse.LuckieverseFloatingButton.Context) -> UIKit.UIViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: Luckieverse.LuckieverseFloatingButton.Context)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit.UIViewController, coordinator: ())
-  public typealias Body = Swift.Never
+@_Concurrency::MainActor @preconcurrency public struct LuckieverseFloatingButton : SwiftUI::UIViewControllerRepresentable {
+  @_Concurrency::MainActor @preconcurrency public init()
+  @_Concurrency::MainActor @preconcurrency public func makeUIViewController(context: Luckieverse::LuckieverseFloatingButton.SwiftUI::Context) -> UIKit::UIViewController
+  @_Concurrency::MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit::UIViewController, context: Luckieverse::LuckieverseFloatingButton.SwiftUI::Context)
+  @_Concurrency::MainActor @preconcurrency public static func dismantleUIViewController(_ uiViewController: UIKit::UIViewController, coordinator: ())
+  public typealias Body = Swift::Never
   public typealias Coordinator = ()
-  public typealias UIViewControllerType = UIKit.UIViewController
+  public typealias UIViewControllerType = UIKit::UIViewController
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC.NSObject {
-  @objc public static let shared: Luckieverse.FloatingButtonManager
-  @objc public func showFloatingButton(on viewController: UIKit.UIViewController)
+@objc @_inheritsConvenienceInitializers @objcMembers public class FloatingButtonManager : ObjectiveC::NSObject {
+  @objc public static let shared: Luckieverse::FloatingButtonManager
+  @objc public func showFloatingButton(on viewController: UIKit::UIViewController)
   @objc public func hideFloatingButton()
   @objc override dynamic public init()
   @objc deinit
 }
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func getCurrentViewController(base: UIKit.UIViewController? = {
-        if #available(iOS 15.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first { $0.isKeyWindow }?.rootViewController
-        } else {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
-        }
-    }()) -> UIKit.UIViewController?
+extension UIKit::UIApplication {
+  @_Concurrency::MainActor @preconcurrency public func getCurrentViewController(base: UIKit::UIViewController? = {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap { $0.windows }
+            .first { $0.isKeyWindow }?.rootViewController
+    }()) -> UIKit::UIViewController?
 }
-extension Luckieverse.LuckieverseLocalPushType : Swift.Equatable {}
-extension Luckieverse.LuckieverseLocalPushType : Swift.Hashable {}
-extension Luckieverse.LuckieverseLocalPushType : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseCalendarType : Swift.Equatable {}
-extension Luckieverse.LuckieverseCalendarType : Swift.Hashable {}
-extension Luckieverse.LuckieverseCalendarType : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseChineseZodiacTime : Swift.Equatable {}
-extension Luckieverse.LuckieverseChineseZodiacTime : Swift.Hashable {}
-extension Luckieverse.LuckieverseChineseZodiacTime : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseGender : Swift.Equatable {}
-extension Luckieverse.LuckieverseGender : Swift.Hashable {}
-extension Luckieverse.LuckieverseGender : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseZodiac : Swift.Equatable {}
-extension Luckieverse.LuckieverseZodiac : Swift.Hashable {}
-extension Luckieverse.LuckieverseZodiac : Swift.RawRepresentable {}
-extension Luckieverse.LuckieverseFloatingButton : Swift.Sendable {}
+extension Luckieverse::LuckieverseLocalPushType : Swift::Equatable {}
+extension Luckieverse::LuckieverseLocalPushType : Swift::Hashable {}
+extension Luckieverse::LuckieverseLocalPushType : Swift::RawRepresentable {}
+extension Luckieverse::LuckieverseCalendarType : Swift::Equatable {}
+extension Luckieverse::LuckieverseCalendarType : Swift::Hashable {}
+extension Luckieverse::LuckieverseCalendarType : Swift::RawRepresentable {}
+extension Luckieverse::LuckieverseChineseZodiacTime : Swift::Equatable {}
+extension Luckieverse::LuckieverseChineseZodiacTime : Swift::Hashable {}
+extension Luckieverse::LuckieverseChineseZodiacTime : Swift::RawRepresentable {}
+extension Luckieverse::LuckieverseGender : Swift::Equatable {}
+extension Luckieverse::LuckieverseGender : Swift::Hashable {}
+extension Luckieverse::LuckieverseGender : Swift::RawRepresentable {}
+extension Luckieverse::LuckieverseZodiac : Swift::Equatable {}
+extension Luckieverse::LuckieverseZodiac : Swift::Hashable {}
+extension Luckieverse::LuckieverseZodiac : Swift::RawRepresentable {}
+extension Luckieverse::LuckieverseFloatingButton : Swift::Sendable {}

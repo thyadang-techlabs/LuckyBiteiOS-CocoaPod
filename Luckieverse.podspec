@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'Luckieverse'
-  s.version          = '2.8.2'
+  s.version          = '2.9.0'
   s.summary          = 'Luckieverse Service for iOS'
   s.description      = 'Luckieverse Service for iOS offerwall'
   s.homepage         = 'https://www.techlabs.co.kr'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Haedong Jeon' => 'goehd2538@techlabs.co.kr' }
   s.source           = { :git => 'https://github.com/thyadang-techlabs/LuckyBiteiOS-CocoaPod.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '14.0'
+  s.ios.deployment_target = '15.0'
   s.swift_version = '5.0'
   s.vendored_frameworks = "Luckieverse.xcframework"
   s.pod_target_xcconfig = {
